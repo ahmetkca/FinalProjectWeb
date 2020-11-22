@@ -36,6 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         $writeToFile = fopen("seats.txt", "w");
+        $nRow = 1;
         foreach($seats_file_array as $row) {
             $line = "";
             foreach($row as $cell) {
@@ -47,12 +48,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 
                 
             }
-            $line = $line."\n";
+            if ($nRow == 5) {
+                $line = $line;
+            } else {
+                $line = $line."\n";
+            }
+            
             //print_r('\n');
             //print_r($line."\n");
             fwrite($writeToFile, $line);
+            $nRow+=1;
         }
         fclose($writeToFile);
+
+        
     } else {
         echo "<h1> You must choose your seat(s) and have at least 1 ticket.</h1>";
     }
