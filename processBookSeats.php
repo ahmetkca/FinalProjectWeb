@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         //var_dump($seats_file_array);
         foreach($_POST['seats'] as $seat) {
-            $seats_file_array[$seat[1]][$seat[3]] = 1;
+            $seats_file_array[$seat[1]-1][$seat[3]-1] = 1;
             //print_r($seat."<br>");
         }
         foreach ($seats_file_array as $row) {

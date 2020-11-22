@@ -104,7 +104,8 @@ label {
     background-color: red;
     transform: scale(0.05);
   }
-  input[type="checkbox"] {
+input[type="checkbox"] {
+    
   opacity: 0;
   position: absolute;
   width: 100%;
@@ -112,14 +113,14 @@ label {
   z-index: -1;
 }
 
-input[type="checkbox"] + label {
-  background: url(https://i.stack.imgur.com/eiFBl.png) no-repeat 0 center;
+input[type="checkbox"] +label {
+  background: url(images/freeseat.png) no-repeat 0 center;
   padding-left:60px;
   line-height:50px;
   display: inline-block;
   cursor:pointer;
 }
-input[type="checkbox"]:checked + label {
+input[type="checkbox"]:checked +label {
   background: url(images/occupiedseat.png) no-repeat 0 center; 
 }
 .check-wrap{
