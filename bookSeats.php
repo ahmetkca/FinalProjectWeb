@@ -44,7 +44,7 @@
 									for ($i = 0; $i < count($row_seats); $i+=1) {
 										// 0 = free, 1 = free
 										if ($row_seats[$i] == 0) {
-											echo '<td><input type="checkbox" style="display: none;" id="'.'r'.$num_row.'c'.($i+1).'" name="seats" value="'.'r'.$num_row.'c'.($i+1).'"><label for="'.'r'.$num_row.'c'.($i+1).'"><img src="images/freeseat.png" height="20" width="20"/></label></td>';
+											echo '<td><input onclick="checkSeatNum(event, this.id);" type="checkbox" style="display: none;" id="'.'r'.$num_row.'c'.($i+1).'" name="seats" value="'.'r'.$num_row.'c'.($i+1).'"><label for="'.'r'.$num_row.'c'.($i+1).'"><img src="images/freeseat.png" height="20" width="20"/></label></td>';
 										} else {
 											echo '<td><input type="checkbox" style="display: none;" id="'.'r'.$num_row.'c'.($i+1).'" name="seats" value="'.'r'.$num_row.'c'.($i+1).'" disabled><label for="'.'r'.$num_row.'c'.($i+1).'"><img src="images/occupiedseat.png" height="20" width="20"/></label></td>';
 										}
