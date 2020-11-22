@@ -31,25 +31,28 @@
 						<div class="seatSelection">
 
 							<table class="selectSeat">
-								<!--<?php
+								<?php
 								$myfile = fopen("seats.txt", "r") or die("Unable to open file!");
 								$num_row = 1;
 								while(!feof($myfile)) {
 									$current_line = fgets($myfile);
-									$row_seats = explode(", ", $current_line);
+									$row_seats = explode(",", $current_line);
+									//var_dump($current_line);
+									//var_dump($row_seats);
 									echo "<tr>";
 									for ($i = 0; $i < count($row_seats); $i+=1) {
 										// 0 = free, 1 = free
 										if ($row_seats[$i] == 0) {
-											echo '<td><input type="checkbox" style="display: none;" id="r1c1" name="r1c1" value=""><label for="r1c1"><img src="images/freeseat.png" height="20" width="20"/></label></td>';
+											echo '<td><input type="checkbox" style="display: none;" id="'.'r'.$num_row.'c'.($i+1).'" name="r1c1" value=""><label for="'.'r'.$num_row.'c'.($i+1).'"><img src="images/freeseat.png" height="20" width="20"/></label></td>';
 										} else {
-											
+											echo '<td><input type="checkbox" style="display: none;" id="'.'r'.$num_row.'c'.($i+1).'" name="r1c1" value="" disabled><label for="'.'r'.$num_row.'c'.($i+1).'"><img src="images/occupiedseat.png" height="20" width="20"/></label></td>';
 										}
 									}
-									$row+=1;
+									$num_row+=1;
+									echo "</tr>";
 								}
-								?>-->			
-	
+								?>		
+	<!--
 								<tr>
 
 									<td><input type="checkbox" style="display: none;" id="r1c1" name="r1c1" value=""><label for="r1c1"><img src="images/freeseat.png" height="20" width="20"/></label></td>
@@ -124,7 +127,7 @@
 								
 								
 								</tr>
-							
+							-->
 							</table>
 
 						</div>
