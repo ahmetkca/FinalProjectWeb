@@ -9,11 +9,19 @@
     padding-left:2% ;
     
 }
+
 .seatLegend ul li {
     text-align: left;
     list-style: none;
     padding-bottom: 2%;
     
+}
+.borderChoice{
+    border: 1px solid orange;
+    border-radius: 50px;
+    margin: 3%;
+    width:45%;
+    background-color: rgb(230, 173, 69);
 }
 
 .food{

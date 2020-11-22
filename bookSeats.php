@@ -83,8 +83,8 @@
 						</div>
 
 
-						<div class="seatLegend">
-
+						<div class="seatLegend borderChoice">
+							<h4>Select your tickets:</h4>
 							<ul>
 								<li>
 									<label for="Adults">Adults: $12.99</label>
@@ -133,25 +133,30 @@
 									<td>
 										<button class="food add" type="button"  onclick="addPopcorn()" >+</button>
 										<button class="food minus" type="button"  onclick="minusPopcorn()" >-</button>
+										<br><br>
 										<p>Popcorn($5): <input type="number" id="popcornOut" value="0" disabled></p>
 									</td>
 									
 									<td>
 										<button class="food add" type="button"  onclick="addCoke()" >+</button>
 										<button class="food minus" type="button"  onclick="minusCoke()" >-</button>
+										<br><br>
 										<p>Coke($1): <input type="number" id="cokeOut" value="0" disabled></p>
 									</td>
 									<td>
 										<button class="food add" type="button"  onclick="addCandy()" >+</button>
 										<button class="food minus" type="button"  onclick="minusCandy()" >-</button>
+										<br><br>
 										<p>Candy($5): <input type="number" id="candyOut" value="0" disabled></p>
 									</td>
 									<td>
 										<button class="food add" type="button"  onclick="addNachos()" >+</button>
 										<button class="food minus" type="button"  onclick="minusNachos()" >-</button>
+										<br><br>
 										<p>Nachos($8): <input  type="number" id="nachosOut" value="0" disabled></p>
 									</td>
 									<td>
+										<br><br>
 										<button type="submit" ><b>Checkout</b></button>
 									</td>
 									
