@@ -129,25 +129,28 @@
 								<tr>
 									
 									<td>
-										<button type="button"  onclick="addPopcorn()" class="add">+</button>
-										<button type="button"  onclick="minusPopcorn()" class="minus">-</button>
+										<button class="food" type="button"  onclick="addPopcorn()" class="add">+</button>
+										<button class="food" type="button"  onclick="minusPopcorn()" class="minus">-</button>
 										<p>Popcorn($5): <input type="number" id="popcornOut" disabled></p>
 									</td>
 									
 									<td>
-										<button type="button"  onclick="addCoke()" class="add">+</button>
-										<button type="button"  onclick="minusCoke()" class="minus">-</button>
+										<button class="food" type="button"  onclick="addCoke()" class="add">+</button>
+										<button class="food" type="button"  onclick="minusCoke()" class="minus">-</button>
 										<p>Coke($1): <input type="number" id="cokeOut" disabled></p>
 									</td>
 									<td>
-										<button type="button"  onclick="addCandy()" class="add">+</button>
-										<button type="button"  onclick="minusCandy()" class="minus">-</button>
+										<button class="food" type="button"  onclick="addCandy()" class="add">+</button>
+										<button class="food" type="button"  onclick="minusCandy()" class="minus">-</button>
 										<p>Candy($5): <input type="number" id="candyOut" disabled></p>
 									</td>
 									<td>
-										<button type="button"  onclick="addNachos()" class="add">+</button>
-										<button type="button"  onclick="minusNachos()" class="minus">-</button>
+										<button class="food" type="button"  onclick="addNachos()" class="add">+</button>
+										<button class="food" type="button"  onclick="minusNachos()" class="minus">-</button>
 										<p>Nachos($8): <input  type="number" id="nachosOut" disabled></p>
+									</td>
+									<td>
+										<button type="submit" ><b>Checkout</b></button>
 									</td>
 									
 
@@ -155,11 +158,11 @@
 
 
 							</table>
-
+								
 							<br>
 							</form>
 						</div>
-
+						</div>
 
 
 
