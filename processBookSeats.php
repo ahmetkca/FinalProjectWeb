@@ -39,18 +39,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $nRow = 1;
         foreach($seats_file_array as $row) {
             $line = "";
+            $nCol = 1;
             foreach($row as $cell) {
                 //var_dump($cell);
                 
                 //print_r($cell.",");
-                $line =$line.$cell.",";
-                
+                //$line =$line.$cell.",";
+                if ($nCol < 9) {
+                    $line =$line.$cell.",";
+                } else {
+                    $line =$line.$cell;
+                }
+                $nCol+=1;
                 
                 
             }
-            if ($nRow == 5) {
-                $line = $line;
-            } else {
+            if ($nRow < 5) {
                 $line = $line."\n";
             }
             
