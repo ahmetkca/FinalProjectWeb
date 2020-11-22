@@ -100,9 +100,9 @@ label {
   }
   
   :checked+label::before {
-    content: url(images/occupiedseat.png);
+    content: url(images/armchairRed.png);
     background-color: red;
-    transform: scale(0.05);
+    transform: scale(0.045);
   }
 /*input[type="checkbox"] {
     
@@ -123,8 +123,5 @@ input[type="checkbox"] +label {
 input[type="checkbox"]:checked +label {
   background: url(images/occupiedseat.png) no-repeat 0 center; 
 }*/
-.check-wrap{
-  position:relative;
-  display: inline-block;
-}
+
  
