@@ -31,7 +31,7 @@
 						<div class="seatSelection">
 
 							<table class="selectSeat">
-								<?php
+								<!--<?php
 								$myfile = fopen("seats.txt", "r") or die("Unable to open file!");
 								$num_row = 1;
 								while(!feof($myfile)) {
@@ -48,8 +48,8 @@
 									}
 									$row+=1;
 								}
-								?>			
-	<!--
+								?>-->			
+	
 								<tr>
 
 									<td><input type="checkbox" style="display: none;" id="r1c1" name="r1c1" value=""><label for="r1c1"><img src="images/freeseat.png" height="20" width="20"/></label></td>
@@ -124,7 +124,7 @@
 								
 								
 								</tr>
-							-->
+							
 							</table>
 
 						</div>
