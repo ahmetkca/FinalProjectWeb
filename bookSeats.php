@@ -86,7 +86,7 @@
 							<ul>
 								<li>
 									<label for="Adults">Adults: $12.99</label>
-									<select name="Adults" id="Adults">
+									<select onchange="changeSeats();" name="Adults" id="Adults">
 									<option value="0">0</option>
 									<option value="1">1</option>
 									<option value="2">2</option>
@@ -94,7 +94,7 @@
 								</li>
 								<li>
 									<label for="Seniors">Seniors: $8.99</label>
-									<select name="Seniors" id="Seniors">
+									<select onchange="changeSeats();" name="Seniors" id="Seniors">
 									<option value="0">0</option>
 									<option value="1">1</option>
 									<option value="2">2</option>
@@ -102,7 +102,7 @@
 								</li>
 								<li>
 									<label for="Children">Children: $0.99</label>
-									<select name="Children" id="Children">
+									<select onchange="changeSeats();" name="Children" id="Children">
 									<option value="0">0</option>
 									<option value="1">1</option>
 									<option value="2">2</option>
