@@ -131,24 +131,24 @@
 								<tr>
 									
 									<td>
-										<button class="food" type="button"  onclick="addPopcorn()" class="add">+</button>
-										<button class="food" type="button"  onclick="minusPopcorn()" class="minus">-</button>
+										<button class="food add" type="button"  onclick="addPopcorn()" >+</button>
+										<button class="food minus" type="button"  onclick="minusPopcorn()" >-</button>
 										<p>Popcorn($5): <input type="number" id="popcornOut" value="0" disabled></p>
 									</td>
 									
 									<td>
-										<button class="food" type="button"  onclick="addCoke()" class="add">+</button>
-										<button class="food" type="button"  onclick="minusCoke()" class="minus">-</button>
+										<button class="food add" type="button"  onclick="addCoke()" >+</button>
+										<button class="food minus" type="button"  onclick="minusCoke()" >-</button>
 										<p>Coke($1): <input type="number" id="cokeOut" value="0" disabled></p>
 									</td>
 									<td>
-										<button class="food" type="button"  onclick="addCandy()" class="add">+</button>
-										<button class="food" type="button"  onclick="minusCandy()" class="minus">-</button>
+										<button class="food add" type="button"  onclick="addCandy()" >+</button>
+										<button class="food minus" type="button"  onclick="minusCandy()" >-</button>
 										<p>Candy($5): <input type="number" id="candyOut" value="0" disabled></p>
 									</td>
 									<td>
-										<button class="food" type="button"  onclick="addNachos()" class="add">+</button>
-										<button class="food" type="button"  onclick="minusNachos()" class="minus">-</button>
+										<button class="food add" type="button"  onclick="addNachos()" >+</button>
+										<button class="food minus" type="button"  onclick="minusNachos()" >-</button>
 										<p>Nachos($8): <input  type="number" id="nachosOut" value="0" disabled></p>
 									</td>
 									<td>
