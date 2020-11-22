@@ -1,0 +1,47 @@
+.row:after
+            {
+                border: 5px solid black;
+                content:"";
+                clear: both;
+                display: table;
+            }
+
+
+.column
+            {
+                border-bottom: 5pt solid orange;
+                float: left;
+                width: 33.4%;
+                 
+            }
+.column2
+            {
+                padding-left: 5pt;
+            
+                border-bottom: 5pt solid orange;
+                float: left;
+                width: 33%;
+                
+                
+            }
+.newcolumn{
+
+  column-count: 3;
+  column-gap: 40px;
+  column-rule-style: dotted;
+}
+.imageSize
+           {    
+                
+                margin-left: 5%;
+                align-content: center;
+                width: 500px;
+                height: 500px;
+                border-image: 25px; 
+            }
+.playButton
+            {
+                width: 27px;
+                height: 27px;
+            }
+

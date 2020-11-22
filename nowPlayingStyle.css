@@ -1,0 +1,29 @@
+.butt {
+    background-color: orange;
+    border: none;
+    border-radius: 4px;
+}
+table{
+    width: 90%;
+}
+
+.sin{
+    border-top: 5px solid orange;
+    border-radius: 1%;
+    margin: 5%;
+    width:85%;
+}
+.upperinfo{
+    padding: 5pt;
+}
+.img{
+    float: right;
+    margin-right: 8%;
+}
+
+a:hover.override{
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+}
+
