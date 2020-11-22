@@ -48,6 +48,7 @@ function checkSeatNum(event, s_id) {
     //return true;
 }
 
+//Handling adding/subtracting beverages and snacks
 function addPopcorn() {
 
     if(popcorn>=0){
