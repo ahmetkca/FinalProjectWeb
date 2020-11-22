@@ -53,82 +53,6 @@
 									echo "</tr>";
 								}
 								?>		
-	<!--
-								<tr>
-
-									<td><input type="checkbox" style="display: none;" id="r1c1" name="r1c1" value=""><label for="r1c1"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r1c2" name="r1c2" value=""><label for="r1c2"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r1c3" name="r1c3" value=""><label for="r1c3"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r1c4" name="r1c4" value=""><label for="r1c4"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r1c5" name="r1c5" value=""><label for="r1c5"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r1c6" name="r1c6" value=""><label for="r1c6"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r1c7" name="r1c7" value=""><label for="r1c7"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r1c8" name="r1c8" value=""><label for="r1c8"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r1c9" name="r1c9" value=""><label for="r1c9"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-
-								</tr>
-
-								<tr>
-
-									<td><input type="checkbox" style="display: none;" id="r2c1" name="r2c1" value=""><label for="r2c1"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r2c2" name="r2c2" value=""><label for="r2c2"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r2c3" name="r2c3" value=""><label for="r2c3"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r2c4" name="r2c4" value=""><label for="r2c4"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r2c5" name="r2c5" value=""><label for="r2c5"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r2c6" name="r2c6" value=""><label for="r2c6"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r2c7" name="r2c7" value=""><label for="r2c7"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r2c8" name="r2c8" value=""><label for="r2c8"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r2c9" name="r2c9" value=""><label for="r2c9"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-
-
-								</tr>
-
-								<tr>
-								
-									<td><input type="checkbox" style="display: none;" id="r3c1" name="r3c1" value=""><label for="r3c1"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r3c2" name="r3c2" value=""><label for="r3c2"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r3c3" name="r3c3" value=""><label for="r3c3"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r3c4" name="r3c4" value=""><label for="r3c4"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r3c5" name="r3c5" value=""><label for="r3c5"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r3c6" name="r3c6" value=""><label for="r3c6"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r3c7" name="r3c7" value=""><label for="r3c7"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r3c8" name="r3c8" value=""><label for="r3c8"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r3c9" name="r3c9" value=""><label for="r3c9"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-								
-								
-								</tr>
-
-								<tr>
-								
-									<td><input type="checkbox" style="display: none;" id="r4c1" name="r4c1" value=""><label for="r4c1"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r4c2" name="r4c2" value=""><label for="r4c2"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r4c3" name="r4c3" value=""><label for="r4c3"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r4c4" name="r4c4" value=""><label for="r4c4"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r4c5" name="r4c5" value=""><label for="r4c5"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r4c6" name="r4c6" value=""><label for="r4c6"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r4c7" name="r4c7" value=""><label for="r4c7"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r4c8" name="r4c8" value=""><label for="r4c8"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r4c9" name="r4c9" value=""><label for="r4c9"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-								
-								
-								</tr>
-
-
-								<tr>
-								
-									<td><input type="checkbox" style="display: none;" id="r5c1" name="r5c1" value=""><label for="r5c1"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r5c2" name="r5c2" value=""><label for="r5c2"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r5c3" name="r5c3" value=""><label for="r5c3"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r5c4" name="r5c4" value=""><label for="r5c4"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r5c5" name="r5c5" value=""><label for="r5c5"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r5c6" name="r5c6" value=""><label for="r5c6"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r5c7" name="r5c7" value=""><label for="r5c7"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r5c8" name="r5c8" value=""><label for="r5c8"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-									<td><input type="checkbox" style="display: none;" id="r5c9" name="r5c9" value=""><label for="r5c9"><img src="images/freeseat.png" height="20" width="20"/></label></td>
-								
-								
-								</tr>
-							-->
 							</table>
 
 						</div>
@@ -179,7 +103,7 @@
 								<li>
 									<label for="Children">Children: $0.99</label>
 									<select name="Children" id="Children">
-									<option value="1">0</option>
+									<option value="0">0</option>
 									<option value="1">1</option>
 									<option value="2">2</option>
 									</select>
@@ -207,23 +131,23 @@
 									<td>
 										<button type="button"  onclick="addPopcorn()" class="add">+</button>
 										<button type="button"  onclick="minusPopcorn()" class="minus">-</button>
-										<p>Popcorn: <input type="number" id="popcornOut" disabled></p>
+										<p>Popcorn($5): <input type="number" id="popcornOut" disabled></p>
 									</td>
 									
 									<td>
 										<button type="button"  onclick="addCoke()" class="add">+</button>
 										<button type="button"  onclick="minusCoke()" class="minus">-</button>
-										<p>Coke: <input type="number" id="cokeOut" disabled></p>
+										<p>Coke($1): <input type="number" id="cokeOut" disabled></p>
 									</td>
 									<td>
 										<button type="button"  onclick="addCandy()" class="add">+</button>
 										<button type="button"  onclick="minusCandy()" class="minus">-</button>
-										<p>Candy: <input type="number" id="candyOut" disabled></p>
+										<p>Candy($5): <input type="number" id="candyOut" disabled></p>
 									</td>
 									<td>
 										<button type="button"  onclick="addNachos()" class="add">+</button>
 										<button type="button"  onclick="minusNachos()" class="minus">-</button>
-										<p>Nachos: <input  type="number" id="nachosOut" disabled></p>
+										<p>Nachos($8): <input  type="number" id="nachosOut" disabled></p>
 									</td>
 									
 
