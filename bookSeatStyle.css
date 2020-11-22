@@ -32,7 +32,9 @@
 .minus:hover{
     background-color: rgb(241, 89, 63);
 }
-
+input{
+    width: 35px;
+}
 td {
   padding-left: 15px;
   padding-right: 15px;
