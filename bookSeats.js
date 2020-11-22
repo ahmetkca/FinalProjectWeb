@@ -3,6 +3,18 @@ var coke = 0;
 var candy = 0;
 var nachos = 0;
 
+function changeSeats() {
+    for (var i = 1; i <= 5; i++) {
+        for (var k = 1; k <= 9; k++ ) {
+            var seat = document.getElementById("r"+i+"c"+k);
+            if (!seat.disabled) {
+                seat.checked = false;
+            }
+            //console.log(seat.disabled);
+        }
+    }
+}
+
 function checkSeatNum(event, s_id) {
     var selected_seat = document.getElementById(s_id);
     var adult = parseInt(document.getElementById("Adults").value);
