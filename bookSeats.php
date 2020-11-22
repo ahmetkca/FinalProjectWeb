@@ -207,23 +207,23 @@
 									<td>
 										<button type="button"  onclick="addPopcorn()" class="add">+</button>
 										<button type="button"  onclick="minusPopcorn()" class="minus">-</button>
-										<p>Popcorn: <span id="popcornOut">0</span></p>
+										<p>Popcorn: <input type="number" id="popcornOut" disabled></p>
 									</td>
 									
 									<td>
 										<button type="button"  onclick="addCoke()" class="add">+</button>
 										<button type="button"  onclick="minusCoke()" class="minus">-</button>
-										<p>Coke: <span id="cokeOut">0</span></p>
+										<p>Coke: <input type="number" id="cokeOut" disabled></p>
 									</td>
 									<td>
 										<button type="button"  onclick="addCandy()" class="add">+</button>
 										<button type="button"  onclick="minusCandy()" class="minus">-</button>
-										<p>Candy: <span id="candyOut">0</span></p>
+										<p>Candy: <input type="number" id="candyOut" disabled></p>
 									</td>
 									<td>
 										<button type="button"  onclick="addNachos()" class="add">+</button>
 										<button type="button"  onclick="minusNachos()" class="minus">-</button>
-										<p>Nachos: <input type="number" id="nachosOut" disabled></p>
+										<p>Nachos: <input  type="number" id="nachosOut" disabled></p>
 									</td>
 									
 

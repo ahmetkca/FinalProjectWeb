@@ -7,7 +7,7 @@ function addPopcorn() {
 
     if(popcorn>=0){
         popcorn++;
-        document.getElementById("popcornOut").innerHTML = popcorn;        
+        document.getElementById("popcornOut").value = popcorn;        
     }
     
 }
@@ -15,7 +15,7 @@ function addPopcorn() {
 function minusPopcorn() {
     if(popcorn >=1 ){
         popcorn--;
-        document.getElementById("popcornOut").innerHTML = popcorn;
+        document.getElementById("popcornOut").value = popcorn;
     }
     
 }
@@ -24,7 +24,7 @@ function addCoke() {
 
     if (coke >= 0 ) {
         coke++;
-        document.getElementById("cokeOut").innerHTML = coke;
+        document.getElementById("cokeOut").value = coke;
     }
     
 }
@@ -32,21 +32,21 @@ function addCoke() {
 function minusCoke() {
     if(coke >=1){
         coke--;
-        document.getElementById("cokeOut").innerHTML = coke;
+        document.getElementById("cokeOut").value = coke;
     }
 }
 
 function addCandy() {
     if (candy >= 0 ) {
         candy++;
-        document.getElementById("candyOut").innerHTML = candy;
+        document.getElementById("candyOut").value = candy;
     }
 }
 
 function minusCandy() {
      if(candy >=1 ){
         candy--;
-        document.getElementById("candyOut").innerHTML = candy;
+        document.getElementById("candyOut").value = candy;
     }
 }
 
