@@ -179,7 +179,7 @@
 								<li>
 									<label for="Children">Children: $0.99</label>
 									<select name="Children" id="Children">
-									<option value="1">0</option>
+									<option value="0">0</option>
 									<option value="1">1</option>
 									<option value="2">2</option>
 									</select>
@@ -207,23 +207,23 @@
 									<td>
 										<button type="button"  onclick="addPopcorn()" class="add">+</button>
 										<button type="button"  onclick="minusPopcorn()" class="minus">-</button>
-										<p>Popcorn: <input type="number" id="popcornOut" disabled></p>
+										<p>Popcorn($5): <input type="number" id="popcornOut" disabled></p>
 									</td>
 									
 									<td>
 										<button type="button"  onclick="addCoke()" class="add">+</button>
 										<button type="button"  onclick="minusCoke()" class="minus">-</button>
-										<p>Coke: <input type="number" id="cokeOut" disabled></p>
+										<p>Coke($1): <input type="number" id="cokeOut" disabled></p>
 									</td>
 									<td>
 										<button type="button"  onclick="addCandy()" class="add">+</button>
 										<button type="button"  onclick="minusCandy()" class="minus">-</button>
-										<p>Candy: <input type="number" id="candyOut" disabled></p>
+										<p>Candy($5): <input type="number" id="candyOut" disabled></p>
 									</td>
 									<td>
 										<button type="button"  onclick="addNachos()" class="add">+</button>
 										<button type="button"  onclick="minusNachos()" class="minus">-</button>
-										<p>Nachos: <input  type="number" id="nachosOut" disabled></p>
+										<p>Nachos($8): <input  type="number" id="nachosOut" disabled></p>
 									</td>
 									
 
