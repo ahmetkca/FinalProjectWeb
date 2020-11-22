@@ -29,7 +29,8 @@
 						<br>
 						<h4>Screen</h4>
 						<div class="seatSelection">
-
+						<form method="POST" action="processBookSeats.php" name="myForm">
+						
 							<table class="selectSeat">
 								<?php
 								$myfile = fopen("seats.txt", "r") or die("Unable to open file!");
@@ -43,9 +44,9 @@
 									for ($i = 0; $i < count($row_seats); $i+=1) {
 										// 0 = free, 1 = free
 										if ($row_seats[$i] == 0) {
-											echo '<td><input type="checkbox" style="display: none;" id="'.'r'.$num_row.'c'.($i+1).'" name="r1c1" value=""><label for="'.'r'.$num_row.'c'.($i+1).'"><img src="images/freeseat.png" height="20" width="20"/></label></td>';
+											echo '<td><input type="checkbox" style="display: none;" id="'.'r'.$num_row.'c'.($i+1).'" name="seats" value="'.'r'.$num_row.'c'.($i+1).'"><label for="'.'r'.$num_row.'c'.($i+1).'"><img src="images/freeseat.png" height="20" width="20"/></label></td>';
 										} else {
-											echo '<td><input type="checkbox" style="display: none;" id="'.'r'.$num_row.'c'.($i+1).'" name="r1c1" value="" disabled><label for="'.'r'.$num_row.'c'.($i+1).'"><img src="images/occupiedseat.png" height="20" width="20"/></label></td>';
+											echo '<td><input type="checkbox" style="display: none;" id="'.'r'.$num_row.'c'.($i+1).'" name="seats" value="'.'r'.$num_row.'c'.($i+1).'" disabled><label for="'.'r'.$num_row.'c'.($i+1).'"><img src="images/occupiedseat.png" height="20" width="20"/></label></td>';
 										}
 									}
 									$num_row+=1;
@@ -219,7 +220,7 @@
 									<td>
 										<button type="button"  onclick="addNachos()" class="add">+</button>
 										<button type="button"  onclick="minusNachos()" class="minus">-</button>
-										<p>Nachos: <span id="nachosOut">0</span></p>
+										<p>Nachos: <input type="number" id="nachosOut" disabled></p>
 									</td>
 									
 
@@ -229,7 +230,7 @@
 							</table>
 
 							<br>
-
+							</form>
 						</div>
 
 

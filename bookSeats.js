@@ -53,13 +53,13 @@ function minusCandy() {
 function addNachos() {
     if (nachos >= 0 ) {
         nachos++;
-        document.getElementById("nachosOut").innerHTML = nachos;
+        document.getElementById("nachosOut").value = nachos;
     }
 }
 
 function minusNachos() {
      if(nachos >=1 ){
         nachos--;
-        document.getElementById("nachosOut").innerHTML = nachos;
+        document.getElementById("nachosOut").value = nachos;
     }
 }
