@@ -27,9 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $infoarray = mysqli_fetch_array($sqltype, MYSQLI_ASSOC);
             
             //Outputs some info about the user
-            echo '<center>Welcome ' . $infoarray["FirstName"] . " " . $infoarray["LastName"] . '<center>';
-            echo "<br>";
-            echo "Your email is " . $infoarray["EmailAddress"];
+            
             $_SESSION['username'] = $infoarray["Username"];
             $_SESSION['userID'] = $infoarray["Id"];
             sleep(1);

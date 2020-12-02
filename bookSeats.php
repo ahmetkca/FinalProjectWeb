@@ -1,5 +1,6 @@
 <?php
 session_start();
+$session_value=(isset($_SESSION['username']))?$_SESSION['username']:''; 
 ?>
 
 <!DOCTYPE html>
@@ -207,9 +208,9 @@ session_start();
 							<p>2020 OT FILMS Canada LP | Privacy Policy | Terms of Use</p>
 						</div>
 						<script>
-							var session = <?= $_SESSION["username"] ?>;
+							var session = '<?php echo $session_value; ?>';
 							var checkout_btn = document.getElementById('checkout-btn');
-							if (typeof session !== 'undefined') {
+							if (session !== '') {
 								checkout_btn.innerHTML = "Checkout";
 								checkout_btn.disabled = false;
 							} else {
