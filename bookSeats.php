@@ -167,7 +167,7 @@
 
 
 							</table>
-								
+								<input type="hidden" id ="totalSubmission" name="totalSubmission"/>
 							<br>
 							</form>
 						</div>
@@ -184,7 +184,7 @@
 								</div>
 							</td>
 
-							<input type="hidden" id ="totalSubmission" name="totalSubmission">
+							
 
 							</table>
 
