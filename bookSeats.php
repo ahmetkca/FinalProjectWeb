@@ -173,7 +173,7 @@ session_start();
 									</td>
 									<td>
 										<br><br>
-										<button type="submit" ><b>Checkout</b></button>
+										<button id="checkout-btn" type="submit" ><b>Checkout</b></button>
 									</td>
 									
 
@@ -206,6 +206,18 @@ session_start();
                         <div class="navbar-b">
 							<p>2020 OT FILMS Canada LP | Privacy Policy | Terms of Use</p>
 						</div>
+						<script>
+							var session = <?= $_SESSION["username"] ?>;
+							var checkout_btn = document.getElementById('checkout-btn');
+							if (typeof session !== 'undefined') {
+								checkout_btn.innerHTML = "Checkout";
+								checkout_btn.disabled = false;
+							} else {
+								checkout_btn.innerHTML = "Please login to purchase";
+								checkout_btn.disabled = true;
+							}
+						</script>
+
                         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
    						<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
