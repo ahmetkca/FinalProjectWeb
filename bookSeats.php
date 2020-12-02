@@ -210,7 +210,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 
 						<?php if(isset($_GET['error'])): ?>
 							<div id="myModal" class="modal">
-								<div class="modal-content">
+								<div id="span0" class="modal-content">
 									<span class="close">&times;</span>
 									<p><?= $_GET['error']; ?></p>
 								</div>
@@ -218,7 +218,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 						<?php elseif (isset($_GET['total']) && isset($_GET['seats'])): ?>
 							<div id="myModal" class="modal">
 								<div class="modal-content">
-									<span class="close">&times;</span>
+									<span id="span1" class="close">&times;</span>
 									<h1>Thank you for purchase, <?= $_SESSION['fname']; ?> <?= $_SESSION['lname'] ?></h1>
 									<p>Total: <?= $_GET['total']; ?>$</p>
 									<p>Username: <?= $_SESSION['username']; ?></p>
@@ -228,7 +228,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 						<?php else: ?>
 							<div id="myModal" class="modal">
 								<div class="modal-content">
-									<span class="close">&times;</span>
+									<span id="span2" class="close">&times;</span>
 									<p>Something went wrong!</p>
 									<p>Couldn't book a seat...</p>
 								</div>
@@ -248,7 +248,16 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 								checkout_btn.innerHTML = "Please login to purchase";
 								checkout_btn.disabled = true;
 							}
-							span.onclick = function() {
+							var span0 = document.getElementById("close0");
+							var span1 = document.getElementById("close1");
+							var span2 = document.getElementById("close2");
+							span0.onclick = function() {
+								modal.style.display = "none";
+							}
+							span1.onclick = function() {
+								modal.style.display = "none";
+							}
+							span2.onclick = function() {
 								modal.style.display = "none";
 							}
 
