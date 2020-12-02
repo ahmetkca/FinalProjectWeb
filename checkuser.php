@@ -81,7 +81,7 @@
                     font-size: 50pt; 
                     color: orange; 
                     font-family: Arial;
-                    transition: 0.8s;
+                    transition: 0.5s;
                     font-family: 'Oswald', sans-serif;
                 }
                 .echotext:hover{
