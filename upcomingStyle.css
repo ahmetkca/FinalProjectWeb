@@ -39,12 +39,18 @@
                 height: 500px;
                 border-image: 25px; 
             }
-.playButton
-            {
-                width: 27px;
-                height: 27px;
-            }
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+}
+.imgply{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.imgply:hover{
+    transform: scale(1.5);
+    filter: drop-shadow(8px 8px 10px black);
+    background-color: transparent;
 }
