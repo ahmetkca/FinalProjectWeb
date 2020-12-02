@@ -80,6 +80,7 @@ input + label {
   cursor: pointer;  
   background: url(images/freeseat.png) no-repeat 0 center;
 }
+
 input[type="checkbox"]:checked + label {
   background: url(images/occupiedseat.png) no-repeat 0 center;
 }
