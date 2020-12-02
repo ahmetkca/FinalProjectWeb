@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include ("setup.php");
 $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
@@ -30,6 +30,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             echo '<center>Welcome ' . $infoarray["FirstName"] . " " . $infoarray["LastName"] . '<center>';
             echo "<br>";
             echo "Your email is " . $infoarray["EmailAddress"];
+            $_SESSION['username'] = $infoarray["Username"];
+            $_SESSION['userID'] = $infoarray["Id"];
+            sleep(1);
+            header("location: home.php");
 
         }
         else{
