@@ -30,7 +30,7 @@
 						<h4>Screen</h4>
 						<div class="seatSelection">
 						<form method="POST" action="processBookSeats.php" name="myForm">
-							<input id="seats_selected" type="hidden" name="seats" value="">
+							
 							<table class="selectSeat">
 								<?php
 								$myfile = fopen("seats.txt", "r") or die("Unable to open file!");
