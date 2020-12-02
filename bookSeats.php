@@ -225,14 +225,6 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 									<p>Seats: <?= $_GET['seats']; ?></p>
 								</div>
 							</div>
-						<?php else: ?>
-							<div id="myModal" class="modal">
-								<div class="modal-content">
-									<span id="span2" class="close">&times;</span>
-									<p>Something went wrong!</p>
-									<p>Couldn't book a seat...</p>
-								</div>
-							</div>
 						<?php endif; ?>
 
                         <div class="navbar-b">
