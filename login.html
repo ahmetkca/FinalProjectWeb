@@ -1,0 +1,136 @@
+<html>
+    <header>
+
+        <style>
+
+            table{
+                background-color: white;
+                width:300;
+                height:250;
+                position:fixed;
+                margin-left:-150; 
+                margin-top:-180; 
+                top:50%;
+                left:50%;
+            }
+
+            input{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            p{
+                color: gray;
+                font-family:Arial;
+            }
+
+            .top{
+                color: gray;
+                font-family:Arial;
+                width: auto; 
+                text-align: center;
+                width: 50%;
+            }
+
+            #button{
+                background-color: rgb(190, 190, 190);
+                transition: 0.5s;
+            }
+
+            #button:hover{
+                background-color:rgb(81, 185, 255);
+                color: white;
+            }
+
+            #login{
+                font-family:Arial; 
+                font-weight: bold; 
+                color: white;  
+                background-color:rgb(81, 185, 255);
+                border: hidden; 
+                height: 30;
+                transition: 0.5s;
+                opacity: 0.5;
+            }
+
+            #login:hover{
+                font-family:Arial; 
+                font-weight: bold; 
+                color: white;  
+                background-color:rgb(81, 185, 255); 
+                border: hidden; 
+                height: 30;
+                opacity: 1;
+            }
+
+            .rotate180 {
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+
+
+
+        </style>
+
+    </header>
+
+    <body style="background-image: url('images/starnight.jpg'); height: 100%; overflow: hidden">
+
+        <form action="checklogin.php" method="POST">
+
+            <table>
+
+                <tr style="height: 50;">
+                    <td class="top" style="border-top: 3px solid; border-color: rgb(81, 185, 255);">Login</td> 
+                    <td class="top" id="button" onclick="signUp()">Sign Up</td>
+                </tr>
+
+                <tr>
+
+                    <td colspan="2" style="padding-left: 10%; padding-right: 10%;">
+
+                        <br>
+
+                        <p style="text-align: center; color: black;">Login to OT Films</p>
+
+                        <p>User Name</p>
+                        <input type="text" name ="user" required>  <!-- 'required' used to ensure user fills every field -->
+
+                        <p>Password</p>
+                        <input type="text" name ="pass" required><br>
+
+                        <br>
+
+                        <input type="submit" value="LOGIN" id="login">
+                        
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    </td>
+                </tr>
+
+            </table>
+
+        </form>
+
+
+    </body>
+
+    <div style="height: 500px;"></div>
+
+    <img src="images/stars.png" class="rotate180" style="width: 100%; height:500px; z-index: 1;">
+
+    <script>
+        function signUp(){
+            location.href = "signup.html";
+        }
+    </script>
+
+
+</html>

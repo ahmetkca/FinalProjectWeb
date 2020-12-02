@@ -180,7 +180,6 @@
 									<p>Subtotal: $<p1 id="subtotal">0.00</p1></p>
 									<p>HST: $<p1 id="tax">0.00</p1></p>
 									<p>Total: $<p1 id="total">0.00</p1></p>
-									<p id="test">TEST</p>
 								</div>
 							</td>
 
