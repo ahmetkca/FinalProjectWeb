@@ -29,6 +29,7 @@ function checkSeatNum(event, s_id) {
         //return false;
     }
 
+    
     var max_seat =adult + senior + children;
     console.log(max_seat);
     var num_selected_seats=0;
