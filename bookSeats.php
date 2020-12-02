@@ -31,7 +31,7 @@
 						<div class="seatSelection">
 						<form method="POST" action="processBookSeats.php" name="myForm">
 						
-							<table class="selectSeat">
+							<table class="selectSeat jumbotron">
 								<?php
 								$myfile = fopen("seats.txt", "r") or die("Unable to open file!");
 								$num_row = 1;
