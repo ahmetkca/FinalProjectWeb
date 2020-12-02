@@ -1,0 +1,44 @@
+.movie-grid{
+    display:grid;
+    grid-template-columns: 20% 60% 20% ;
+    grid-template: 700pt;
+    grid-gap: 5px;
+    background-color: rgb(255, 160, 71);
+    padding:5px;
+    margin-top: 50pt;
+}
+
+.movie-grid > div{
+    background-color: rgba(255, 255, 255, 0.8);
+  
+    padding: 20px 0;
+    font-size: 30px;
+}
+.image-Size
+           {    
+                
+                margin-left: auto;
+                margin-right: auto;
+                width: 450pt;
+                height: 450pt;
+                 
+           }
+.container2{
+    height: 600pt;
+    width: 800pt;
+    margin-left: 15pt;
+    align-content: center;
+
+}
+.youtube > iframe{
+    height: 500pt;
+    width: 500pt;
+    padding: 10pt;
+}
+body{
+    background-color: rgb(229, 236, 243);
+}
+.col{
+    border: solid 2pt orange;
+    border-radius: ;
+}
