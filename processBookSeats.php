@@ -7,7 +7,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $myfile = fopen("seats.txt", "r") or die("Unable to open file!");
         $seats_file_array = array();
         $row_num = 0;
-        print_r($_POST['totalSubmission']);
+        $total = $_POST['totalSubmission'];
+        $seats = $_POST['seats'];
+        //print_r($_POST['totalSubmission']);
 
         //Reads the file to initialise a 2D array (similar bookseats.php), used to target a seat directly by row and column
         //opposed to iterating through
@@ -62,10 +64,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $nRow+=1;
         }
         fclose($writeToFile);
-
+        $rStr = "location: bookSeats.php?total=".$total;
+        foreach($_POST['seats'] as $seat) {
+            if ($seat == "occupied" || $seat == "covid") {
+                continue;
+            }
+            $rStr .= "&seats[]=".$seat;
+        }
+        header($rStr);
         
     } else {
-        echo "<h1> You must choose your seat(s) and have at least 1 ticket.</h1>";
+        header("location: bookSeats.php?error=You must choose your seat(s) and have at least 1 ticket.");
+        //echo "<h1> </h1>";
     }
 }
 ?>
