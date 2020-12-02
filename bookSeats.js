@@ -7,7 +7,8 @@ function changeSeats() {
     for (var i = 1; i <= 5; i++) {
         for (var k = 1; k <= 9; k++ ) {
             var seat = document.getElementById("r"+i+"c"+k);
-            if (!seat.disabled) {
+            
+            if (!seat.disabled && seat.className == "free-seat") {
                 seat.checked = false;
             }
             //console.log(seat.disabled);
@@ -34,7 +35,7 @@ function checkSeatNum(event, s_id) {
     for (var i = 1; i <= 5; i++) {
         for (var k = 1; k <= 9; k++ ) {
             var seat = document.getElementById("r"+i+"c"+k);
-            if (seat.checked == true) {
+            if (seat.checked == true && seat.className == "free-seat") {
                 ++num_selected_seats;
             }
             
@@ -108,4 +109,41 @@ function minusNachos() {
         nachos--;
         document.getElementById("nachosOut").value = nachos;
     }
+}
+
+function getSeatCost(){
+
+    var adult = parseInt(Adults.value);
+    adult *= 12.99;
+
+    var senior = parseInt(Seniors.value);
+    senior *= 8.99;
+
+    var child = parseInt(Children.value);
+    child *= 0.99;
+
+    return (adult+senior+child);
+}
+
+function getFoodCost(){
+
+    var popcorn = parseInt(popcornOut.value);
+    popcorn *= 5;
+
+    var coke = parseInt(cokeOut.value);
+
+    var candy = parseInt(candyOut.value);
+    candy *= 5;
+
+    var nachos = parseInt(nachosOut.value);
+    nachos*= 8;
+
+    return (popcorn+coke+candy+nachos);
+}
+
+function calcTotal(){
+
+    var sub = getSeatCost() + getFoodCost();
+    subOut = sub.toFixed(2);
+    document.getElementById("subtotal").innerHTML = subOut;
 }
