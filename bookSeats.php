@@ -48,9 +48,9 @@
 										} else if($row_seats[$i] == 1){
 											echo '<td><input type="checkbox" style="display: none;" id="'.'r'.$num_row.'c'.($i+1).'" name="seats" value="'.'r'.$num_row.'c'.($i+1).'" onclick="return false;" checked><label for="'.'r'.$num_row.'c'.($i+1).'"></label></td>';
 										} else{
-											echo '<td><input type="checkbox" style="display: none;" id="'.'r'.$num_row.'c'.($i+1).'" name="seats" value="'.'r'.$num_row.'c'.($i+1).'" disabled><label for="'.'r'.$num_row.'c'.($i+1).'"><img src="images/covidChair.png" height="20" width="20"/></label></td>';
+											echo '<td><input type="checkbox" style="display: none;" id="'.'r'.$num_row.'c'.($i+1).'" name="seats" value="'.'r'.$num_row.'c'.($i+1).'" disabled><label for="'.'r'.$num_row.'c'.($i+1).'"><img src="images/covidChair.png" height="30" width="30"/></label></td>';
 										}
-										
+
 									}
 									$num_row+=1;
 									echo "</tr>";
