@@ -1,6 +1,6 @@
 <?php
 session_start();
-$session_value=(isset($_SESSION['username']))?$_SESSION['username']:''; 
+$session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 ?>
 
 <!DOCTYPE html>
@@ -208,7 +208,32 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 
 							</table>
 
-
+						<?php if(isset($_GET['error'])): ?>
+							<div id="myModal" class="modal">
+								<div id="span0" class="modal-content">
+									<span class="close">&times;</span>
+									<p><?= $_GET['error']; ?></p>
+								</div>
+							</div>
+						<?php elseif (isset($_GET['total']) && isset($_GET['seats'])): ?>
+							<div id="myModal" class="modal">
+								<div class="modal-content">
+									<span id="span1" class="close">&times;</span>
+									<h1>Thank you for purchase, <?= $_SESSION['fname']; ?> <?= $_SESSION['lname'] ?></h1>
+									<p>Total: <?= $_GET['total']; ?>$</p>
+									<p>Username: <?= $_SESSION['username']; ?></p>
+									<p>Seats: <?= $_GET['seats']; ?></p>
+								</div>
+							</div>
+						<?php else: ?>
+							<div id="myModal" class="modal">
+								<div class="modal-content">
+									<span id="span2" class="close">&times;</span>
+									<p>Something went wrong!</p>
+									<p>Couldn't book a seat...</p>
+								</div>
+							</div>
+						<?php endif; ?>
 
                         <div class="navbar-b">
 							<p>2020 OT FILMS Canada LP | Privacy Policy | Terms of Use</p>
@@ -222,6 +247,25 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 							} else {
 								checkout_btn.innerHTML = "Please login to purchase";
 								checkout_btn.disabled = true;
+							}
+							var span0 = document.getElementById("close0");
+							var span1 = document.getElementById("close1");
+							var span2 = document.getElementById("close2");
+							span0.onclick = function() {
+								modal.style.display = "none";
+							}
+							span1.onclick = function() {
+								modal.style.display = "none";
+							}
+							span2.onclick = function() {
+								modal.style.display = "none";
+							}
+
+							// When the user clicks anywhere outside of the modal, close it
+							window.onclick = function(event) {
+								if (event.target == modal) {
+									modal.style.display = "none";
+								}
 							}
 						</script>
 
