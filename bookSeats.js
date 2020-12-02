@@ -7,7 +7,8 @@ function changeSeats() {
     for (var i = 1; i <= 5; i++) {
         for (var k = 1; k <= 9; k++ ) {
             var seat = document.getElementById("r"+i+"c"+k);
-            if (!seat.disabled) {
+            
+            if (!seat.disabled && seat.className == "free-seat") {
                 seat.checked = false;
             }
             //console.log(seat.disabled);
@@ -34,7 +35,7 @@ function checkSeatNum(event, s_id) {
     for (var i = 1; i <= 5; i++) {
         for (var k = 1; k <= 9; k++ ) {
             var seat = document.getElementById("r"+i+"c"+k);
-            if (seat.checked == true) {
+            if (seat.checked == true && seat.className == "free-seat") {
                 ++num_selected_seats;
             }
             
