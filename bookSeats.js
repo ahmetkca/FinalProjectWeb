@@ -37,6 +37,7 @@ function checkSeatNum(event, s_id) {
         for (var k = 1; k <= 9; k++ ) {
             var seat = document.getElementById("r"+i+"c"+k);
             if (seat.checked == true && seat.className == "free-seat") {
+                document.getElementById("seats_selected").innerHTML += "," + seat.id;
                 ++num_selected_seats;
             }
             

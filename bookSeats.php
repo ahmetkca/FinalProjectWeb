@@ -30,7 +30,7 @@
 						<h4>Screen</h4>
 						<div class="seatSelection">
 						<form method="POST" action="processBookSeats.php" name="myForm">
-						
+							<input id="seats_selected" type="hidden" name="seats" value="">
 							<table class="selectSeat">
 								<?php
 								$myfile = fopen("seats.txt", "r") or die("Unable to open file!");
@@ -46,9 +46,9 @@
 										if ($row_seats[$i] == 0) {
 											echo '<td><input class="free-seat" onclick="checkSeatNum(event, this.id);" type="checkbox" style="display: none;" id="'.'r'.$num_row.'c'.($i+1).'" name="seats[]" value="'.'r'.$num_row.'c'.($i+1).'"><label for="'.'r'.$num_row.'c'.($i+1).'"></label></td>';
 										} else if($row_seats[$i] == 1){
-											echo '<td><input type="checkbox" style="display: none;" id="'.'r'.$num_row.'c'.($i+1).'" name="seats" value="'.'r'.$num_row.'c'.($i+1).'" onclick="return false;" checked><label for="'.'r'.$num_row.'c'.($i+1).'"></label></td>';
+											echo '<td><input type="checkbox" style="display: none;" id="'.'r'.$num_row.'c'.($i+1).'" name="seats[]" value="occupied" onclick="return false;" checked><label for="'.'r'.$num_row.'c'.($i+1).'"></label></td>';
 										} else{
-											echo '<td><input type="checkbox" style="display: none;" id="'.'r'.$num_row.'c'.($i+1).'" name="seats" value="'.'r'.$num_row.'c'.($i+1).'" onclick="return false;"><label for="'.'r'.$num_row.'c'.($i+1).'"><img class="covid" src="images/covidChair.png"/></label></td>';
+											echo '<td><input type="checkbox" style="display: none;" id="'.'r'.$num_row.'c'.($i+1).'" name="seats[]" value="covid" onclick="return false;"><label for="'.'r'.$num_row.'c'.($i+1).'"><img class="covid" src="images/covidChair.png"/></label></td>';
 										}
 
 									}
@@ -119,7 +119,7 @@
 						<p>Subtotal: $<p1 id="subtotal">--.--</p1></p>
 						<p>HST: $<p1 id="tax">--.--</p1></p>
 						<p>Total: $<p1 id="total">--.--</p1></p>
-
+						
 						<br>
 						<div class="seatLegend">
 
