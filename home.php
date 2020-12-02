@@ -18,11 +18,11 @@ session_start();
 				<body style="background-image: url('images/starnight.jpg');">
 						<nav class="navbar navbar-custom ">
                             <img src="images/Logo.png" alt="Logo is missing from the current directory" height="200" width="200"/>
-                           <a class="navbar-brand" href="home.html">Home</a> 
-                           <a class="navbar-brand" href="upcoming.html">Upcoming</a>
-                           <a class="navbar-brand" href="nowPlaying.html">Now Playing</a>
+                           <a class="navbar-brand" href="home.php">Home</a> 
+                           <a class="navbar-brand" href="upcoming.php">Upcoming</a>
+                           <a class="navbar-brand" href="nowPlaying.php">Now Playing</a>
                            <a class="navbar-brand" href="bookSeats.php">Book Seats</a>
-						   <a class="navbar-brand" href="covid.html">COVID-19</a> 
+						   <a class="navbar-brand" href="covid.php">COVID-19</a> 
 						   <?php if (isset($_SESSION['username'])): ?>
 							<div class="navbar-nav">
 								<a class="navbar-item nav-link" href="#" style="color: white">Welcome <?= $_SESSION['username'] ?></a>
