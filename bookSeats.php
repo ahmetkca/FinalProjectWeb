@@ -88,7 +88,7 @@
 							<ul>
 								<li>
 									<label for="Adults">Adults: $12.99</label>
-									<select onchange="changeSeats();" name="Adults" id="Adults">
+									<select onchange="changeSeats(); calcTotal();" name="Adults" id="Adults">
 									<option value="0">0</option>
 									<option value="1">1</option>
 									<option value="2">2</option>
@@ -96,7 +96,7 @@
 								</li>
 								<li>
 									<label for="Seniors">Seniors: $8.99</label>
-									<select onchange="changeSeats();" name="Seniors" id="Seniors">
+									<select onchange="changeSeats(); calcTotal();" name="Seniors" id="Seniors">
 									<option value="0">0</option>
 									<option value="1">1</option>
 									<option value="2">2</option>
@@ -104,7 +104,7 @@
 								</li>
 								<li>
 									<label for="Children">Children: $0.99</label>
-									<select onchange="changeSeats();" name="Children" id="Children">
+									<select onchange="changeSeats(); calcTotal();" name="Children" id="Children">
 									<option value="0">0</option>
 									<option value="1">1</option>
 									<option value="2">2</option>
@@ -114,6 +114,9 @@
 							</ul>
 					
 						</div>
+
+						<p>Subtotal: $<p1 id="subtotal">--.--</p1></p>
+
 						<br>
 						<div class="seatLegend">
 
@@ -127,31 +130,30 @@
 								</tr>
 
 
-
 								<tr>
 									
 									<td>
-										<button class="food add" type="button"  onclick="addPopcorn()" >+</button>
-										<button class="food minus" type="button"  onclick="minusPopcorn()" >-</button>
+										<button class="food add" type="button"  onclick="addPopcorn(); calcTotal();" >+</button>
+										<button class="food minus" type="button"  onclick="minusPopcorn(); calcTotal();" >-</button>
 										<br><br>
 										<p>Popcorn($5): <input type="number" id="popcornOut" value="0" disabled></p>
 									</td>
 									
 									<td>
-										<button class="food add" type="button"  onclick="addCoke()" >+</button>
-										<button class="food minus" type="button"  onclick="minusCoke()" >-</button>
+										<button class="food add" type="button"  onclick="addCoke(); calcTotal();" >+</button>
+										<button class="food minus" type="button"  onclick="minusCoke(); calcTotal();" >-</button>
 										<br><br>
 										<p>Coke($1): <input type="number" id="cokeOut" value="0" disabled></p>
 									</td>
 									<td>
-										<button class="food add" type="button"  onclick="addCandy()" >+</button>
-										<button class="food minus" type="button"  onclick="minusCandy()" >-</button>
+										<button class="food add" type="button"  onclick="addCandy(); calcTotal();" >+</button>
+										<button class="food minus" type="button"  onclick="minusCandy(); calcTotal();" >-</button>
 										<br><br>
 										<p>Candy($5): <input type="number" id="candyOut" value="0" disabled></p>
 									</td>
 									<td>
-										<button class="food add" type="button"  onclick="addNachos()" >+</button>
-										<button class="food minus" type="button"  onclick="minusNachos()" >-</button>
+										<button class="food add" type="button"  onclick="addNachos(); calcTotal();" >+</button>
+										<button class="food minus" type="button"  onclick="minusNachos(); calcTotal();" >-</button>
 										<br><br>
 										<p>Nachos($8): <input  type="number" id="nachosOut" value="0" disabled></p>
 									</td>

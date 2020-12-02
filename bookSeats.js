@@ -109,3 +109,40 @@ function minusNachos() {
         document.getElementById("nachosOut").value = nachos;
     }
 }
+
+function getSeatCost(){
+
+    var adult = parseInt(Adults.value);
+    adult *= 12.99;
+
+    var senior = parseInt(Seniors.value);
+    senior *= 8.99;
+
+    var child = parseInt(Children.value);
+    child *= 0.99;
+
+    return (adult+senior+child);
+}
+
+function getFoodCost(){
+
+    var popcorn = parseInt(popcornOut.value);
+    popcorn *= 5;
+
+    var coke = parseInt(cokeOut.value);
+
+    var candy = parseInt(candyOut.value);
+    candy *= 5;
+
+    var nachos = parseInt(nachosOut.value);
+    nachos*= 8;
+
+    return (popcorn+coke+candy+nachos);
+}
+
+function calcTotal(){
+
+    var sub = getSeatCost() + getFoodCost();
+    subOut = sub.toFixed(2);
+    document.getElementById("subtotal").innerHTML = subOut;
+}
