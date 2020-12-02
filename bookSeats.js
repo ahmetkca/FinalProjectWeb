@@ -157,5 +157,4 @@ function calcTotal(){
 
 function getTotal(){
     document.getElementById("totalSubmission").value = document.getElementById("total").innerHTML;
-    document.getElementById("test").innerHTML =  document.getElementById("totalSubmission").value;
 }
