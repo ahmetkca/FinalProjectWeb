@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 	<html>
 				<head>
@@ -20,7 +23,17 @@
                            <a class="navbar-brand" href="nowPlaying.html">Now Playing</a>
                            <a class="navbar-brand" href="bookSeats.php">Book Seats</a>
                            <a class="navbar-brand" href="covid.html">COVID-19</a> 
-                           <a class="navbar-brand"></a>     				
+                           <?php if (isset($_SESSION['username'])): ?>
+							<div class="navbar-nav">
+								<a class="navbar-item nav-link" href="#" style="color: white">Welcome <?= $_SESSION['username'] ?></a>
+								<a class="navbar-item nav-link" href="logout.php" style="color: white">Logout</a>
+						   </div>
+						   <?php else: ?>
+							<div class="navbar-nav">
+								<a class="navbar-item nav-link" href="login.html" style="color: white">Login</a> or
+								<a class="navbar-item nav-link" href="signup.html" style="color: white">Register</a>
+						   </div>
+						   <?php endif; ?>    				
         				</nav>
 
                         <div class="navbar-b">

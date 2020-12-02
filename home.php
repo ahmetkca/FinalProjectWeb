@@ -31,7 +31,7 @@ session_start();
 						   <?php else: ?>
 							<div class="navbar-nav">
 								<a class="navbar-item nav-link" href="login.html" style="color: white">Login</a> or
-								<a class="navbar-item nav-link" href="login.html" style="color: white">Register</a>
+								<a class="navbar-item nav-link" href="signup.html" style="color: white">Register</a>
 						   </div>
 						   <?php endif; ?>	
 						   
