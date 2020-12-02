@@ -116,6 +116,8 @@
 						</div>
 
 						<p>Subtotal: $<p1 id="subtotal">--.--</p1></p>
+						<p>HST: $<p1 id="tax">--.--</p1></p>
+						<p>Total: $<p1 id="total">--.--</p1></p>
 
 						<br>
 						<div class="seatLegend">

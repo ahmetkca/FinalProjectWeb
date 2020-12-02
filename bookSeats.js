@@ -127,15 +127,15 @@ function getSeatCost(){
 function getFoodCost(){
 
     var popcorn = parseInt(popcornOut.value);
-    popcorn *= 5;
+    popcorn *= 5.00;
 
     var coke = parseInt(cokeOut.value);
 
     var candy = parseInt(candyOut.value);
-    candy *= 5;
+    candy *= 5.00;
 
     var nachos = parseInt(nachosOut.value);
-    nachos*= 8;
+    nachos*= 8.00;
 
     return (popcorn+coke+candy+nachos);
 }
@@ -143,6 +143,10 @@ function getFoodCost(){
 function calcTotal(){
 
     var sub = getSeatCost() + getFoodCost();
-    subOut = sub.toFixed(2);
-    document.getElementById("subtotal").innerHTML = subOut;
+    var tax = sub*0.13;
+    var total = sub + tax;
+
+    document.getElementById("subtotal").innerHTML = sub.toFixed(2);
+    document.getElementById("tax").innerHTML = tax.toFixed(2);
+    document.getElementById("total").innerHTML = total.toFixed(2);
 }
