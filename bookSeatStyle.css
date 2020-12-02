@@ -87,6 +87,10 @@ input[type="checkbox"]:checked + label {
   background: url(images/occupiedseat.png) no-repeat 0 center;
 }
 
+.covid {
+    margin-right: 30px;
+}
+
 #reciept{
     border: 5px solid rgb(230, 173, 69);
     border-radius: 50px;
