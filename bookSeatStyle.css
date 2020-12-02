@@ -1,5 +1,7 @@
 .selectSeat{
     border: 2px solid black;
+    border-collapse: separate;
+    border-spacing: 15px 25px;
     width: 95%;
     margin-left: auto;
     margin-right: auto;
