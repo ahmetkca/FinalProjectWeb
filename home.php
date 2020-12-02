@@ -25,13 +25,13 @@ session_start();
 						   <a class="navbar-brand" href="covid.html">COVID-19</a> 
 						   <?php if (isset($_SESSION['username'])): ?>
 							<div class="navbar-nav">
-								<a class="navbar-item nav-link" href="#">Welcome <?= $_SESSION['username'] ?></a>
-								<a class="navbar-item nav-link" href="logout.php">Logout</a>
+								<a class="navbar-item nav-link" href="#" style="color: white">Welcome <?= $_SESSION['username'] ?></a>
+								<a class="navbar-item nav-link" href="logout.php" style="color: white">Logout</a>
 						   </div>
 						   <?php else: ?>
 							<div class="navbar-nav">
-								<a class="navbar-item nav-link" href="login.html">Login</a> or
-								<a class="navbar-item nav-link" href="login.html">Register</a>
+								<a class="navbar-item nav-link" href="login.html" style="color: white">Login</a> or
+								<a class="navbar-item nav-link" href="login.html" style="color: white">Register</a>
 						   </div>
 						   <?php endif; ?>	
 						   
