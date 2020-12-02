@@ -210,21 +210,47 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 
 						<?php if(isset($_GET['error'])): ?>
 							<div id="myModal" class="modal">
-								<div id="span0" class="modal-content">
-									<span class="close">&times;</span>
+								<div class="modal-content">
+									<span id="closeModal" class="close">&times;</span>
 									<p><?= $_GET['error']; ?></p>
 								</div>
 							</div>
+							<script>
+								document.getElementById("closeModal").addEventListener("click", function() {
+									document.getElementById("myModal").style.display = "none"
+								});
+							
+
+								// When the user clicks anywhere outside of the modal, close it
+								window.onclick = function(event) {
+									if (event.target == document.getElementById("myModal")) {
+										document.getElementById("myModal").style.display = "none";
+									}
+								}
+							</script>
 						<?php elseif (isset($_GET['total']) && isset($_GET['seats'])): ?>
 							<div id="myModal" class="modal">
 								<div class="modal-content">
-									<span id="span1" class="close">&times;</span>
+									<span id="closeModal" class="close">&times;</span>
 									<h1>Thank you for purchase, <?= $_SESSION['fname']; ?> <?= $_SESSION['lname'] ?></h1>
 									<p>Total: <?= $_GET['total']; ?>$</p>
 									<p>Username: <?= $_SESSION['username']; ?></p>
 									<p>Seats: <?= $_GET['seats']; ?></p>
 								</div>
 							</div>
+							<script>
+								document.getElementById("closeModal").addEventListener("click", function() {
+									document.getElementById("myModal").style.display = "none";
+								});
+							
+
+								// When the user clicks anywhere outside of the modal, close it
+								window.onclick = function(event) {
+									if (event.target == document.getElementById("myModal")) {
+										document.getElementById("myModal").style.display = "none";
+									}
+								}
+							</script>
 						<?php endif; ?>
 
                         <div class="navbar-b">
@@ -239,25 +265,6 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 							} else {
 								checkout_btn.innerHTML = "Please login to purchase";
 								checkout_btn.disabled = true;
-							}
-							var span0 = document.getElementById("close0");
-							var span1 = document.getElementById("close1");
-							var span2 = document.getElementById("close2");
-							span0.onclick = function() {
-								modal.style.display = "none";
-							}
-							span1.onclick = function() {
-								modal.style.display = "none";
-							}
-							span2.onclick = function() {
-								modal.style.display = "none";
-							}
-
-							// When the user clicks anywhere outside of the modal, close it
-							window.onclick = function(event) {
-								if (event.target == modal) {
-									modal.style.display = "none";
-								}
 							}
 						</script>
 
