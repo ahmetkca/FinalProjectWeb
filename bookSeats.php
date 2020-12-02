@@ -83,7 +83,8 @@
 
 						</div>
 
-
+					<table>
+						<td>
 						<div class="seatLegend borderChoice">
 							<h4>Select your tickets:</h4>
 							<ul>
@@ -115,10 +116,6 @@
 							</ul>
 					
 						</div>
-
-						<p>Subtotal: $<p1 id="subtotal">--.--</p1></p>
-						<p>HST: $<p1 id="tax">--.--</p1></p>
-						<p>Total: $<p1 id="total">--.--</p1></p>
 
 						<br>
 						<div class="seatLegend">
@@ -175,6 +172,21 @@
 							</form>
 						</div>
 						</div>
+							</td>
+
+
+							<td>
+								<div id="reciept">
+									<p>Subtotal: $<p1 id="subtotal">0.00</p1></p>
+									<p>HST: $<p1 id="tax">0.00</p1></p>
+									<p>Total: $<p1 id="total">0.00</p1></p>
+									<p id="test">TEST</p>
+								</div>
+							</td>
+
+							<input type="hidden" id ="totalSubmission" name="totalSubmission">
+
+							</table>
 
 
 

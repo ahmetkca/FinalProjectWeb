@@ -46,7 +46,7 @@
     border:0px;
 }
 input{
-    width: 35px;
+    width: 50px;
 }
 td {
   padding-left: 15px;
@@ -85,6 +85,19 @@ input + label {
 
 input[type="checkbox"]:checked + label {
   background: url(images/occupiedseat.png) no-repeat 0 center;
+}
+
+#reciept{
+    border: 5px solid rgb(230, 173, 69);
+    border-radius: 50px;
+    margin: 3%;
+    width: 575px;
+    background-color: rgb(81, 185, 255);
+}
+
+#reciept > p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50pt;
 }
 
  

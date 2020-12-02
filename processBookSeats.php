@@ -8,6 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $myfile = fopen("seats.txt", "r") or die("Unable to open file!");
         $seats_file_array = array();
         $row_num = 0;
+
         while(!feof($myfile)) {
             $current_line = fgets($myfile);
             $current_line = str_replace(array("\n", "\r"), '', $current_line);
