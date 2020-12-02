@@ -1,7 +1,5 @@
 .selectSeat{
     border: 2px solid black;
-    border-collapse: separate;
-    border-spacing: 15px 25px;
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -73,18 +71,20 @@ h1,h4{
 
 /* Check box seats swapping */
 input[type="checkbox"] {
-  display:none;
+display:none;
 }
 input + label {
-  display: inline-block;  
-  width: 60px;
-  height: 30px;
-  cursor: pointer;  
-  background: url(images/freeseat.png) no-repeat 0 center;
+          display: inline-block;  
+          width: 60px;
+          height: 30px;
+          cursor: pointer;  
+          background: url(images/freeseat.png) no-repeat 0 center;
 }
-
-input[type="checkbox"]:checked + label {
-  background: url(images/occupiedseat.png) no-repeat 0 center;
+input[type="checkbox"]:checked +label {
+background: url(images/occupiedseat.png) no-repeat 0 center; 
 }
-
- 
+.covid{
+    height: 30px;
+    width: 30px;
+    margin-right: 25pt;
+}
