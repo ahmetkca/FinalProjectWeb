@@ -48,9 +48,9 @@
 										} else if($row_seats[$i] == 1){
 											echo '<td><input type="checkbox" style="display: none;" id="'.'r'.$num_row.'c'.($i+1).'" name="seats" value="'.'r'.$num_row.'c'.($i+1).'" onclick="return false;" checked><label for="'.'r'.$num_row.'c'.($i+1).'"></label></td>';
 										} else{
-											echo '<td><input type="checkbox" style="display: none;" id="'.'r'.$num_row.'c'.($i+1).'" name="seats" value="'.'r'.$num_row.'c'.($i+1).'" onclick="return false;"><label for="'.'r'.$num_row.'c'.($i+1).'"><img class="covid" src="images/covidChair.png" height="20" width="20"/></label></td>';
+											echo '<td><input type="checkbox" style="display: none;" id="'.'r'.$num_row.'c'.($i+1).'" name="seats" value="'.'r'.$num_row.'c'.($i+1).'" onclick="return false;"><label for="'.'r'.$num_row.'c'.($i+1).'"><img class="covid" src="images/covidChair.png"/></label></td>';
 										}
-										
+
 									}
 									$num_row+=1;
 									echo "</tr>";
@@ -117,6 +117,8 @@
 						</div>
 
 						<p>Subtotal: $<p1 id="subtotal">--.--</p1></p>
+						<p>HST: $<p1 id="tax">--.--</p1></p>
+						<p>Total: $<p1 id="total">--.--</p1></p>
 
 						<br>
 						<div class="seatLegend">
