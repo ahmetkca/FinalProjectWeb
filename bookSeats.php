@@ -50,12 +50,18 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 								<?php
 								$myfile = fopen("seats.txt", "r") or die("Unable to open file!");
 								$num_row = 1;
+								
+								//OUTPUTS ALL SEATS ONTO THE PAGE
+								//Reads every line of the file
+								//Creates 5 1D arrays (because feof function goes line by line)
 								while(!feof($myfile)) {
 									$current_line = fgets($myfile);
-									$row_seats = explode(",", $current_line);
-									//var_dump($current_line);
-									//var_dump($row_seats);
+									$row_seats = explode(",", $current_line);	//Breaks the file(line) into an array, separates each element by 
+																				//identifying commas. Puts these elements into a row of seats
+								
 									echo "<tr>";
+
+									//Uses numbers from file to initialise seats (free, occupied, covid)
 									for ($i = 0; $i < count($row_seats); $i+=1) {
 										// 0 = free, 1 = free
 										if ($row_seats[$i] == 0) {

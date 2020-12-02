@@ -4,11 +4,13 @@
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['seats']) && (isset($_POST['Adults']) || isset($_POST['Seniors']) || isset($_POST['Children']))) {
-        //var_dump($_POST['seats']);
         $myfile = fopen("seats.txt", "r") or die("Unable to open file!");
         $seats_file_array = array();
         $row_num = 0;
         print_r($_POST['totalSubmission']);
+
+        //Reads the file to initialise a 2D array (similar bookseats.php), used to target a seat directly by row and column
+        //opposed to iterating through
         while(!feof($myfile)) {
             $current_line = fgets($myfile);
             $current_line = str_replace(array("\n", "\r"), '', $current_line);
@@ -22,33 +24,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             $row_num+=1;
         }
-        //var_dump($seats_file_array);
         
+
+        //Updates the array with selected seats
         foreach($_POST['seats'] as $seat) {
-            //var_dump(intval($seat[1]));
             if ($seat == "occupied" || $seat == "covid") {
                 continue;
             }
             $seats_file_array[intval($seat[1])-1][intval($seat[3])-1] = 1;
-            //print_r($seat."<br>");
-        }
-        foreach ($seats_file_array as $row) {
-            //var_dump($seats_file_array);
-            foreach($row as $cell) {
-                //print_r($cell.",");
-            }
-            //print_r("<br>");
         }
 
-        $writeToFile = fopen("seats.txt", "w");
+
+        //This is to rewrite the file in order to save the selections for next time
+        
+        $writeToFile = fopen("seats.txt", "w"); //w is a type of write that truncates the file and writes on a fresh txt
+                                                //this is because we can't target a specific file element, we need to iterate through
         $nRow = 1;
         foreach($seats_file_array as $row) {
             $line = "";
             $nCol = 1;
             foreach($row as $cell) {
-                //var_dump($cell);
-                
-                //print_r($cell.",");
                 //$line =$line.$cell.",";
                 if ($nCol < 9) {
                     $line =$line.$cell.",";
@@ -63,8 +58,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $line = $line."\n";
             }
             
-            //print_r('\n');
-            //print_r($line."\n");
             fwrite($writeToFile, $line);
             $nRow+=1;
         }
