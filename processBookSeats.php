@@ -23,8 +23,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $row_num+=1;
         }
         //var_dump($seats_file_array);
+        
         foreach($_POST['seats'] as $seat) {
             //var_dump(intval($seat[1]));
+            if ($seat == "occupied" || $seat == "covid") {
+                continue;
+            }
             $seats_file_array[intval($seat[1])-1][intval($seat[3])-1] = 1;
             //print_r($seat."<br>");
         }
