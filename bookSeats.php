@@ -42,8 +42,9 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 						   <?php endif; ?>   				
         				</nav>
 
-						<br>	
-						<h1 style="color: rgb(81, 185, 255); font-family: 'Oswald', sans-serif;">Seat Selection</h1>
+						<br>
+						<h1 style="font-family: 'Oswald', sans-serif; font-size: 50pt; color: rgb(81, 185, 255);">BOOK YOUR SEATS FOR THE PREMIERE OF</h1>	
+						<h1 style="font-family: 'Oswald', sans-serif; font-size: 50pt; color: rgb(81, 185, 255);">Star Wars: A New Hope</h1>
 						<br>
 						<h4>Screen</h4>
 						<div class="seatSelection">
