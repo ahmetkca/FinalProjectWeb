@@ -98,14 +98,20 @@ session_start();
 							<p>Adventure/ Sci Fi</p>
 
 							<h3>Testimonials</h3>
-							<p>Few films before or after it have managed to include such a celebrated, recognizable score - thanks to the masterful compositions by John Williams. <u>August 31 2020</u>
+
+							<dl>
+								<dt>Few films before or after it have managed to include such a celebrated, recognizable score - thanks to the masterful compositions by John Williams.</dt>
+								<dd>-	Kanye East</dd>
 								<br>
-								<br>	
-								Few films are ingrained in pop culture like Star Wars, partly because few films changed cinema like Star Wars. <u>July 5, 2020</u>
+								<dt>Few films are ingrained in pop culture like Star Wars, partly because few films changed cinema like Star Wars.</dt>
+								<dd>-	Klaudia Parrish</dd>
 								<br>
-								<br>
-								Star Wars is not just a movie to me. It's not just a movie to a lot of people. It's a part of who we are. It defines us. It's an important piece of our lives and it will live on in all of us forever. <u>May 4, 2020</u>
-						</p>
+								<dt>Star Wars is not just a movie to me. It's not just a movie to a lot of people. It's a part of who we are. It defines us. It's an important piece of our lives and it will live on in all of us forever.</dt>
+								<dd>-	Travis Bartlett</dd>
+							</d1>
+
+
+						
 						</div>
 						
 				</body>
