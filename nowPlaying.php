@@ -57,7 +57,7 @@ session_start();
 								   <h2 style="color:rgb(81, 185, 255)"><strong>Current Big Premiere</strong></h2>
 								   <p class="upperinfo">Run time: 125 min<br>
 								   Rating: PG<br>
-								   Genre: Adventure/ Sci Fi<br>
+								   Genre: Adventure/Sci Fi<br>
 								   Trailer: <a href="https://www.youtube.com/watch?v=1g3_CFmnU7k" target="_blank" class="play-button"><i class="circle imgply"></i></a><br><br>
 								   <button onclick="document.location='bookSeats.php'" class="butt" Style="margin-top: 3px">Buy Tickets </button>
 								   <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
@@ -66,6 +66,7 @@ session_start();
 									<a class="a2a_button_twitter"></a>
 									<a class="a2a_button_email"></a>
 									</div>
+									<br>
 								   <h2>Cast</h2>
 								   <p>Mark Hamill, Harrison Ford, Carrie Fisher, Alec Guinness and Peter Cushing.</p>
 									</td>
@@ -73,6 +74,7 @@ session_start();
 						   </table>
 						</div>
 						<div class="sin">
+							<br>
 							<h3>Synopsis</h3>
 							<p>After Princess Leia, the leader of the Rebel Alliance, is held hostage by Darth Vader, Luke and Han Solo must free her and destroy the powerful weapon created by the Galactic Empire.</p>
 							<h4>Initital Release</h4>
@@ -95,7 +97,7 @@ session_start();
 							<h4>Run time</h4>
 							<p>125 min</p>
 							<h4>Genre</h4>
-							<p>Adventure/ Sci Fi</p>
+							<p>Adventure/Sci Fi</p>
 
 							<h3>Testimonials</h3>
 
