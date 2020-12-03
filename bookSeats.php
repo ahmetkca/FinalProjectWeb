@@ -214,7 +214,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 
 
 							<td>
-								<div id="reciept">
+								<div id="reciept" class="shadowbox">
 									<p style="color: white;">Subtotal: $<p1 id="subtotal">0.00</p1></p>
 									<p style="color: white;">HST: $<p1 id="tax">0.00</p1></p>
 									<p style="color: white;">Total: $<p1 id="total">0.00</p1></p>
