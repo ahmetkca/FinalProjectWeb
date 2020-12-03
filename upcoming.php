@@ -134,7 +134,9 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 																		<p>Surround, Dolby Stereo, Dolby A, Magnetic Stereo 6 Track</p>
 																		<p>Scope (2.35:1)</p>
 																		<p>Star Wars Saga</p>
+																		<br>
 																	</div>
+																	
 																</div>
 													
  													 	</div>
@@ -226,7 +228,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 																					<p> $7.0M</p>
 																					<p> 1h 41m</p>
 																					<p> Blumhouse Productions</p>																		
-																				
+																					<br>
 																				</div>
 																			</div>
 																	</div>
