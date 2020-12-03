@@ -77,6 +77,7 @@ session_start();
                                             <td><strong>Tickets:</strong></td>
                                             <td><strong>Food:</strong></td>
                                             <td><strong>Premier:</strong></td>
+                                            <td><strong>Seats:</strong></td>
                                             <td><strong>Time Purchased:</strong></td>
                                             <td><strong>Total Payed:</strong></td>
                                         </tr>
@@ -93,6 +94,7 @@ session_start();
                                         $candy = $infoarray["CandyNum"];
                                         $nachos = $infoarray["NachoNum"];
                                         $sum = $infoarray["totalNum"];
+                                        $seats = $infoarray["seatsNum"];
                                         $time = $infoarray["timeNum"];
 
                                         echo '<tr style="border-bottom: 1px solid black;">
@@ -112,6 +114,9 @@ session_start();
                                             </td>
                                             <td>
                                                 <p>Star Wars: A New Hope (Premiere)</p>
+                                            </td>
+                                            <td>
+                                                <p> ' . $seats . '</p>
                                             </td>
                                             <td>
                                                 <p> ' . $time . '</p>
