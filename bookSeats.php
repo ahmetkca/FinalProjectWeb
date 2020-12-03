@@ -1,6 +1,7 @@
 <?php
 session_start();
 $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
+
 ?>
 
 <!DOCTYPE html>
@@ -190,6 +191,12 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 
 							</table>
 
+								<?php 
+									///////////////////////////////////////////////////////////////////////////////////////
+									$username = $_SESSION['username']; 
+									echo '<input type="hidden" id ="userSubmission" name="userSubmission" value="'. $username . '"/>';
+								?>
+
 								<input type="hidden" id ="totalSubmission" name="totalSubmission"/>
 
 								<input type="hidden" id ="adultSubmission" name="adultSubmission"/>
@@ -280,6 +287,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 									<p align="center"><u>Username:</u> <?= $_SESSION['username']; ?></p>
 									<p align="center"><u>Adult:</u> <?= $_GET['adult']; ?> | <u>Senior:</u> <?= $_GET['senior']; ?> | <u>Children:</u> <?= $_GET['children']; ?></p>
 									<p align="center"><u>Popcorn:</u> <?= $_GET['popcorn']; ?> | <u>Coke:</u> <?= $_GET['coke']; ?> | <u>Candy:</u> <?= $_GET['candy']; ?> | <u>Nachos:</u> <?= $_GET['nacho']; ?></p>
+
 								</div>
 							</div>
 							<script>

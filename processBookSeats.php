@@ -2,6 +2,18 @@
 
 // will be processing form submission from bookSeats.php
 
+
+        include ("setup.php");
+        $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+
+        //Notifies user if there was an error connecting to the database
+        if (mysqli_connect_errno()) {
+            die ("Database connection failed: ".mysqli_connect_error()."(".mysqli_connect_errno().")");
+        }
+
+
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['seats']) && (isset($_POST['Adults']) || isset($_POST['Seniors']) || isset($_POST['Children']))) {
         $myfile = fopen("seats.txt", "r") or die("Unable to open file!");
@@ -79,6 +91,44 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $rStr .= "&coke=".$_POST['cokeSubmission'];
         $rStr .= "&candy=".$_POST['candySubmission'];
         $rStr .= "&nacho=".$_POST['nachoSubmission'];
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            $user = $_SESSION['userSubmission'];
+            $adults = $_POST['adultSubmission'];
+            $seniors = $_POST['seniorSubmission'];
+            $children = $_POST['childrenSubmission'];
+            $popcorn = $_POST['popcornSubmission'];
+            $coke = $_POST['cokeSubmission'];
+            $candy = $_POST['candySubmission'];
+            $nachos = $_POST['nachoSubmission'];
+            $sum = $_POST['totalSubmission'];
+
+            //Holds the necessary command to insert into the 'users' table
+            $sqlhold = "INSERT INTO booked (Username, AdultNum, SeniorNum, ChildrenNum, PopcornNum, CokeNum, CandyNum, NachoNum, totalNum) VALUES (
+                '{$connection->real_escape_string($user)}',
+                '{$connection->real_escape_string($adults)}',
+                '{$connection->real_escape_string($seniors)}',
+                '{$connection->real_escape_string($children)}',
+                '{$connection->real_escape_string($popcorn)}',
+                '{$connection->real_escape_string($coke)}',
+                '{$connection->real_escape_string($candy)}',
+                '{$connection->real_escape_string($nachos)}',
+                '{$connection->real_escape_string($sum)}')";
+
+            //Inserts the command ($mysqlhold) into the mySQL console
+            $insert = mysqli_query($connection, $sqlhold);
+            
+            //Returns statement based on whether the insert was completed successfully
+            if($insert == true){
+                echo '<script>alert("You Have Signed Up Successfully")</script>';
+            }
+            else{
+                echo '<script>alert("Sign Up NOT Successful")</script>';
+            }
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
         /*
         $msg = "First line of text\nSecond line of text";
 

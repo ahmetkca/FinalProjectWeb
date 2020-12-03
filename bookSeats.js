@@ -161,6 +161,7 @@ function calcTotal(){
     document.getElementById("subtotal").innerHTML = sub.toFixed(2);
     document.getElementById("tax").innerHTML = tax.toFixed(2);
     document.getElementById("total").innerHTML = total.toFixed(2);
+
     getTotal();
 }
 
@@ -169,29 +170,29 @@ function getTotal(){
 }
 
 function getAdults(){
-    document.getElementById("adultSubmission").value = Adults.value;
+    document.getElementById("adultSubmission").value = (Adults.value).toString();
 }
 
 function getSeniors(){
-    document.getElementById("seniorSubmission").value = Seniors.value;
+    document.getElementById("seniorSubmission").value = (Seniors.value).toString();
 }
 
 function getChildren(){
-    document.getElementById("childrenSubmission").value = Children.value;
+    document.getElementById("childrenSubmission").value = (Children.value).toString();
 }
 
 function getPopcorn(){
-    document.getElementById("popcornSubmission").value = popcornOut.value;
+    document.getElementById("popcornSubmission").value = (popcornOut.value).toString();
 }
 
 function getCoke(){
-    document.getElementById("cokeSubmission").value = cokeOut.value;
+    document.getElementById("cokeSubmission").value = (cokeOut.value).toString();
 }
 
 function getCandy(){
-    document.getElementById("candySubmission").value = candyOut.value;
+    document.getElementById("candySubmission").value = (candyOut.value).toString();
 }
 
 function getNachos(){
-    document.getElementById("nachoSubmission").value = nachosOut.value;
+    document.getElementById("nachoSubmission").value = (nachosOut.value).toString();
 }
