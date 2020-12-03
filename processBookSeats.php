@@ -112,7 +112,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $candy = $_POST['candySubmission'];
             $nachos = $_POST['nachoSubmission'];
             $sum = $_POST['totalSubmission'];
-            $seatChoice = $newSeatsNum;
 
             //Holds the necessary command to insert into the 'users' table
             $sqlhold = "INSERT INTO booked (Username, AdultNum, SeniorNum, ChildrenNum, PopcornNum, CokeNum, CandyNum, NachoNum, totalNum, seatsNum) VALUES (
@@ -125,7 +124,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 '{$connection->real_escape_string($candy)}',
                 '{$connection->real_escape_string($nachos)}',
                 '{$connection->real_escape_string($sum)}',
-                '{$connection->real_escape_string(implode(",", $seatChoice))}')";
+                '{$connection->real_escape_string(implode(",", $newSeatsNum))}')";
 
             //Inserts the command ($mysqlhold) into the mySQL console
             $insert = mysqli_query($connection, $sqlhold);
