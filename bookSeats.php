@@ -247,7 +247,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 									<table align="center">
 										<?php 
 											//$rowABC = array("A", "B", "C", "D", "E");
-											for ($r = 1; $i <= 5; $i+=1) {
+											for ($r = 1; $r <= 5; $r+=1) {
 												echo "<tr>";
 												for ($c = 1; $c <= 9; $c+=1 ) {
 													$slc = false;
