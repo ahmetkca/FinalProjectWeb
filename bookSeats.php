@@ -251,7 +251,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 									<h2 align="center">SCREEN</h2>
 									<table align="center" style="margin: 0;">
 										<?php 
-											$rowABC = array("A", "B", "C", "D", "E");
+											$rowABC = array("r1", "r2", "r3", "r4", "r5");
 											for ($r = 1; $r <= 5; $r+=1) {
 												echo '<tr><td style="overflow: hidden;">'.$rowABC[$r-1].'</td>';
 												for ($c = 1; $c <= 9; $c+=1 ) {
@@ -279,7 +279,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 										?>	
 									</table>
 									<h1>Thank you for purchase, <?= $_SESSION['fname']; ?> <?= $_SESSION['lname'] ?></h1>
-									<strong align="center">Please Provide Your Name and Username at Event for Admission</strong><br>
+									<strong align="center">Please Provide Your Printed Receipt at Event Admission</strong><br>
 									<p align="center"><u>Total:</u> $<?= $_GET['total']; ?></p>
 									<p align="center"><u>Username:</u> <?= $_SESSION['username']; ?></p>
 									<p align="center"><u>Adults:</u> <?= $_GET['adult']; ?> | <u>Seniors:</u> <?= $_GET['senior']; ?> | <u>Children:</u> <?= $_GET['children']; ?></p>

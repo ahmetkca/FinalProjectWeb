@@ -73,10 +73,11 @@ session_start();
                                 <table style="width:90%; margin-left: 5%;margin-right: 5%;">
                                     <thead>
                                         <tr style="border-bottom: 5px solid black;">
-                                            <td><strong>Tickets</strong></td>
-                                            <td><strong>Food</strong></td>
-                                            <td><strong>Total Payed:</strong></td>
+                                            <td><strong>Tickets:</strong></td>
+                                            <td><strong>Food:</strong></td>
                                             <td><strong>Premier:</strong></td>
+                                            <td><strong>Time Purchased:</strong></td>
+                                            <td><strong>Total Payed:</strong></td>
                                         </tr>
                                     </thead>
 
@@ -91,6 +92,8 @@ session_start();
                                         $candy = $infoarray["CandyNum"];
                                         $nachos = $infoarray["NachoNum"];
                                         $sum = $infoarray["totalNum"];
+                                        $time = $infoarray["timeNum"];
+
                                         echo '<tr style="border-bottom: 1px solid black;">
                                             <td>
                                                 <p>Adult tickets: ' . $adults . '</p>
@@ -106,11 +109,13 @@ session_start();
                                                 <br>
                                             </td>
                                             <td>
-                                                <p> '. $sum .'</p> 
-                                            </td>
-                                            
-                                            <td>
                                                 <p>Star Wars: A New Hope (Premiere)</p>
+                                            </td>
+                                            <td>
+                                                <p> ' . $time . '</p>
+                                            </td>
+                                            <td>
+                                                <p> $'. $sum .'</p> 
                                             </td>
 
                                         </tr>';
