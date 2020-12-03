@@ -238,7 +238,11 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 									<h1>Thank you for purchase, <?= $_SESSION['fname']; ?> <?= $_SESSION['lname'] ?></h1>
 									<p>Total: <?= $_GET['total']; ?>$</p>
 									<p>Username: <?= $_SESSION['username']; ?></p>
-									<p>Seats: <?= $_GET['seats']; ?></p>
+									<p>Seats: <?php 
+										foreach($_GET['seats'] as $seat) {
+											echo $seat.", ";
+										}
+									?></p>
 								</div>
 							</div>
 							<script>
