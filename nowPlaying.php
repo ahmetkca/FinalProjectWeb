@@ -46,10 +46,11 @@ session_start();
    						<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
 						<div>
+						<br>
 						   <table>
 							   <tr>
 							   <td>
-								  <p><img src="images/newhope.png" alt="Star Wars A New Hope" height="120%" width="60%" class="img"/></p>
+								  <p><img src="images/newhope.png" alt="Star Wars A New Hope" height="120%" width="60%" class="img shadowbox"/></p>
 							   </td>
 							   <td>
 								   <h1>Star Wars: A New Hope</h1>
