@@ -259,7 +259,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 															break;
 														}
 													}
-													print_r($r." ".$c);
+													//print_r($r." ".$c);
 													if ($slc) {
 														echo '<td><img width="20" height="20" src="images/selectedSeat.png"></td>';
 														$slc = false;
