@@ -50,9 +50,9 @@ session_start();
 								<div class="nav nav-tabs justify-content-center nav-fill" id="nav-tab" role="tablist">
 
 								  <a class="nav-item nav-link active" id="Face-Mask-Policy" data-toggle="tab" href="#nav-Policy" role="tab" aria-controls="nav-Policy" aria-selected="true">Face Mask Policy</a>
-								  <a class="nav-item nav-link" id="Plane-your-Visit" data-toggle="tab" href="#nav-Plan" role="tab" aria-controls="nav-Plan" aria-selected="false">Plane Your Visit</a>
+								  <a class="nav-item nav-link" id="Plane-your-Visit" data-toggle="tab" href="#nav-Plan" role="tab" aria-controls="nav-Plan" aria-selected="false">Plan Your Visit</a>
 								  <a class="nav-item nav-link" id="Contact-Tracing" data-toggle="tab" href="#nav-Contact" role="tab" aria-controls="nav-Contact" aria-selected="false">Contact Tracing</a>  
-								  <a class="nav-item nav-link" id="What-Were-Doing" data-toggle="tab" href="#nav-Doing" role="tab" aria-controls="nav-Doing" aria-selected="false">What Were Doing</a>
+								  <a class="nav-item nav-link" id="What-Were-Doing" data-toggle="tab" href="#nav-Doing" role="tab" aria-controls="nav-Doing" aria-selected="false">What We're Doing</a>
 								</div>
 							  </nav>
 						</div>
@@ -64,8 +64,8 @@ session_start();
 								<p>In compliance with local health regulations and/or by-laws, it is mandatory to wear a non-medical face covering over your nose, mouth and chin while you are on the premises of any OT Film's locations. You may remove your face covering to enjoy your concessions when seated in your auditorium.</p>
 								<ul>
 									<li>Every OT Film Cast and Crew member will be wearing proper protective equipment as physical distancing might not always be possible.</li>
-									<li>Although physical distancing may not always be possible at all OT Film locations, we strogly recommend all vistors make their best attempts at physical dictancing</li>
-									<li>Masks are required to worn by patrons at all times during their visit when not seated in the theater</li>
+									<li>Although physical distancing may not always be possible at all OT Film locations, we strogly recommend all vistors make their best attempts at physical distancing</li>
+									<li>Masks are required to be worn by patrons at all times during their visit when not seated in the theatre</li>
 								</ul>
 								<h2><img src="images/mask.png" alt="error loading mask image" width="500" height="250"/></h2>
 							</div>
@@ -76,7 +76,7 @@ session_start();
 							<h1>Contact Tracing</h1>
 							<div>
 								<h2>Tracing</h2>
-								<p>As per provincial requirements, OT Films has implemented contact tracing measures at the following locations. To ensure a safe and physically-distanced movie-going experience, we encourage all guests to purchase their tickets and reserve their seats in advance at <a href="bookSeats.php" class="override">OTFilms.com</a>.</p>
+								<p>As per provincial requirements, OT Films has implemented contact tracing measures at all locations. To ensure a safe and physically-distanced movie-going experience, we encourage all guests to purchase their tickets and reserve their seats in advance at <a href="bookSeats.php" class="override">OTFilms.com</a>.</p>
 								<h1><img src="images/graph.png" alt="error loading grpah image" width="600" height="500"/></h1>
 							</div>
 						   </div>
@@ -84,14 +84,14 @@ session_start();
 					
                         <div class="tab-pane fade" id="nav-Plan" role="tabpanel" aria-labelledby="Plane-your-Visit">
 							<div class="shown">
-								<h1>Plane Your Visit</h1>
+								<h1>Plan Your Visit</h1>
 							<div>
 								<h2>Can I go to the Movies?</h2>
 								<p>Please stay home if you have any of the following symptoms:</p>
 								<ul>
 									<li>Fever</li>
 									<li>Cough</li>
-									<li>Trouble breathing</li>
+									<li>difficulty breathing</li>
 									<li>Sore throat</li>
 									<li>Loss of taste or smell</li>
 									<li>Severe dizziness</li>
@@ -127,10 +127,10 @@ session_start();
 							</div>
 
 							<div>
-								<h2>Leaving the theater</h2>
+								<h2>Leaving the theatre</h2>
 								<p>To maintain physical distancing when exiting the theatre, we ask:</p>
 								<ul>
-									<li>When your movie is over, please follow the instructions of the OT Films Cast member or all directional signage and exit by row, starting at the front.</li>
+									<li>When your movie is over, please follow the instructions of the OT Films Cast members or all directional signage and exit by row, starting at the front.</li>
 									<li>After you exit the auditorium, additional directional signage will assist you to exit the theatre.</li>
 									<li>Where possible you will be directed through an alternative exit path that does not require you to travel back through the lobby area.</li>
 									<li>As you exit the theatre please be kind - deposit your own garbage in the appropriate bins. Our Cast and Crew will truly appreciate your assistance in keeping our theatres clean for all Movie Lovers.</li>
@@ -146,7 +146,7 @@ session_start();
 
 						<div class="tab-pane fade" id="nav-Doing" role="tabpanel" aria-labelledby="What-Were-Doing">
 							<div class="shown">
-							<h1>What Were Doing</h1>
+							<h1>What We're Doing</h1>
 							<div>
 								<h2>Our Cast And Crew</h2>
 								<ul>
