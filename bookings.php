@@ -96,6 +96,13 @@ session_start();
                                                 <p>Adult tickets: ' . $adults . '</p>
                                                 <p>Senior tickets: ' . $seniors . '</p>
                                                 <p>Children tickets: ' . $children . '</p>
+                                                <div class="btn btn-primary tooltip">Hover Me to Preview Seats
+                                                    <div class="top">
+                                                        <h3>Lorem Ipsum</h3>
+                                                        <p>Dolor sit amet, consectetur adipiscing elit.</p>
+                                                        <i></i>
+                                                    </div>
+                                                </div>
                                                 <br>
                                             </td>
                                             <td>
