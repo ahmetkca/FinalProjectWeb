@@ -145,6 +145,9 @@ function getFoodCost(){
 
 function calcTotal(){
 
+    getAdults();
+    getSeniors();
+
     var sub = getSeatCost() + getFoodCost();
     var tax = sub*0.13;
     var total = sub + tax;
@@ -157,4 +160,13 @@ function calcTotal(){
 
 function getTotal(){
     document.getElementById("totalSubmission").value = document.getElementById("total").innerHTML;
+}
+
+function getAdults(){
+    document.getElementById("adultSubmission").value = Adults.value;
+}
+
+function getSeniors(){
+    document.getElementById("seniorSubmission").value = Seniors.value;
+    //document.getElementById("test").innerHTML = document.getElementById("adultSubmission").value
 }
