@@ -40,7 +40,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 						   <?php endif; ?>   				
         				</nav>
 
-
+						<br>	
 						<h1 style="color: rgb(81, 185, 255); font-family: 'Oswald', sans-serif;">Seat Selection</h1>
 						<br>
 						<h4>Screen</h4>
