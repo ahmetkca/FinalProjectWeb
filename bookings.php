@@ -100,6 +100,9 @@ session_start();
                                                 <p>Nachos: " . $nachos . "</p>
                                                 <br>
                                             </td>
+                                            <td>
+                                                <p> ". $sum ."</p> 
+                                            </td>
 
                                         </tr>";
                                     }
