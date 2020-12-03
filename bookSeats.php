@@ -189,6 +189,9 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 
 							</table>
 								<input type="hidden" id ="totalSubmission" name="totalSubmission"/>
+								<input type="hidden" id ="adultSubmission" name="adultSubmission"/>
+								<input type="hidden" id ="seniorSubmission" name="seniorSubmission"/>
+								<p id="test">HELP</p>
 							<br>
 							</form>
 						</div>
