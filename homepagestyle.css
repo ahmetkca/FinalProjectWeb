@@ -25,6 +25,7 @@
       padding-right: 30px;
       padding-bottom: 30px;
       padding-left: 30px;
+      transition: 0.5s;
 } 
 a:hover {
     background-color: rgb(81, 185, 255);
@@ -35,6 +36,10 @@ a:hover {
 
 .navbar-brand{
     font-family: 'Oswald', sans-serif;
+}
+
+.navbar-item{
+  transition: 0.5s;
 }
 
 h1{
