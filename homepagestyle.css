@@ -84,10 +84,3 @@ h1{
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
-
-.slides{
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
