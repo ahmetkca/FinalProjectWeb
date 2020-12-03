@@ -96,3 +96,8 @@ background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,0.7511379551820728) 100%);
     /*background: white;*/
 }
+
+dd{
+    padding-left: 2%;
+
+}

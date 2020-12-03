@@ -166,10 +166,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 																	<dd>-	Roger Kaur</dd>
 																</d1>
 																	
-																
-																<p></p>
-																
-																														
+																												
 													
  													 	</div>
 													</div>														
