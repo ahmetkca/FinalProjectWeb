@@ -265,9 +265,9 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 									<!-- Inside tabs -->
 									<nav>
 										<div class="nav nav-pills  navbar-light bg-dark justify-content-center nav-fill " id="nav-tab" role="tablist">
-										<a class="nav-item nav-link active" id="nav-synop3-tab" data-toggle="tab" href="#nav-synop3" role="tab" aria-controls="nav-synop3" aria-selected="false">Movie Info</a>
-										<a class="nav-item nav-link" id="nav-trailer3-tab" data-toggle="tab" href="#nav-trailer3" role="tab" aria-controls="nav-trailer3" aria-selected="true">Trailer</a>
-										<a class="nav-item nav-link" id="nav-review3-tab" data-toggle="tab" href="#nav-review3" role="tab" aria-controls="nav-review3" aria-selected="false">Review</a>
+										<a class="nav-item nav-link active" id="nav-synop-tab" data-toggle="tab" href="#nav-synop3" role="tab" aria-controls="nav-synop3" aria-selected="false">Movie Info</a>
+										<a class="nav-item nav-link" id="nav-trailer-tab" data-toggle="tab" href="#nav-trailer3" role="tab" aria-controls="nav-trailer3" aria-selected="true">Trailer</a>
+										<a class="nav-item nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-review3" role="tab" aria-controls="nav-review3" aria-selected="false">Review</a>
 										</div>
 									</nav>
 									<!-- Trailer Tab-->
@@ -361,9 +361,9 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 									<!-- Inside tabs -->
 									<nav>
 										<div class="nav nav-pills  navbar-light bg-dark justify-content-center nav-fill " id="nav-tab" role="tablist">
-										<a class="nav-item nav-link active" id="nav-synop4-tab" data-toggle="tab" href="#nav-synop4" role="tab" aria-controls="nav-synop4" aria-selected="false">Movie Info</a>
-										<a class="nav-item nav-link" id="nav-trailer4-tab" data-toggle="tab" href="#nav-trailer4" role="tab" aria-controls="nav-trailer4" aria-selected="true">Trailer</a>
-										<a class="nav-item nav-link" id="nav-review4-tab" data-toggle="tab" href="#nav-review4" role="tab" aria-controls="nav-review4" aria-selected="false">Review</a>
+										<a class="nav-item nav-link active" id="nav-synop-tab" data-toggle="tab" href="#nav-synop4" role="tab" aria-controls="nav-synop4" aria-selected="false">Movie Info</a>
+										<a class="nav-item nav-link" id="nav-trailer-tab" data-toggle="tab" href="#nav-trailer4" role="tab" aria-controls="nav-trailer4" aria-selected="true">Trailer</a>
+										<a class="nav-item nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-review4" role="tab" aria-controls="nav-review4" aria-selected="false">Review</a>
 										</div>
 									</nav>
 									<!-- Trailer Tab-->
