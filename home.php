@@ -45,7 +45,7 @@ session_start();
 							<h1>UPCOMING RELEASES</h1>
 
 							<!-- Slideshow container -->
-							<table>
+							<table class = >
 
 								<tr>
 
