@@ -79,8 +79,8 @@ session_start();
 							<h1>Contact Tracing</h1>
 							<div>
 								<h2>Tracing</h2>
-								<p>As per provincial requirements, OT Films has implemented contact tracing measures at all locations. To ensure a safe and physically-distanced movie-going experience, we encourage all guests to purchase their tickets and reserve their seats in advance at <a href="bookSeats.php" class="override">OTFilms.com</a>.</p>
-								<h1><img src="images/graph.png" alt="error loading grpah image" width="600" height="500"/></h1>
+								<p>As per provincial requirements, OT Films has implemented contact tracing measures at all locations. To ensure a safe and physically-distanced movie-going experience, we encourage all guests to purchase their tickets and reserve their seats in advance at <a href="bookSeats.php" class="override">OTFilms.com</a>.</br><a href="https://www.cdc.gov/coronavirus/2019-ncov/community/contact-tracing-nonhealthcare-workplaces.html" class="override" margin-left="20%">Why Do We Trace</a></p>
+								
 							</div>
 						   </div>
 						</div>
@@ -98,8 +98,10 @@ session_start();
 									<li>Sore throat</li>
 									<li>Loss of taste or smell</li>
 									<li>Severe dizziness</li>
+									<li><a href="https://covid-19.ontario.ca/?gclid=Cj0KCQiAtqL-BRC0ARIsAF4K3WGQULbkh7CjJ1NOtXMYNZaBcghb4IfEffVvUnQiHnplRcmYfnW3j3MaAk9lEALw_wcB" class="override" margin-left="20%">Think you might be sick? Check Here</a></li>
 								</ul>
-								<img src="images/symptoms.jpg" alt="error loading stay home image" class="center"/> 
+								<img src="images/symptoms.jpg" alt="error loading stay home image" class="center"/> </br>
+								
 							</div>
 
 							<div>

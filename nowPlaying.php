@@ -12,6 +12,7 @@ session_start();
 						<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">	
 						<link rel="stylesheet" href="nowPlayingStyle.css">
 						<link rel="icon" href="images/Logo.png">
+						<script async src="https://static.addtoany.com/menu/page.js"></script>
                         
 				</head>
 
@@ -58,10 +59,15 @@ session_start();
 								   Genre: Adventure/ Sci Fi<br>
 								   Trailer: <a href="https://www.youtube.com/watch?v=1g3_CFmnU7k" target="_blank" class="playbutt"><img src="images/Play.PNG" class="imgply" height="3%" width="3%"/></a><br>
 								   <button onclick="document.location='bookSeats.php'" class="butt" Style="margin-top: 3px">Buy Tickets </button>
+								   <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+									<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+									<a class="a2a_button_facebook"></a>
+									<a class="a2a_button_twitter"></a>
+									<a class="a2a_button_email"></a>
+									</div>
 								   <h2>Cast</h2>
 								   <p>Mark Hamill, Harrison Ford, Carrie Fisher, Alec Guinness and Peter Cushing.</p>
-
-							   </td>
+									</td>
 							</tr>
 						   </table>
 						</div>
