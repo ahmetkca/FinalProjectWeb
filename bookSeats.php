@@ -244,7 +244,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 								<div class="modal-content">
 									<span id="closeModal" class="close">&times;</span>
 									<h2 align="center">SCREEN</h2>
-									<table align="center">
+									<table align="center" style="margin: 0;">
 										<?php 
 											//$rowABC = array("A", "B", "C", "D", "E");
 											for ($r = 1; $r <= 5; $r+=1) {
@@ -274,13 +274,10 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 										?>	
 									</table>
 									<h1>Thank you for purchase, <?= $_SESSION['fname']; ?> <?= $_SESSION['lname'] ?></h1>
-									<p>Total: <?= $_GET['total']; ?>$</p>
-									<p>Username: <?= $_SESSION['username']; ?></p>
-									<p>Seats: <?php 
-										foreach($_GET['seats'] as $seat) {
-											echo $seat.", ";
-										}
-									?></p>
+									<strong align="center">Please Provide Your Name and Username at Event for Admission</strong><br>
+									<p align="center"><u>Total:</u> <?= $_GET['total']; ?>$</p>
+									<p align="center"><u>Username:</u> <?= $_SESSION['username']; ?></p>
+									
 								</div>
 							</div>
 							<script>
