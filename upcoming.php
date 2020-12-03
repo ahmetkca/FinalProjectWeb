@@ -14,6 +14,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 						<link rel="stylesheet" type="text/css" href="homestyle.css">
 						<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">	
 						<link rel="stylesheet" href ="upcomingStyle.css">
+						<link rel="icon" href="images/Logo.png">
                         
 				</head>
 

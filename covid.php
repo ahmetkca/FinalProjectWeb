@@ -12,6 +12,7 @@ session_start();
 						<link rel="stylesheet" href ="homestyle.css">
 						<link rel="stylesheet" href="covidstyle.css">
 						<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">	
+						<link rel="icon" href="images/Logo.png">
                         
 				</head>
 
