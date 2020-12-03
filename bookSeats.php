@@ -50,7 +50,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 						<div class="seatSelection">
 						<form method="POST" action="processBookSeats.php" name="myForm">
 						
-							<table class="selectSeat">
+							<table style="background-color: white;" class="selectSeat">
 								<?php
 								$myfile = fopen("seats.txt", "r") or die("Unable to open file!");
 								$num_row = 1;
@@ -90,12 +90,12 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 
 							<table>
 								<tr>
-									<td><img src="images/occupiedseat.png" width="64" height="64"></td>
-									<td><img src="images/freeseat.png" width="64" height="64"></td>
-									<td><img src="images/covidChair.png" width="64" height="64"></td>
+									<td><img class="img-book" src="images/occupiedseat.png" width="64" height="64"></td>
+									<td><img class="img-book" src="images/freeseat.png" width="64" height="64"></td>
+									<td><img class="img-book" src="images/covidChair.png" width="64" height="64"></td>
 								</tr>
 
-								<tr>
+								<tr style="color:white;">
 									<td>Occupied Seat</td>
 									<td>Free Seat</td>
 									<td>Seat Inaccessbile</td>
@@ -148,10 +148,10 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 							<table>
 
 								<tr>
-									<td><img src="images/popcorn.png" width="64" height="64"></td>
-									<td><img src="images/coke.png" width="64" height="64"></td>
-									<td><img src="images/candy.png" width="64" height="64"></td>
-									<td><img src="images/nachos.png" width="64" height="64"></td>
+									<td><img class="img-book" src="images/popcorn.png" width="64" height="64"></td>
+									<td><img  class="img-book"src="images/coke.png" width="64" height="64"></td>
+									<td><img  class="img-book"src="images/candy.png" width="64" height="64"></td>
+									<td><img  class="img-book"src="images/nachos.png" width="64" height="64"></td>
 								</tr>
 
 
@@ -249,7 +249,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 							<div id="myModal" class="modal">
 								<div class="modal-content">
 									<span id="closeModal" class="close">&times;</span>
-									<h2 align="center">SCREEN</h2>
+									<h2 align="center" style="color: white;">SCREEN</h2>
 									<table align="center" style="margin: 0;">
 										<?php 
 											$rowABC = array("r1", "r2", "r3", "r4", "r5");
