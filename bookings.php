@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +43,29 @@ session_start();
                         
                         <!-- --------------------------------------------------------------------------------------------------- -->
 
-                            
+                            <?php
+                                $user = $_SESSION['username'];
+
+                                //This writes to mySQL console
+                                //it selects everything from the users tables, and checks for the '$user' variable
+                                $sqltask = "select * from users where Username = '$user'";
+                                $sqltype = mysqli_query($connection, $sqltask);
+
+                                //Finds the number of bookings the user has made
+                                $check = mysqli_num_rows($sqltype);
+
+                                $adults = $infoarray["AdultNum"];
+                                $seniors = $infoarray["SeniorNum"];
+                                $children = $infoarray["ChildrenNum"];
+                                $popcorn = $infoarray["PopcornNum"];
+                                $coke = $infoarray["CokeNum"];
+                                $candy = $infoarray["CandyNum"];
+                                $nachos = $infoarray["NachoNum"];
+                                $sum = $infoarray["totalNum"];
+
+                                echo $adults
+
+                            ?>
 
                         <!-- --------------------------------------------------------------------------------------------------- -->
 
