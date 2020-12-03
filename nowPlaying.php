@@ -60,7 +60,7 @@ session_start();
 								   Trailer: <a href="https://www.youtube.com/watch?v=1g3_CFmnU7k" target="_blank" class="play-button"><i class="circle imgply"></i></a><br><br>
 								   <button onclick="document.location='bookSeats.php'" class="butt" Style="margin-top: 3px">Buy Tickets </button>
 								   <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-									<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+									
 									<a class="a2a_button_facebook"></a>
 									<a class="a2a_button_twitter"></a>
 									<a class="a2a_button_email"></a>

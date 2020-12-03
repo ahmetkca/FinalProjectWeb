@@ -34,6 +34,7 @@ table{
 }
 
 .circle {
+    color: red;
     box-sizing: border-box;
     position: absolute;
     display: block;
@@ -45,6 +46,7 @@ table{
 }
 .circle::before {
     content: "";
+    color: red;
     display: block;
     box-sizing: border-box;
     position: absolute;
@@ -55,4 +57,15 @@ table{
     border-left: 6px solid;
     top: 4px;
     left: 7px
+}
+body{
+    background-color: #485461;
+background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+}
+p{
+    color: white;
+}
+
+h1,h2,h3,h4{
+    color:rgba(255, 0, 0, 0.747);
 }
