@@ -11,9 +11,11 @@ session_start();
 						<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
 						<link rel="stylesheet" href ="homepagestyle.css">
-						<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">						
+                        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">	
+                        <link rel="stylesheet" href = "bookingsStyle.css">					
 						<script type="text/javascript" src ="homepagejava.js"></script>
-						<link rel="icon" href="images/Logo.png">
+                        <link rel="icon" href="images/Logo.png">
+    
 				</head>
 
 
@@ -46,13 +48,18 @@ session_start();
                             <?php
                                 $user = $_SESSION['username'];
 
+                                include ("setup.php");
+                                $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+
                                 //This writes to mySQL console
                                 //it selects everything from the users tables, and checks for the '$user' variable
-                                $sqltask = "select * from users where Username = '$user'";
+                                $sqltask = "select * from booked where Username = '$user'";
                                 $sqltype = mysqli_query($connection, $sqltask);
 
                                 //Finds the number of bookings the user has made
                                 $check = mysqli_num_rows($sqltype);
+
+                                $infoarray = mysqli_fetch_array($sqltype, MYSQLI_ASSOC);
 
                                 $adults = $infoarray["AdultNum"];
                                 $seniors = $infoarray["SeniorNum"];
@@ -63,7 +70,23 @@ session_start();
                                 $nachos = $infoarray["NachoNum"];
                                 $sum = $infoarray["totalNum"];
 
-                                echo $adults
+                                echo "<br>";
+                                echo '<div id="content">';
+                                echo "<strong><u>Tickets</u></strong>";
+                                echo "<p>Adult tickets: " . $adults . "</p>";
+                                echo "<p>Senior tickets: " . $seniors . "</p>";
+                                echo "<p>Children tickets: " . $children . "</p>";
+                                echo "<br>";
+
+                                echo "<strong><u>Food</u></strong>";
+                                echo "<p>Popcorn: " . $popcorn . "</p>";
+                                echo "<p>Coke: " . $coke . "</p>";
+                                echo "<p>Candy: " . $candy . "</p>";
+                                echo "<p>Nachos: " . $nachos . "</p>";
+                                echo "<br>";
+
+                                echo "<strong><u>Total Payed:</u></strong> <p1> $" . $sum . "</p1>";
+                                echo "</div>"
 
                             ?>
 
