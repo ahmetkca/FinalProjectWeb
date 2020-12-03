@@ -71,14 +71,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
             $rStr .= "&seats[]=".$seat;
         }
+        $rStr .= "&adult=".$_POST['adultSubmission'];
+        $rStr .= "&senior=".$_POST['seniorSubmission'];
+        $rStr .= "&children=".$_POST['childrenSubmission'];
         
+        $rStr .= "&popcorn=".$_POST['popcornSubmission'];
+        $rStr .= "&coke=".$_POST['cokeSubmission'];
+        $rStr .= "&candy=".$_POST['candySubmission'];
+        $rStr .= "&nacho=".$_POST['nachoSubmission'];
+        /*
         $msg = "First line of text\nSecond line of text";
 
         // use wordwrap() if lines are longer than 70 characters
         $msg = wordwrap($msg,70);
 
         // send email
-        mail($_SESSION['email'],"OT Films", $msg);
+        mail($_SESSION['email'],"OT Films", $msg);*/
         header($rStr);
     } else {
         header("location: bookSeats.php?error=You must choose your seat(s) and have at least 1 ticket.");

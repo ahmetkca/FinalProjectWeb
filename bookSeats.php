@@ -277,7 +277,8 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 									<strong align="center">Please Provide Your Name and Username at Event for Admission</strong><br>
 									<p align="center"><u>Total:</u> <?= $_GET['total']; ?>$</p>
 									<p align="center"><u>Username:</u> <?= $_SESSION['username']; ?></p>
-									
+									<p align="center">Adult: <?= $_GET['adult']; ?>   Senior: <?= $_GET['senior']; ?>   Children: <?= $_GET['children']; ?></p>
+									<p align="center">Popcorn: <?= $_GET['popcorn']; ?>   Coke: <?= $_GET['coke']; ?>   Candy: <?= $_GET['candy']; ?>   Nachos: <?= $_GET['nacho']; ?></p>
 								</div>
 							</div>
 							<script>
