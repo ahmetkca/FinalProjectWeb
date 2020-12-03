@@ -246,9 +246,9 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 									<h2 align="center">SCREEN</h2>
 									<table align="center" style="margin: 0;">
 										<?php 
-											//$rowABC = array("A", "B", "C", "D", "E");
+											$rowABC = array("A", "B", "C", "D", "E");
 											for ($r = 1; $r <= 5; $r+=1) {
-												echo "<tr>";
+												echo '<tr><td style="overflow: hidden; width: 15%">'.$rowABC[$r-1].'</td>';
 												for ($c = 1; $c <= 9; $c+=1 ) {
 													$slc = false;
 													foreach($_GET['seats'] as $seat) {
