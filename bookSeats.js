@@ -147,6 +147,7 @@ function calcTotal(){
 
     getAdults();
     getSeniors();
+    getChildren();
 
     var sub = getSeatCost() + getFoodCost();
     var tax = sub*0.13;
@@ -168,5 +169,9 @@ function getAdults(){
 
 function getSeniors(){
     document.getElementById("seniorSubmission").value = Seniors.value;
-    //document.getElementById("test").innerHTML = document.getElementById("adultSubmission").value
+}
+
+function getChildren(){
+    document.getElementById("childrenSubmission").value = Children.value;
+    document.getElementById("test").innerHTML = document.getElementById("childrenSubmission").value
 }

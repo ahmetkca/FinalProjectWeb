@@ -191,6 +191,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 								<input type="hidden" id ="totalSubmission" name="totalSubmission"/>
 								<input type="hidden" id ="adultSubmission" name="adultSubmission"/>
 								<input type="hidden" id ="seniorSubmission" name="seniorSubmission"/>
+								<input type="hidden" id ="childrenSubmission" name="childrenSubmission"/>
 								<p id="test">HELP</p>
 							<br>
 							</form>
