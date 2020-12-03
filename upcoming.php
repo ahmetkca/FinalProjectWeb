@@ -96,9 +96,9 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 												<div class="row">
 													<div class="col">
 													<div class="card text-white bg-dark" style="max-width: 80rem;">
- 														<div class="card-header">Header</div>
+ 														<div class="card-header"></div>
   														<div class="card-body">
-														<h5 class="card-title">Dark Panel title</h5>
+														<h5 class="card-title">Description</h5>
 																<p>
 																The adventure continues in this "Star Wars" sequel. Luke Skywalker (Mark Hamill), Han Solo (Harrison Ford), Princess Leia (Carrie Fisher)
 																and Chewbacca (Peter Mayhew) face attack by the Imperial forces and its AT-AT walkers on the ice planet Hoth. While Han and Leia escape in the Millennium Falcon, 
@@ -196,9 +196,9 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 															<div class="col">
 
 																<div class="card text-white bg-danger mb-3" style="max-width: 80rem;">
-																	<div class="card-header">Header</div>
+																	<div class="card-header"></div>
 																		<div class="card-body">
-																			<h5 class="card-title">Danger Panel title</h5>
+																			<h5 class="card-title">Description</h5>
 																			<p>
 																			Seventeen-year-old Millie Kessler spends her days trying to survive high school and the cruel actions of the popular crowd. But when she becomes the latest target of the Butcher,
 																			the town's infamous serial killer, her senior year becomes the least of her worries. When the Butcher's mystical dagger causes him and Millie to magically switch bodies,
@@ -288,9 +288,9 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 													<div class="col">
 															
 														<div class="card text-white bg-primary mb-3" style="max-width: 80rem;">
-															<div class="card-header">Header</div>
+															<div class="card-header"></div>
 															<div class="card-body">
-																<h5 class="card-title">Secondary Panel title</h5>
+																<h5 class="card-title">Description</h5>
 																<p class="card-text text-white">A look at three defining chapters in the life of Chiron, a young black man growing up in Miami. 
 																His epic journey to manhood is guided by the kindness, support and love of the community that helps raise him.</p>
 																
@@ -383,7 +383,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 												<div class="row">
 													<div class="col" >
 													<div class="card text-white bg-warning mb-3" style="max-width: 80rem;">
-														<div class="card-header">Header</div>
+														<div class="card-header"></div>
 														<div class="card-body">
 															<h5 class="card-title">Warning Panel title</h5>
 															<p class="card-text text-white">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p>

@@ -36,8 +36,10 @@
 }
 .youtube > iframe{
     height: 500pt;
-    width: 500pt;
-    margin-top:20pt;
+    width: 700pt;
+    margin-top:50pt;
+    border-radius: 10pt;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
 }
 body{
     background-color: rgb(229, 236, 243);
@@ -71,6 +73,7 @@ body{
 
     }
 #nav-tabContent2{
+    
     border-top: 4px solid black;
     height: 600pt;
     width:100%;
