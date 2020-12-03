@@ -184,7 +184,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 													<div class="container2">
 														<div class="row">
 															<div class="col" >
-																<div class="youtube" align="center"><iframe src="https://www.youtube.com/embed/JNwNXF9Y6kY"></iframe></div>
+																<div class="youtube" align="center"><iframe src="https://www.youtube.com/embed/EqPnIcDW9g0"></iframe></div>
 															</div>													
 														</div>
 													</div>
@@ -195,7 +195,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 														<div class="row">
 															<div class="col">
 
-																<div class="card text-white bg-danger mb-3" style="max-width: 80rem;">
+																<div class="card text-white bg-danger mb-3" style="max-width: 80rem; ">
 																	<div class="card-header"></div>
 																		<div class="card-body">
 																			<h5 class="card-title">Description</h5>
@@ -382,11 +382,13 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 											<div class="container2" >
 												<div class="row">
 													<div class="col" >
-													<div class="card text-white bg-warning mb-3" style="max-width: 80rem;">
+													<div class="card text-black bg-warning mb-3" style="max-width: 80rem;">
 														<div class="card-header"></div>
 														<div class="card-body">
-															<h5 class="card-title">Warning Panel title</h5>
-															<p class="card-text text-white">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p>
+															<h5 class="card-title">Description</h5>
+															<p class="card-text text-black">As the son of Odin (Anthony Hopkins), king of the Norse gods, Thor (Chris Hemsworth) will soon inherit the throne of Asgard from his aging father. However, on the day that he is to be crowned,
+															 Thor reacts with brutality when the gods' enemies, the Frost Giants, enter the palace in violation of their treaty. As punishment,
+															  Odin banishes Thor to Earth. While Loki (Tom Hiddleston), Thor's brother, plots mischief in Asgard, Thor, now stripped of his powers, faces his greatest threat.</p>
 
 															<div class="row">
 																				<div class="col" style="text-align: right;">	
