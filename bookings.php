@@ -59,6 +59,10 @@ session_start();
                                 //Finds the number of bookings the user has made
                                 $check = mysqli_num_rows($sqltype);
 
+                                echo "<br>";
+                                echo '<table id="content">';
+                                
+                                //////////////////////////LOOP/////////////////////////////////////////////////////////
                                 $infoarray = mysqli_fetch_array($sqltype, MYSQLI_ASSOC);
 
                                 $adults = $infoarray["AdultNum"];
@@ -68,25 +72,35 @@ session_start();
                                 $coke = $infoarray["CokeNum"];
                                 $candy = $infoarray["CandyNum"];
                                 $nachos = $infoarray["NachoNum"];
-                                $sum = $infoarray["totalNum"];
+                                $sum = $infoarray["totalNum"];    
 
-                                echo "<br>";
-                                echo '<div id="content">';
-                                echo "<strong><u>Tickets</u></strong>";
-                                echo "<p>Adult tickets: " . $adults . "</p>";
-                                echo "<p>Senior tickets: " . $seniors . "</p>";
-                                echo "<p>Children tickets: " . $children . "</p>";
-                                echo "<br>";
+                                echo "<tr>";
 
-                                echo "<strong><u>Food</u></strong>";
-                                echo "<p>Popcorn: " . $popcorn . "</p>";
-                                echo "<p>Coke: " . $coke . "</p>";
-                                echo "<p>Candy: " . $candy . "</p>";
-                                echo "<p>Nachos: " . $nachos . "</p>";
-                                echo "<br>";
+                                    echo "<td>";
+                                        echo "<strong><u>Tickets</u></strong>";
+                                        echo "<p>Adult tickets: " . $adults . "</p>";
+                                        echo "<p>Senior tickets: " . $seniors . "</p>";
+                                        echo "<p>Children tickets: " . $children . "</p>";
+                                        echo "<br>";
+                                    echo "</td>";
 
-                                echo "<strong><u>Total Payed:</u></strong> <p1> $" . $sum . "</p1>";
-                                echo "</div>"
+                                    echo "<td>";
+                                        echo "<strong><u>Food</u></strong>";
+                                        echo "<p>Popcorn: " . $popcorn . "</p>";
+                                        echo "<p>Coke: " . $coke . "</p>";
+                                        echo "<p>Candy: " . $candy . "</p>";
+                                        echo "<p>Nachos: " . $nachos . "</p>";
+                                        echo "<br>";
+                                    echo "</td>";
+
+                                    echo "<strong><u>Total Payed:</u></strong> <p1> $" . $sum . "</p1> ";
+
+                                echo "</tr>";
+
+                                //////////////////////LOOP//////////////////////////////////////////////////////////////
+
+                                echo "</table>"
+
 
                             ?>
 
