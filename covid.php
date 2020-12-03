@@ -60,7 +60,7 @@ session_start();
 						<div class="tab-pane fade show active" id="nav-Policy" role="tabpanel" aria-labelledby="Face-Mask-Policy">
 							<div class="shown">
 								<h1>Face Mask Policy</h1>
-								
+								<h2>Face Mask Policy</h2>
 								<p>In compliance with local health regulations and/or by-laws, it is mandatory to wear a non-medical face covering over your nose, mouth and chin while you are on the premises of any OT Film's locations. You may remove your face covering to enjoy your concessions when seated in your auditorium.</p>
 								<ul>
 									<li>Every OT Film Cast and Crew member will be wearing proper protective equipment as physical distancing might not always be possible.</li>
@@ -72,8 +72,9 @@ session_start();
 
 						<div class="tab-pane fade" id="nav-Contact" role="tabpanel" aria-labelledby="Contact-Tracing">		
 							<div class="shown">
+							<h1>Contact Tracing</h1>
 							<div>
-								<h1>Contact Tracing</h1>
+								<h2>Contact Tracing</h2>
 								<p>As per provincial requirements, OT Films has implemented contact tracing measures at the following locations. To ensure a safe and physically-distanced movie-going experience, we encourage all guests to purchase their tickets and reserve their seats in advance at <a href="bookSeats.php" class="override">OTFilms.com</a>.</p>
 						   </div>
 						   </div>
