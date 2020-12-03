@@ -244,7 +244,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 								<div class="modal-content">
 									<span id="closeModal" class="close">&times;</span>
 									<h2 align="center">SCREEN</h2>
-									<table>
+									<table align="center">
 										<?php 
 										$rowABC = array("A", "B", "C", "D", "E");
 										for ($r = 1; $i <= 5; $i+=1) {
@@ -263,7 +263,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 													echo '<td><img width="20" height="20" src="images/selectedSeat.png"></td>';
 													$slc = false;
 												} else {
-													echo '<td><img width="20" height="20" src="images/selectedSeat.png"></td>';
+													echo '<td><img width="20" height="20" src="images/seat.png"></td>';
 												}
 												
 
