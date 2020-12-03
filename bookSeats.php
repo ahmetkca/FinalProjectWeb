@@ -50,7 +50,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 						<div class="seatSelection">
 						<form method="POST" action="processBookSeats.php" name="myForm">
 						
-							<table style="background-color: white;" class="selectSeat">
+							<table style="background-color: white;" class="selectSeat shadowbox">
 								<?php
 								$myfile = fopen("seats.txt", "r") or die("Unable to open file!");
 								$num_row = 1;
@@ -110,7 +110,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 
 					<table>
 						<td>
-						<div class="seatLegend borderChoice">
+						<div class="seatLegend borderChoice shadowbox">
 							<h4 style="color: white;">Select your tickets:</h4>
 							<ul>
 								<li>
