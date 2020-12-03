@@ -246,30 +246,31 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 									<h2 align="center">SCREEN</h2>
 									<table align="center">
 										<?php 
-										$rowABC = array("A", "B", "C", "D", "E");
-										for ($r = 1; $i <= 5; $i+=1) {
-											echo "<tr><td>".$rowABC[$r-1]."</td>";
-											for ($c = 1; $c <= 9; $c+=1 ) {
-												$slc = false;
-												foreach($_GET['seats'] as $seat) {
-													
-													if ($r == $seat[1] && $c == $seat[3]) {
-														
-														$slc = true;
-														break;
-													}
-												}
-												if ($slc) {
-													echo '<td><img width="20" height="20" src="images/selectedSeat.png"></td>';
+											//$rowABC = array("A", "B", "C", "D", "E");
+											for ($r = 1; $r <= 5; $r+=1) {
+												echo "<tr>";
+												for ($c = 1; $c <= 9; $c+=1 ) {
 													$slc = false;
-												} else {
-													echo '<td><img width="20" height="20" src="images/seat.png"></td>';
-												}
-												
+													foreach($_GET['seats'] as $seat) {
+														
+														if ($r == $seat[1] && $c == $seat[3]) {
+															
+															$slc = true;
+															break;
+														}
+													}
+													//print_r($r." ".$c);
+													if ($slc) {
+														echo '<td><img width="20" height="20" src="images/selectedSeat.png"></td>';
+														$slc = false;
+													} else {
+														echo '<td><img width="20" height="20" src="images/seat.png"></td>';
+													}
+													
 
+												}
+												echo "</tr>";
 											}
-											echo "</tr>";
-										}
 										?>	
 									</table>
 									<h1>Thank you for purchase, <?= $_SESSION['fname']; ?> <?= $_SESSION['lname'] ?></h1>
