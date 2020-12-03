@@ -149,6 +149,11 @@ function calcTotal(){
     getSeniors();
     getChildren();
 
+    getPopcorn();
+    getCoke();
+    getCandy();
+    getNachos();
+
     var sub = getSeatCost() + getFoodCost();
     var tax = sub*0.13;
     var total = sub + tax;
@@ -173,5 +178,20 @@ function getSeniors(){
 
 function getChildren(){
     document.getElementById("childrenSubmission").value = Children.value;
-    document.getElementById("test").innerHTML = document.getElementById("childrenSubmission").value
+}
+
+function getPopcorn(){
+    document.getElementById("popcornSubmission").value = popcornOut.value;
+}
+
+function getCoke(){
+    document.getElementById("cokeSubmission").value = cokeOut.value;
+}
+
+function getCandy(){
+    document.getElementById("candySubmission").value = candyOut.value;
+}
+
+function getNachos(){
+    document.getElementById("nachoSubmission").value = nachosOut.value;
 }
