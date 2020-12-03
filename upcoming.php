@@ -78,7 +78,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 										<div class="nav nav-pills navbar-light bg-dark justify-content-center nav-fill " id="nav-tab"  role="tablist">
 										  <a class="nav-item nav-link active" id="nav-synop-tab" data-toggle="tab" href="#nav-synop" role="tab" aria-controls="nav-synop" aria-selected="false">Movie Info</a>
 										  <a class="nav-item nav-link" id="nav-trailer-tab" data-toggle="tab" href="#nav-trailer" role="tab" aria-controls="nav-trailer" aria-selected="true">Trailer</a>
-										  <a class="nav-item nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-review" role="tab" aria-controls="nav-review" aria-selected="false">Review</a>
+										  <a class="nav-item nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-review" role="tab" aria-controls="nav-review" aria-selected="false">Testimonials</a>
 										</div>
 									</nav>
 									<!-- Trailer Tab-->
@@ -150,7 +150,35 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 											<div class="container2">
 												<div class="row">
 													<div class="col">
-														<img class="imageSize" src="images/empire.png" style="padding:30pt" width="300pt" height="300pt">
+														<div class="card text-white bg-dark shadowbox" style="max-width: 80rem;">
+ 														<div class="card-header"></div>
+  														<div class="card-body">
+															<h5 class="card-title">Testimonials</h5>
+															
+																<dl>
+																	<dt>Most intense in the original trilogy but also the most entertaining!</dt>
+																	<dd>-	Lacie Lang</dd>
+																	<br>
+																	<dt>The Empire Strikes back is widely regarded to be the best chapter for a good reason. It is very well directed and has one of the best story lines of any episode.</dt>
+																	<dd>-	Giulia Page</dd>
+																	<br>
+																	<dt>Star Wars name is a household name, with 9 movies in its line-up. The original trilogy is no doubt incredible, but honestly this movie is as close to perfect as it gets.</dt>
+																	<dd>-	Roger Kaur</dd>
+																</d1>
+																	
+																
+																<p></p>
+																
+																														
+													
+ 													 	</div>
+													</div>														
+														
+														
+														
+														
+														
+														
 													</div>
 												</div>
 											</div>
@@ -175,7 +203,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 												<div class="nav nav-pills  navbar-light bg-dark justify-content-center nav-fill " id="nav-tab" role="tablist">
 												<a class="nav-item nav-link active" id="nav-synop-tab" data-toggle="tab" href="#nav-synop2" role="tab" aria-controls="nav-synop2" aria-selected="false">Movie Info</a>
 												<a class="nav-item nav-link" id="nav-trailer-tab" data-toggle="tab" href="#nav-trailer2" role="tab" aria-controls="nav-trailer2" aria-selected="true">Trailer</a>
-												<a class="nav-item nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-review2" role="tab" aria-controls="nav-review2" aria-selected="false">Review</a>
+												<a class="nav-item nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-review2" role="tab" aria-controls="nav-review2" aria-selected="false">Testimonials</a>
 												</div>
 											</nav>
 											<!-- Trailer Tab-->
@@ -243,7 +271,29 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 													<div class="container2">
 														<div class="row">
 															<div class="col" >
-																<img class="imageSize" src="images/empire.png" style="padding:30pt" width="300pt" height="300pt">
+																<div class="card text-white bg-danger mb-3 shadowbox" style="max-width: 80rem;">
+ 																<div class="card-header"></div>
+  																<div class="card-body">
+																<h5 class="card-title">Testimonials</h5>
+															
+																<dl>
+																	<dt>Vince Vaughn explores his feminine side when his character inhabits the body of a high-school girl in this slasher comedy.</dt>
+																	<dd>-	Roland Noble</dd>
+																	<br>
+																	<dt>Director Christopher Landon's Freaky is breathlessly stolen by Vince Vaughn, who delivers a character both terrifying and lovable in equal measure.</dt>
+																	<dd>-	Alessandra Chambers</dd>
+																	<br>
+																	<dt>Vaughn steals more than a body in this snarky, over-the-top mashup -- he steals the whole show.</dt>
+																	<dd>-	Nelly Benitez</dd>
+																</d1>
+																	
+
+																
+													
+ 													 		</div>
+														</div>
+
+																
 															</div>
 														</div>
 													</div>
@@ -268,7 +318,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 										<div class="nav nav-pills  navbar-light bg-dark justify-content-center nav-fill " id="nav-tab" role="tablist">
 										<a class="nav-item nav-link active" id="nav-synop-tab" data-toggle="tab" href="#nav-synop3" role="tab" aria-controls="nav-synop3" aria-selected="false">Movie Info</a>
 										<a class="nav-item nav-link" id="nav-trailer-tab" data-toggle="tab" href="#nav-trailer3" role="tab" aria-controls="nav-trailer3" aria-selected="true">Trailer</a>
-										<a class="nav-item nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-review3" role="tab" aria-controls="nav-review3" aria-selected="false">Review</a>
+										<a class="nav-item nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-review3" role="tab" aria-controls="nav-review3" aria-selected="false">Testimonials</a>
 										</div>
 									</nav>
 									<!-- Trailer Tab-->
@@ -337,7 +387,30 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 											<div class="container2">
 												<div class="row">
 													<div class="col">
-														<img class="imageSize" src="images/empire.png" style="padding:30pt" width="300pt" height="300pt">
+
+														<div class="card text-white bg-primary mb-3 shadowbox" style="max-width: 80rem;">
+ 														<div class="card-header"></div>
+  														<div class="card-body">
+															<h5 class="card-title">Testimonials</h5>
+															
+																<dl>
+																	<dt>This film about a young black man's coming of age is both a disarmingly personal film and an urgent social document.</dt>
+																	<dd>-	Iyla Sparrow</dd>
+																	<br>
+																	<dt>It's difficult to distill the power, grace, and grit that make this drama so unforgettable.</dt>
+																	<dd>-	Fenton Bullock</dd>
+																	<br>
+																	<dt>Hype would bruise Barry Jenkins' Moonlight, which is so delicate in its touch that the usual superlatives sound unusually shrill. It's the gentlest, most suggestive of great films.</dt>
+																	<dd>-	Jack Chavez</dd>
+																</d1>
+ 													 	</div>
+													</div>	
+
+
+
+
+
+														
 													</div>
 												</div>
 											</div>
@@ -363,7 +436,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 										<div class="nav nav-pills  navbar-light bg-dark justify-content-center nav-fill " id="nav-tab" role="tablist">
 										<a class="nav-item nav-link active" id="nav-synop-tab" data-toggle="tab" href="#nav-synop4" role="tab" aria-controls="nav-synop4" aria-selected="false">Movie Info</a>
 										<a class="nav-item nav-link" id="nav-trailer-tab" data-toggle="tab" href="#nav-trailer4" role="tab" aria-controls="nav-trailer4" aria-selected="true">Trailer</a>
-										<a class="nav-item nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-review4" role="tab" aria-controls="nav-review4" aria-selected="false">Review</a>
+										<a class="nav-item nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-review4" role="tab" aria-controls="nav-review4" aria-selected="false">Testimonials</a>
 										</div>
 									</nav>
 									<!-- Trailer Tab-->
@@ -434,7 +507,28 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 											<div class="container2">
 												<div class="row">
 													<div class="col">
-														<img class="imageSize" src="images/empire.png" style="padding:30pt" width="300pt" height="300pt">
+
+																<div class="card text-white bg-warning mb-3 shadowbox" style="max-width: 80rem;">
+ 																<div class="card-header"></div>
+  																<div class="card-body">
+																<h5 class="card-title">Testimonials</h5>
+															
+																<dl>
+																	<dt>Armed with lessons about international politics and diplomacy, this is an entertaining, surprisingly astute film defined by top-shelf special effects and a compelling, if crowded, storyline. </dt>
+																	<dd>-	Diego Randolph</dd>
+																	<br>
+																	<dt>"Thor," directed by Kenneth Branagh, is a programmed triumph of commercial calculation over imagination.</dt>
+																	<dd>-	Lucas Andersen</dd>
+																	<br>
+																	<dt>Turn off the snark-o-meter, and this is a return to form for Marvel, introducing a new hero we'll be happy to see again in, oh, about a year or so.</dt>
+																	<dd>-	Kristie Wilks</dd>
+																</d1>
+ 													 		</div>
+														</div>
+
+
+
+														
 													</div>
 												</div>
 											</div>

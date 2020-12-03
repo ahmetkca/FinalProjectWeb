@@ -92,7 +92,9 @@ session_start();
                         </nav>
                         
                         <!-- --------------------------------------------------------------------------------------------------- -->
-                            
+                            <div class="tooltip">Hover over me to Preview Seats
+		                        <span class="tooltiptext">Seats</span>
+	                        </div>
                             <?php
                                 $user = $_SESSION['username'];
 
@@ -147,9 +149,7 @@ session_start();
                                                 <p>Adult tickets: ' . $adults . '</p>
                                                 <p>Senior tickets: ' . $seniors . '</p>
                                                 <p>Children tickets: ' . $children . '</p>
-                                                <div class="tooltip">Hover over me to Preview Seats
-		                                            <span class="tooltiptext">Seats</span>
-	                                            </div>
+                                                
                                                 <br>
                                             </td>
                                             <td>
