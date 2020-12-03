@@ -78,7 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $msg = wordwrap($msg,70);
 
         // send email
-        mail($_SESSION['email'],"OT Films", "Thank you for your purchase.");
+        mail($_SESSION['email'],"OT Films", $msg);
         header($rStr);
     } else {
         header("location: bookSeats.php?error=You must choose your seat(s) and have at least 1 ticket.");
