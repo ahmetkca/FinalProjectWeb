@@ -45,7 +45,7 @@ session_start();
 							<h1>UPCOMING RELEASES</h1>
 
 							<!-- Slideshow container -->
-							<table id="locations">
+							<table class="center">
 
 								<tr>
 
@@ -74,7 +74,7 @@ session_start();
 							<h1>OUR LOCATIONS</h1>
 						
 						<div style="background-image: url('images/moviesback.jpg');">
-							<table border="10" style="border-color: rgb(81, 185, 255); background-color: orange;">
+							<table border="10" class="center" style="border-color: rgb(81, 185, 255); background-color: orange;">
 
 								<tr id="maps">
 
