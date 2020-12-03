@@ -28,10 +28,31 @@ table{
     margin-bottom: 10px;
 }
 .imgply:hover{
-    transform: scale(1.5);
-    filter: drop-shadow(8px 8px 10px black);
+    transform: scale(1.25);
+    /*filter: drop-shadow(8px 8px 10px black); */
     background-color: transparent;
 }
 
-
-
+.circle {
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    
+    width: 22px;
+    height: 22px;
+    border: 2px solid;
+    border-radius: 20px
+}
+.circle::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 0;
+    height: 10px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 6px solid;
+    top: 4px;
+    left: 7px
+}
