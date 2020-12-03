@@ -64,8 +64,8 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 								<div class="tab-pane fade show active" id="nav-movie1" role="tabpanel" aria-labelledby="nav-movie1-tab">
 									<div class="container">
 										<div class="row">
-											<div class="col" style="background-color: rgb(106, 128, 9);">
-												<img class="imageSize" src="images/new empire.png" style="padding:30pt" width="300pt" height="300pt">
+											<div class="col" style="background-color: rgb(0, 0, 0);">
+												<img class="Thumb" src="images/new empire.png"  >
 											</div>
 										
 										</div>
@@ -118,8 +118,8 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 						<div class="tab-pane fade show " id="nav-movie2" role="tabpanel" aria-labelledby="nav-movie2-tab">
 							<div class="container">
 								<div class="row">
-									<div class="col">
-												<img class="imageSize" src="images/freaky.jpg" style="padding:30pt" width="300pt" height="300pt">
+									<div class="col"  style="background-color: rgb(0, 0, 0);">
+										<img class="Thumb" src="images/freaky.jpg" style="">
 									</div>
 								
 							</div>
@@ -172,8 +172,8 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 								
 									<div class="container">
 										<div class="row">
-											<div class="col" >
-												<img class="imageSize" src="images/moonlight.jpg" style="padding:30pt" width="300pt" height="300pt">
+											<div class="col" style="background-color: rgb(0, 0, 0);" >
+												<img class="Thumb" src="images/moonlight.jpg" >
 											</div>
 											
 										</div>
@@ -227,8 +227,8 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 								<div class="tab-pane fade" id="nav-movie4" role="tabpanel" aria-labelledby="nav-movie4-tab">
 									<div class="container">
 										<div class="row">
-											<div class="col" >
-												<img class="imageSize" src="images/thor.jpg" style="padding:30pt" width="300pt" height="300pt">
+											<div class="col" style="background-color: rgb(0, 0, 0);" >
+												<img class="Thumb" src="images/thor.jpg" >
 											</div>
 										
 										</div>
