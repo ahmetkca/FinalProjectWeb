@@ -32,6 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $_SESSION['userID'] = $infoarray["Id"];
             $_SESSION['fname'] = $infoarray['FirstName'];
             $_SESSION['lname'] = $infoarray['LastName'];
+            $_SESSION['email'] = $infoarray['EmailAddress'];
             sleep(1);
             header("location: home.php");
 

@@ -293,6 +293,22 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 									}
 								}
 							</script>
+							<script src="https://smtpjs.com/v3/smtp.js">
+								var msg = document.getElementById('myModal').innerHTML;
+								function sendEmail() {
+									Email.send({
+										SecureToken : "463c10eb-7f02-4c98-a3da-09e4cd99e8bd",
+										To : <?= $_SESSION['email']; ?>,
+										From : "otfilms@gmail.com",
+										Subject : "Thank you for your purchase.",
+										Body : msg
+									}).then(
+										message => alert("mail sent successfully")
+									);
+								}
+								sendEmail();
+							</script>
+							
 						<?php endif; ?>
 
                         <div class="navbar-b">
