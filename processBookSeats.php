@@ -49,6 +49,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $seats_file_array[intval($seat[1])-1][intval($seat[3])-1] = 1;
         }
 
+        $newSeatsNum = array();
+        foreach($_POST['seats'] as $seat) {
+            if ($seat == "occupied" || $seat == "covid") {
+                continue;
+            }
+            array_push($newSeatsNum, $seat);
+        }
+
 
         //This is to rewrite the file in order to save the selections for next time
         
@@ -104,7 +112,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $candy = $_POST['candySubmission'];
             $nachos = $_POST['nachoSubmission'];
             $sum = $_POST['totalSubmission'];
-            $seatChoice = $_POST['seats'];
+            $seatChoice = $newSeatsNum;
 
             //Holds the necessary command to insert into the 'users' table
             $sqlhold = "INSERT INTO booked (Username, AdultNum, SeniorNum, ChildrenNum, PopcornNum, CokeNum, CandyNum, NachoNum, totalNum, seatsNum) VALUES (
