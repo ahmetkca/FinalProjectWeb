@@ -2,7 +2,7 @@
 
 // will be processing form submission from bookSeats.php
 
-
+    session_start();
     //used to store reciept info in database
         include ("setup.php");
         $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
@@ -95,7 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-            $user = $_POST['userSubmission'];
+            $user = $_SESSION['username'];
             $adults = $_POST['adultSubmission'];
             $seniors = $_POST['seniorSubmission'];
             $children = $_POST['childrenSubmission'];

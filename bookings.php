@@ -60,21 +60,50 @@ session_start();
                                 $check = mysqli_num_rows($sqltype);
 
                                 echo "<br>";
-                                echo '<table id="content">';
+                                //echo '<table id="content">';
                                 
                                 //////////////////////////LOOP/////////////////////////////////////////////////////////
-                                $infoarray = mysqli_fetch_array($sqltype, MYSQLI_ASSOC);
+                                //$infoarray = mysqli_fetch_array($sqltype, MYSQLI_ASSOC);
 
-                                $adults = $infoarray["AdultNum"];
-                                $seniors = $infoarray["SeniorNum"];
-                                $children = $infoarray["ChildrenNum"];
-                                $popcorn = $infoarray["PopcornNum"];
-                                $coke = $infoarray["CokeNum"];
-                                $candy = $infoarray["CandyNum"];
-                                $nachos = $infoarray["NachoNum"];
-                                $sum = $infoarray["totalNum"];    
+                                
+                                
+                                ?>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td><strong><u>Tickets</u></strong></td>
+                                            <td><strong><u>Food</u></strong></td>
+                                            <td><strong><u>Total Payed:</u></strong></td>
+                                        </tr>
+                                    </thead>
+                                <?php
+                                    while ($infoarray = mysqli_fetch_array($sqltype)) {
+                                        $adults = $infoarray["AdultNum"];
+                                        $seniors = $infoarray["SeniorNum"];
+                                        $children = $infoarray["ChildrenNum"];
+                                        $popcorn = $infoarray["PopcornNum"];
+                                        $coke = $infoarray["CokeNum"];
+                                        $candy = $infoarray["CandyNum"];
+                                        $nachos = $infoarray["NachoNum"];
+                                        $sum = $infoarray["totalNum"];
+                                        echo "<tr>
+                                            <td>
+                                                <p>Adult tickets: " . $adults . "</p>
+                                                <p>Senior tickets: " . $seniors . "</p>
+                                                <p>Children tickets: " . $children . "</p>
+                                                <br>
+                                            </td>
+                                            <td>
+                                                <p>Popcorn: " . $popcorn . "</p>
+                                                <p>Coke: " . $coke . "</p>
+                                                <p>Candy: " . $candy . "</p>
+                                                <p>Nachos: " . $nachos . "</p>
+                                                <br>
+                                            </td>
 
-                                echo "<tr>";
+                                        </tr>";
+                                    }
+                                /*echo "<tr>";
 
                                     echo "<td>";
                                         echo "<strong><u>Tickets</u></strong>";
@@ -95,14 +124,15 @@ session_start();
 
                                     echo "<strong><u>Total Payed:</u></strong> <p1> $" . $sum . "</p1> ";
 
-                                echo "</tr>";
+                                echo "</tr>";*/
 
                                 //////////////////////LOOP//////////////////////////////////////////////////////////////
 
-                                echo "</table>"
+                                
 
 
                             ?>
+                            </table>
 
                         <!-- --------------------------------------------------------------------------------------------------- -->
 
