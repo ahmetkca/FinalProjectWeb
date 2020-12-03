@@ -36,116 +36,144 @@ session_start();
 						   </div>
 						   <?php endif; ?>
                                				
-        				</nav>
-
-                        <div class="navbar-b">
+						</nav>
+						<div class="navbar-b">
 							<p>2020 OT FILMS Canada LP | Privacy Policy | Terms of Use</p>
 						</div>
                         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
    						<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-						
 						<h1>Covid-19 Policies</h1>
-						
-					<div>
-						<h2>Face Mask Policy</h2>
-						<p>In compliance with local health regulations and/or by-laws, it is mandatory to wear a non-medical face covering over your nose, mouth and chin while you are on the premises of any OT Film's locations. You may remove your face covering to enjoy your concessions when seated in your auditorium.</p>
-						<ul>
-							<li>Every OT Film Cast and Crew member will be wearing proper protective equipment as physical distancing might not always be possible.</li>
-							<li>Although physical distancing may not always be possible at all OT Film locations, we strogly recommend all vistors make their best attempts at physical dictancing</li>
-							<li>Masks are required to worn by patrons at all times during their visit when not seated in the theater</li>
-						</ul>
-					</div>
 
-					<div>
-						<h2>Contact Tracing</h2>
-						<p>As per provincial requirements, OT Films has implemented contact tracing measures at the following locations. To ensure a safe and physically-distanced movie-going experience, we encourage all guests to purchase their tickets and reserve their seats in advance at <a href="bookSeats.php" class="override">OTFilms.com</a>.</p>
-					</div>
+						<div class="container-md">
+							<nav>
+								<div class="nav nav-tabs justify-content-center nav-fill" id="nav-tab" role="tablist">
 
-					<div>
-						<h2>Can I go to the Movies?</h2>
-						<p>Please stay home if you have any of the following symptoms:</p>
-						<ul>
-							<li>Fever</li>
-							<li>Cough</li>
-							<li>Trouble breathing</li>
-							<li>Sore throat</li>
-							<li>Loss of taste or smell</li>
-							<li>Severe dizziness</li>
-						</ul>
-						<img src="images/symptoms.jpg" alt="error loading stay home image" class="center"/> 
-					</div>
+								  <a class="nav-item nav-link active" id="Face-Mask-Policy" data-toggle="tab" href="#nav-Policy" role="tab" aria-controls="nav-Policy" aria-selected="true">Face Mask Policy</a>
+								  <a class="nav-item nav-link" id="Plane-your-Visit" data-toggle="tab" href="#nav-Plan" role="tab" aria-controls="nav-Plan" aria-selected="false">Plane Your Visit</a>
+								  <a class="nav-item nav-link" id="Contact-Tracing" data-toggle="tab" href="#nav-Contact" role="tab" aria-controls="nav-Contact" aria-selected="false">Contact Tracing</a>  
+								  <a class="nav-item nav-link" id="What-Were-Doing" data-toggle="tab" href="#nav-Doing" role="tab" aria-controls="nav-Doing" aria-selected="false">What Were Doing</a>
+								</div>
+							  </nav>
+						</div>
+						<div class="tab-content" id="nav-tabContent">
+						<div class="tab-pane fade show active" id="nav-Policy" role="tabpanel" aria-labelledby="Face-Mask-Policy">
+							<div class="shown">
+								<h1>Face Mask Policy</h1>
+								
+								<p>In compliance with local health regulations and/or by-laws, it is mandatory to wear a non-medical face covering over your nose, mouth and chin while you are on the premises of any OT Film's locations. You may remove your face covering to enjoy your concessions when seated in your auditorium.</p>
+								<ul>
+									<li>Every OT Film Cast and Crew member will be wearing proper protective equipment as physical distancing might not always be possible.</li>
+									<li>Although physical distancing may not always be possible at all OT Film locations, we strogly recommend all vistors make their best attempts at physical dictancing</li>
+									<li>Masks are required to worn by patrons at all times during their visit when not seated in the theater</li>
+								</ul>
+							</div>
+						</div>
 
-					<div>
-						<h2>Movie Tickets</h2>
-						<ul>
-							<li>We encourage guests to purchase their movie tickets in advance at <a href="bookSeats.php" class="override">OTFilms.com</a>. Tickets may also be purchased at the theatre using a purposefully-distanced automated box office kiosk with touchscreens that are covered with an antimicrobial copper film to provide enhanced cleanliness.</li>
-							<li>We encourage in-theatre ticket and concession purchases using contactless payment methods (credit/debit, mobile payments, gift cards and vouchers).</li>
-							<li>Please note that we have maintained Free Reserved Seating, and introduced Free Reserved Seating in select locations.</li>
-						</ul>
-					</div>
+						<div class="tab-pane fade" id="nav-Contact" role="tabpanel" aria-labelledby="Contact-Tracing">		
+							<div class="shown">
+							<div>
+								<h1>Contact Tracing</h1>
+								<p>As per provincial requirements, OT Films has implemented contact tracing measures at the following locations. To ensure a safe and physically-distanced movie-going experience, we encourage all guests to purchase their tickets and reserve their seats in advance at <a href="bookSeats.php" class="override">OTFilms.com</a>.</p>
+						   </div>
+						   </div>
+						</div>
+					
+                        <div class="tab-pane fade" id="nav-Plan" role="tabpanel" aria-labelledby="Plane-your-Visit">
+							<div class="shown">
+								<h1>Plane Your Visit</h1>
+							<div>
+								<h2>Can I go to the Movies?</h2>
+								<p>Please stay home if you have any of the following symptoms:</p>
+								<ul>
+									<li>Fever</li>
+									<li>Cough</li>
+									<li>Trouble breathing</li>
+									<li>Sore throat</li>
+									<li>Loss of taste or smell</li>
+									<li>Severe dizziness</li>
+								</ul>
+								<img src="images/symptoms.jpg" alt="error loading stay home image" class="center"/> 
+							</div>
 
-					<div>
-						<h2>Plan Ahead</h2>
-						<ul>
-							<li>To achieve the recommended physical distancing for our Guests, we ask that you arrive no sooner than 20 minutes (15 minutes in Ontario) prior to your movie’s scheduled showtime</li>
-							<li>If you arrive earlier, you may be asked to remain outside the theatre until your movie is ready for seating.</li>
-						</ul>
-					</div>
+							<div>
+								<h2>Movie Tickets</h2>
+								<ul>
+									<li>We encourage guests to purchase their movie tickets in advance at <a href="bookSeats.php" class="override">OTFilms.com</a>. Tickets may also be purchased at the theatre using a purposefully-distanced automated box office kiosk with touchscreens that are covered with an antimicrobial copper film to provide enhanced cleanliness.</li>
+									<li>We encourage in-theatre ticket and concession purchases using contactless payment methods (credit/debit, mobile payments, gift cards and vouchers).</li>
+									<li>Please note that we have maintained Free Reserved Seating, and introduced Free Reserved Seating in select locations.</li>
+								</ul>
+							</div>
 
-					<div>
-						<h2>Physical Distancing And Hygiene</h2>
-						<ul>
-							<li>Please follow all directional and physical distancing signs, and the guidance of our Cast and Crew members as you move from the front doors, to concession, to your movie, and finally when you exit the theatre following your movie.</li>
-							<li>Throughout the theatre, we have installed protective safety shields at interaction points to safeguard both our Guests and our Crew members.</li>
-							<li>We have temporarily removed lobby seating for added Guest safety.</li>
-							<li>Hand sanitizer will be available throughout your theatre experience including at the entries, concessions, washrooms and the entrance to each theatre corridor.</li>
-						</ul>
-					</div>
+							<div>
+								<h2>Plan Ahead</h2>
+								<ul>
+									<li>To achieve the recommended physical distancing for our Guests, we ask that you arrive no sooner than 20 minutes (15 minutes in Ontario) prior to your movie’s scheduled showtime</li>
+									<li>If you arrive earlier, you may be asked to remain outside the theatre until your movie is ready for seating.</li>
+								</ul>
+							</div>
 
-					<div>
-						<h2>Our Cast And Crew</h2>
-						<ul>
-							<li>Our Fit for Work policy requires that each Cast member complete a health questionnaire to confirm they have not been exposed to anyone with COVID-19, and are symptom-free before they enter the theatre and start their shift.</li>
-							<li>Every OT Films Cast and Crew member will always be wearing proper protective equipment. PPE will be supplied by OT Films for its Cast and Crew members.</li>
-							<li>Every OT Films Cast and Crew member will be required to wash their hands every 30 minutes.</li>
-						</ul>
-					</div>
+							<div>
+								<h2>Physical Distancing And Hygiene</h2>
+								<ul>
+									<li>Please follow all directional and physical distancing signs, and the guidance of our Cast and Crew members as you move from the front doors, to concession, to your movie, and finally when you exit the theatre following your movie.</li>
+									<li>Throughout the theatre, we have installed protective safety shields at interaction points to safeguard both our Guests and our Crew members.</li>
+									<li>We have temporarily removed lobby seating for added Guest safety.</li>
+									<li>Hand sanitizer will be available throughout your theatre experience including at the entries, concessions, washrooms and the entrance to each theatre corridor.</li>
+								</ul>
+							</div>
 
-					<div>
-						<h2>Enhanced Cleaning</h2>
-						<ul>
-							<li>As an enhanced cleaning practice, we will be disinfecting our auditoriums, seating surfaces, washrooms and common areas with an odorless and 100% biodegradable cleaning product which has been proven to kill 99.9999% of bacteria and has been approved by Health Canada and the EPA for use against SARS-CoV-2, the Coronavirus that causes COVID-19.</li>
-							<li>OT Films will have a dedicated Hygiene Officer scheduled on each shift, with the sole responsibility of ensuring that cleaning and safety standards are completed as scheduled and to specification.</li>
-							<li>There will be extra time provided between movies to complete our enhanced cleaning standards. Only after the Manager on Duty or Hygiene Officer has inspected and signed-off on the cleaning of the auditorium—will it be released to seat our next Guests.</li>
-							<li>We have deployed additional cleaning Crew members who are dedicated to enhanced cleaning of high-contact areas throughout the theatre every 30 minutes.</li>
-						</ul>
-					</div>
+							<div>
+								<h2>Leaving the theater</h2>
+								<p>To maintain physical distancing when exiting the theatre, we ask:</p>
+								<ul>
+									<li>When your movie is over, please follow the instructions of the OT Films Cast member or all directional signage and exit by row, starting at the front.</li>
+									<li>After you exit the auditorium, additional directional signage will assist you to exit the theatre.</li>
+									<li>Where possible you will be directed through an alternative exit path that does not require you to travel back through the lobby area.</li>
+									<li>As you exit the theatre please be kind - deposit your own garbage in the appropriate bins. Our Cast and Crew will truly appreciate your assistance in keeping our theatres clean for all Movie Lovers.</li>
+								</ul>
+							</div>
 
-					<div>
-						<h2>Washrooms</h2>
-						<ul>
-							<li>All sinks and stalls are available. Alternate urinals will be closed to provide physical distancing.</li>
-							<li>Please always respect others and maintain physical distancing when entering, occupying, and exiting the restrooms.</li>
-						</ul>
-					</div>
+							<div>
+								<h2>How To Stay Safe</h2>
+								<img src="images/safetyguidlines.jpg" alt="error loading stay home image" class="center"/> 
+							</div>
+						   </div>
+						</div>
 
-					<div>
-						<h2>Leaving the theater</h2>
-						<p>To maintain physical distancing when exiting the theatre, we ask:</p>
-						<ul>
-							<li>When your movie is over, please follow the instructions of the OT Films Cast member or all directional signage and exit by row, starting at the front.</li>
-							<li>After you exit the auditorium, additional directional signage will assist you to exit the theatre.</li>
-							<li>Where possible you will be directed through an alternative exit path that does not require you to travel back through the lobby area.</li>
-							<li>As you exit the theatre please be kind - deposit your own garbage in the appropriate bins. Our Cast and Crew will truly appreciate your assistance in keeping our theatres clean for all Movie Lovers.</li>
-						</ul>
-					</div>
+						<div class="tab-pane fade" id="nav-Doing" role="tabpanel" aria-labelledby="What-Were-Doing">
+							<div class="shown">
+							<h1>What Were Doing</h1>
+							<div>
+								<h2>Our Cast And Crew</h2>
+								<ul>
+									<li>Our Fit for Work policy requires that each Cast member complete a health questionnaire to confirm they have not been exposed to anyone with COVID-19, and are symptom-free before they enter the theatre and start their shift.</li>
+									<li>Every OT Films Cast and Crew member will always be wearing proper protective equipment. PPE will be supplied by OT Films for its Cast and Crew members.</li>
+									<li>Every OT Films Cast and Crew member will be required to wash their hands every 30 minutes.</li>
+								</ul>
+							</div>
 
-					<div>
-						<h2>How To Stay Safe</h2>
-						<img src="images/safetyguidlines.jpg" alt="error loading stay home image" class="center"/> 
-					</div>
+							<div>
+								<h2>Enhanced Cleaning</h2>
+								<ul>
+									<li>As an enhanced cleaning practice, we will be disinfecting our auditoriums, seating surfaces, washrooms and common areas with an odorless and 100% biodegradable cleaning product which has been proven to kill 99.9999% of bacteria and has been approved by Health Canada and the EPA for use against SARS-CoV-2, the Coronavirus that causes COVID-19.</li>
+									<li>OT Films will have a dedicated Hygiene Officer scheduled on each shift, with the sole responsibility of ensuring that cleaning and safety standards are completed as scheduled and to specification.</li>
+									<li>There will be extra time provided between movies to complete our enhanced cleaning standards. Only after the Manager on Duty or Hygiene Officer has inspected and signed-off on the cleaning of the auditorium—will it be released to seat our next Guests.</li>
+									<li>We have deployed additional cleaning Crew members who are dedicated to enhanced cleaning of high-contact areas throughout the theatre every 30 minutes.</li>
+								</ul>
+							</div>
+						   
 
+							<div>
+								<h2>Washrooms</h2>
+								<ul>
+									<li>All sinks and stalls are available. Alternate urinals will be closed to provide physical distancing.</li>
+									<li>Please always respect others and maintain physical distancing when entering, occupying, and exiting the restrooms.</li>
+								</ul>
+							</div>
+							</div>
+						</div>	
+											
 					</body>
 
 	</html>
