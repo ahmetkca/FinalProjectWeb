@@ -188,10 +188,18 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 
 
 							</table>
+
 								<input type="hidden" id ="totalSubmission" name="totalSubmission"/>
+
 								<input type="hidden" id ="adultSubmission" name="adultSubmission"/>
 								<input type="hidden" id ="seniorSubmission" name="seniorSubmission"/>
-								<p id="test">HELP</p>
+								<input type="hidden" id ="childrenSubmission" name="childrenSubmission"/>
+
+								<input type="hidden" id ="popcornSubmission" name="popcornSubmission"/>
+								<input type="hidden" id ="cokeSubmission" name="cokeSubmission"/>
+								<input type="hidden" id ="candySubmission" name="candySubmission"/>
+								<input type="hidden" id ="nachoSubmission" name="nachoSubmission"/>
+								
 							<br>
 							</form>
 						</div>
