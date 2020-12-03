@@ -71,6 +71,9 @@ session_start();
                                 ?>
                                 
                                 <?php if ($check >= 1): ?>
+                                <center><p id="print" onclick="window.print()">Click Here to Print this Page</p></center>
+                                <br>
+                                <br>
                                 <table style="width:90%; margin-left: 5%;margin-right: 5%;">
                                     <thead>
                                         <tr style="border-bottom: 5px solid black;">
