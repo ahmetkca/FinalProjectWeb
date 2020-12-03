@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
             //outputs message if user doesn't exist
             echo '<script>alert("This User Does Not Exist \n OR \n The Username or Password is Incorrect")</script>';
-            echo '<a href="login.html" style="font-size: 50pt; color: green; font-family: Arial;"><center>Click Here to Attempt to Log in Again</center><a>';
+            echo '<a href="login.html" class="echotext"><center>Click Here to Attempt to Log in Again</center><a>';
 
         }
     }
@@ -49,3 +49,38 @@ else{
 }
 
 ?>
+
+<!DOCTYPE html>
+	<html>
+        <head>
+
+            <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+            <style>
+                .rotate180 {
+                    -webkit-transform: rotate(180deg);
+                    -moz-transform: rotate(180deg);
+                    -o-transform: rotate(180deg);
+                    -ms-transform: rotate(180deg);
+                    transform: rotate(180deg);
+                }
+                .echotext{
+                    font-size: 50pt; 
+                    color: orange; 
+                    font-family: Arial;
+                    transition: 0.5s;
+                    font-family: 'Oswald', sans-serif;
+                }
+                .echotext:hover{
+                    color: rgb(81, 185, 255);  
+                }
+            </style>
+
+        <head>
+
+        <body style="background-image: url('images/starnight.jpg');">
+
+            <img src="images/stars.png" class="rotate180" style="width: 100%; z-index: 0; margin-left: 0; margin-right: 0;">
+
+        </body>
+    </html>
