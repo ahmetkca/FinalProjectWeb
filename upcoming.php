@@ -118,9 +118,9 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 																		<p>	Box Office (Gross USA):	</p>
 																		<p>	Runtime:	</p>
 																		<p>	Production Co:	</p>
-																		<p>	Sound Mix:	</p>
-																		<p>	Aspect Ratio:	</p>
-																		<p>	View the collection:	</p>
+																		
+																		
+																	
 																	</div>
 																	<div class="col" >
 																		<p>PG (Sci-Fi Action Violence)</p>
@@ -133,9 +133,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 																		<p>$291.9M</p>
 																		<p>2h 4m</p>
 																		<p>Lucasfilm Ltd.</p>
-																		<p>Surround, Dolby Stereo, Dolby A, Magnetic Stereo 6 Track</p>
-																		<p>Scope (2.35:1)</p>
-																		<p>Star Wars Saga</p>
+																	
 																		<br>
 																	</div>
 																	
@@ -214,6 +212,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 																					<p> Director:   </p>
 																					<p> Producer:   </p>
 																					<p> Writer      </p>
+																					<p>	Release Date (Theaters):	</p>
 																					<p> Box Office (Gross USA): </p>
 																					<p> Runtime:    </p>
 																					<p> Production Co. </p>
@@ -323,9 +322,8 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 																					<p> $27.9M</p>
 																					<p> 1h 51m</p>
 																					<p> Plan B Entertainment, Upload Films, Pastel</p>	
-																					<p>	Dolby Digital</p>
-																					<p> Scope (2.35:1)</p>																	
-																				
+																					<p>	Dolby Digital</p>		
+																					<br><br>										
 																			</div>
 																			</div>
 															</div>
@@ -406,7 +404,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 																					<p>	Runtime:	</p>
 																					<p>	Production Co:	</p>
 																					<p>	Sound Mix:	</p>
-																					<p>	Aspect Ratio:	</p>
+																					
 																					
 																				</div>
 																				<div class="col">
@@ -422,7 +420,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 																					<p> 1h 53m</p>	
 																					<p>	Marvel Studios</p>
 																					<p> SDDS, Dolby Digital, Datasat</p>																	
-																				
+																					<br>
 																				</div>
 																			</div>
 														</div>
