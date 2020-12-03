@@ -71,8 +71,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
             $rStr .= "&seats[]=".$seat;
         }
-        header($rStr);
         
+        $msg = "First line of text\nSecond line of text";
+
+        // use wordwrap() if lines are longer than 70 characters
+        $msg = wordwrap($msg,70);
+
+        // send email
+        mail($_SESSION['email'],"OT Films", "Thank you for your purchase.");
+        header($rStr);
     } else {
         header("location: bookSeats.php?error=You must choose your seat(s) and have at least 1 ticket.");
         //echo "<h1> </h1>";

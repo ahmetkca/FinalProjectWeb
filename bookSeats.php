@@ -292,7 +292,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 										document.getElementById("myModal").style.display = "none";
 									}
 								}
-								var msg = document.getElementById('myModal');
+								/*var msg = document.getElementById('myModal');
 								var xmlhttp = new XMLHttpRequest();
 								xmlhttp.onreadystatechange = function () {
 									if (this.readyState == 4 && this.status == 200) {
@@ -302,7 +302,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 								};
 								xmlhttp.open("POST", "send_email.php", true);
 								xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-								xmlhttp.send("msg="+msg);
+								xmlhttp.send("msg="+msg);*/
 							</script>
 							<script src="https://smtpjs.com/v3/smtp.js">
 								var msg = document.getElementById('myModal').innerHTML;
