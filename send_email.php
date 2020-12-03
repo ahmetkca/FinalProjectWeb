@@ -14,6 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         // More headers
         $headers .= 'From: <akarapinrar@gmail.com>' . "\r\n";
         //$headers .= 'Cc: myboss@example.com' . "\r\n";
+        mail($to,$subject,$message,$headers);
     }
 }
 
