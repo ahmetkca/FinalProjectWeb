@@ -70,9 +70,7 @@ body{
     }
 #nav-tabContent2{
     border-top: 4px solid black;
-  
     height: 600pt;
     width:100%;
-    background: rgb(186,13,13);
-    background: linear-gradient(90deg, rgba(186,13,13,1) 0%, rgba(121,9,9,1) 35%, rgba(186,13,13,1) 100%);
+    background: white;
 }

@@ -73,15 +73,15 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 
 									<!-- Inside tabs -->
 									<nav>
-										<div class="nav nav-pills navbar-light bg-dark justify-content-center nav-fill " id="nav-tab" role="tablist">
-										  <a class="nav-item nav-link active" id="nav-trailer-tab" data-toggle="tab" href="#nav-trailer" role="tab" aria-controls="nav-trailer" aria-selected="true">Trailer</a>
-										  <a class="nav-item nav-link" id="nav-synop-tab" data-toggle="tab" href="#nav-synop" role="tab" aria-controls="nav-synop" aria-selected="false">Synopsis</a>
+										<div class="nav nav-pills navbar-light bg-dark justify-content-center nav-fill " id="nav-tab"  role="tablist">
+										  <a class="nav-item nav-link active" id="nav-synop-tab" data-toggle="tab" href="#nav-synop" role="tab" aria-controls="nav-synop" aria-selected="false">Movie Info</a>
+										  <a class="nav-item nav-link" id="nav-trailer-tab" data-toggle="tab" href="#nav-trailer" role="tab" aria-controls="nav-trailer" aria-selected="true">Trailer</a>
 										  <a class="nav-item nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-review" role="tab" aria-controls="nav-review" aria-selected="false">Review</a>
 										</div>
 									</nav>
 									<!-- Trailer Tab-->
-									<div class="tab-content" id="nav-tabContent2">
-										<div class="tab-pane fade show active" id="nav-trailer" role="tabpanel" aria-labelledby="nav-trailer-tab">
+									<div class="tab-content" id="nav-tabContent2" >
+										<div class="tab-pane fade show " id="nav-trailer" role="tabpanel" aria-labelledby="nav-trailer-tab">
 											<div class="container2">
 												<div class="row">
 													<div class="col" >
@@ -91,11 +91,54 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 											</div>
 										</div>
 									<!-- Synop Tab -->
-										<div class="tab-pane fade show" id="nav-synop" role="tabpanel" aria-labelledby="nav-synop-tab">
+										<div class="tab-pane fade show active" id="nav-synop" role="tabpanel" aria-labelledby="nav-synop-tab">
 											<div class="container2" >
 												<div class="row">
 													<div class="col">
-														<img class="imageSize" src="images/empire.png" style="padding:30pt" width="300pt" height="300pt">
+													<div class="card text-white bg-dark" style="max-width: 80rem;">
+ 														<div class="card-header">Header</div>
+  														<div class="card-body">
+														<h5 class="card-title">Dark Panel title</h5>
+																<p>
+																The adventure continues in this "Star Wars" sequel. Luke Skywalker (Mark Hamill), Han Solo (Harrison Ford), Princess Leia (Carrie Fisher)
+																and Chewbacca (Peter Mayhew) face attack by the Imperial forces and its AT-AT walkers on the ice planet Hoth. While Han and Leia escape in the Millennium Falcon, 
+																Luke travels to Dagobah in search of Yoda. Only with the Jedi master's help will Luke survive when the dark side of the Force beckons him into the ultimate duel with Darth Vader (David Prowse).	
+																</p>
+																<div class="row">
+																	<div class="col" style="text-align: right;">
+																		<p>	Rating:	</p>
+																		<p>	Genre:</p>
+																		<p>	Original Language:</p>
+																		<p>	Director:	</p>
+																		<p>	Producer:	</p>
+																		<p>	Release Date (Theaters):	</p>
+																		<p>	Release Date (Streaming):	</p>
+																		<p>	Box Office (Gross USA):	</p>
+																		<p>	Runtime:	</p>
+																		<p>	Production Co:	</p>
+																		<p>	Sound Mix:	</p>
+																		<p>	Aspect Ratio:	</p>
+																		<p>	View the collection:	</p>
+																	</div>
+																	<div class="col" >
+																		<p>PG (Sci-Fi Action Violence)</p>
+																		<p>	Action, Sci Fi, Adventure, Fantasy</p>
+																		<p>	English</p>
+																		<p> Irvin Kershner</p>
+																		<p> Gary Kurtz</p>
+																		<p>May 21, 1980  Wide</p>
+																		<p>Apr 10, 2015</p>
+																		<p>$291.9M</p>
+																		<p>2h 4m</p>
+																		<p>Lucasfilm Ltd.</p>
+																		<p>Surround, Dolby Stereo, Dolby A, Magnetic Stereo 6 Track</p>
+																		<p>Scope (2.35:1)</p>
+																		<p>Star Wars Saga</p>
+																	</div>
+																</div>
+													
+ 													 	</div>
+													</div>
 													</div>
 												</div>
 											</div>
@@ -128,14 +171,14 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 											<!-- Inside tabs -->
 											<nav>
 												<div class="nav nav-pills  navbar-light bg-dark justify-content-center nav-fill " id="nav-tab" role="tablist">
-												<a class="nav-item nav-link active" id="nav-trailer-tab" data-toggle="tab" href="#nav-trailer2" role="tab" aria-controls="nav-trailer2" aria-selected="true">Trailer</a>
-												<a class="nav-item nav-link" id="nav-synop-tab" data-toggle="tab" href="#nav-synop2" role="tab" aria-controls="nav-synop2" aria-selected="false">Synopsis</a>
+												<a class="nav-item nav-link active" id="nav-synop-tab" data-toggle="tab" href="#nav-synop2" role="tab" aria-controls="nav-synop2" aria-selected="false">Movie Info</a>
+												<a class="nav-item nav-link" id="nav-trailer-tab" data-toggle="tab" href="#nav-trailer2" role="tab" aria-controls="nav-trailer2" aria-selected="true">Trailer</a>
 												<a class="nav-item nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-review2" role="tab" aria-controls="nav-review2" aria-selected="false">Review</a>
 												</div>
 											</nav>
 											<!-- Trailer Tab-->
 											<div class="tab-content" id="nav-tabContent2">
-												<div class="tab-pane fade show active" id="nav-trailer2" role="tabpanel" aria-labelledby="nav-trailer2-tab">
+												<div class="tab-pane fade show" id="nav-trailer2" role="tabpanel" aria-labelledby="nav-trailer2-tab">
 													<div class="container2">
 														<div class="row">
 															<div class="col" >
@@ -145,11 +188,18 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 													</div>
 												</div>
 											<!-- Synop Tab -->
-												<div class="tab-pane fade show" id="nav-synop2" role="tabpanel" aria-labelledby="nav-synop2-tab">
+												<div class="tab-pane fade show active" id="nav-synop2" role="tabpanel" aria-labelledby="nav-synop2-tab">
 													<div class="container2" >
 														<div class="row">
 															<div class="col">
-																<img class="imageSize" src="images/empire.png" style="padding:30pt" width="300pt" height="300pt">
+
+																<div class="card text-white bg-danger mb-3" style="max-width: 80rem;">
+																	<div class="card-header">Header</div>
+																		<div class="card-body">
+																			<h5 class="card-title">Danger Panel title</h5>
+																			<p class="card-text text-white">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p>
+																	</div>
+																</div>	
 															</div>
 														</div>
 													</div>
@@ -182,14 +232,14 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 									<!-- Inside tabs -->
 									<nav>
 										<div class="nav nav-pills  navbar-light bg-dark justify-content-center nav-fill " id="nav-tab" role="tablist">
-										<a class="nav-item nav-link active" id="nav-trailer3-tab" data-toggle="tab" href="#nav-trailer3" role="tab" aria-controls="nav-trailer3" aria-selected="true">Trailer</a>
-										<a class="nav-item nav-link" id="nav-synop3-tab" data-toggle="tab" href="#nav-synop3" role="tab" aria-controls="nav-synop3" aria-selected="false">Synopsis</a>
+										<a class="nav-item nav-link active" id="nav-synop3-tab" data-toggle="tab" href="#nav-synop3" role="tab" aria-controls="nav-synop3" aria-selected="false">Movie Info</a>
+										<a class="nav-item nav-link" id="nav-trailer3-tab" data-toggle="tab" href="#nav-trailer3" role="tab" aria-controls="nav-trailer3" aria-selected="true">Trailer</a>
 										<a class="nav-item nav-link" id="nav-review3-tab" data-toggle="tab" href="#nav-review3" role="tab" aria-controls="nav-review3" aria-selected="false">Review</a>
 										</div>
 									</nav>
 									<!-- Trailer Tab-->
 									<div class="tab-content" id="nav-tabContent2">
-										<div class="tab-pane fade show active" id="nav-trailer3" role="tabpanel" aria-labelledby="nav-trailer3-tab">
+										<div class="tab-pane fade show " id="nav-trailer3" role="tabpanel" aria-labelledby="nav-trailer3-tab">
 											<div class="container2">
 												<div class="row">
 													<div class="col" >
@@ -199,11 +249,18 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 											</div>
 										</div>
 									<!-- Synop Tab -->
-										<div class="tab-pane fade show" id="nav-synop3" role="tabpanel" aria-labelledby="nav-synop3-tab">
+										<div class="tab-pane fade show active" id="nav-synop3" role="tabpanel" aria-labelledby="nav-synop3-tab">
 											<div class="container2" >
 												<div class="row">
 													<div class="col">
-														<img class="imageSize" src="images/empire.png" style="padding:30pt" width="300pt" height="300pt">
+															
+														<div class="card text-white bg-primary mb-3" style="max-width: 80rem;">
+															<div class="card-header">Header</div>
+															<div class="card-body">
+																<h5 class="card-title">Secondary Panel title</h5>
+																<p class="card-text text-white">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p>
+															</div>
+														</div>
 													</div>
 												</div>
 											</div>
@@ -237,14 +294,14 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 									<!-- Inside tabs -->
 									<nav>
 										<div class="nav nav-pills  navbar-light bg-dark justify-content-center nav-fill " id="nav-tab" role="tablist">
-										<a class="nav-item nav-link active" id="nav-trailer4-tab" data-toggle="tab" href="#nav-trailer4" role="tab" aria-controls="nav-trailer4" aria-selected="true">Trailer</a>
-										<a class="nav-item nav-link" id="nav-synop4-tab" data-toggle="tab" href="#nav-synop4" role="tab" aria-controls="nav-synop4" aria-selected="false">Synopsis</a>
+										<a class="nav-item nav-link active" id="nav-synop4-tab" data-toggle="tab" href="#nav-synop4" role="tab" aria-controls="nav-synop4" aria-selected="false">Movie Info</a>
+										<a class="nav-item nav-link" id="nav-trailer4-tab" data-toggle="tab" href="#nav-trailer4" role="tab" aria-controls="nav-trailer4" aria-selected="true">Trailer</a>
 										<a class="nav-item nav-link" id="nav-review4-tab" data-toggle="tab" href="#nav-review4" role="tab" aria-controls="nav-review4" aria-selected="false">Review</a>
 										</div>
 									</nav>
 									<!-- Trailer Tab-->
 									<div class="tab-content" id="nav-tabContent2">
-										<div class="tab-pane fade show active" id="nav-trailer4" role="tabpanel" aria-labelledby="nav-trailer4-tab">
+										<div class="tab-pane fade show" id="nav-trailer4" role="tabpanel" aria-labelledby="nav-trailer4-tab">
 											<div class="container2">
 												<div class="row">
 													<div class="col" >
@@ -254,11 +311,17 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 											</div>
 										</div>
 									<!-- Synop Tab -->
-										<div class="tab-pane fade show" id="nav-synop4" role="tabpanel" aria-labelledby="nav-synop4-tab">
+										<div class="tab-pane fade show active" id="nav-synop4" role="tabpanel" aria-labelledby="nav-synop4-tab">
 											<div class="container2" >
 												<div class="row">
 													<div class="col" >
-														<img class="imageSize" src="images/empire.png" style="padding:30pt" width="300pt" height="300pt">
+													<div class="card text-white bg-warning mb-3" style="max-width: 80rem;">
+														<div class="card-header">Header</div>
+														<div class="card-body">
+															<h5 class="card-title">Warning Panel title</h5>
+															<p class="card-text text-white">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p>
+														</div>
+														</div>
 													</div>
 												</div>
 											</div>
