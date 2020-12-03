@@ -110,7 +110,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 
 					<table>
 						<td>
-						<div class="seatLegend borderChoice">
+						<div class="seatLegend borderChoice shadowbox">
 							<h4>Select your tickets:</h4>
 							<ul>
 								<li>
@@ -214,7 +214,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 
 
 							<td>
-								<div id="reciept">
+								<div id="reciept" class="shadowbox">
 									<p>Subtotal: $<p1 id="subtotal">0.00</p1></p>
 									<p>HST: $<p1 id="tax">0.00</p1></p>
 									<p>Total: $<p1 id="total">0.00</p1></p>
