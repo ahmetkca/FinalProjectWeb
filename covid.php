@@ -29,6 +29,7 @@ session_start();
 							<div class="navbar-nav">
 								<a class="navbar-item nav-link" href="#" style="color: white">Welcome <?= $_SESSION['username'] ?></a>
 								<a class="navbar-item nav-link" href="logout.php" style="color: white">Logout</a>
+								<a class="navbar-item nav-link" href="bookings.php" style="color: white">Your Bookings</a>
 						   </div>
 						   <?php else: ?>
 							<div class="navbar-nav">
