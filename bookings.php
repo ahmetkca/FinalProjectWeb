@@ -68,14 +68,19 @@ session_start();
                                 
                                 
                                 ?>
-                                <table>
+                                
+                                <?php if ($check >= 1): ?>
+                                <table style="width:90%; margin-left: 5%;margin-right: 5%;">
                                     <thead>
-                                        <tr>
-                                            <td><strong><u>Tickets</u></strong></td>
-                                            <td><strong><u>Food</u></strong></td>
-                                            <td><strong><u>Total Payed:</u></strong></td>
+                                        <tr style="border-bottom: 5px solid black;">
+                                            <td><strong>Tickets</strong></td>
+                                            <td><strong>Food</strong></td>
+                                            <td><strong>Total Payed:</strong></td>
+                                            <td><strong>Premier:</strong></td>
                                         </tr>
                                     </thead>
+
+
                                 <?php
                                     while ($infoarray = mysqli_fetch_array($sqltype)) {
                                         $adults = $infoarray["AdultNum"];
@@ -86,56 +91,39 @@ session_start();
                                         $candy = $infoarray["CandyNum"];
                                         $nachos = $infoarray["NachoNum"];
                                         $sum = $infoarray["totalNum"];
-                                        echo "<tr>
+                                        echo '<tr style="border-bottom: 1px solid black;">
                                             <td>
-                                                <p>Adult tickets: " . $adults . "</p>
-                                                <p>Senior tickets: " . $seniors . "</p>
-                                                <p>Children tickets: " . $children . "</p>
+                                                <p>Adult tickets: ' . $adults . '</p>
+                                                <p>Senior tickets: ' . $seniors . '</p>
+                                                <p>Children tickets: ' . $children . '</p>
                                                 <br>
                                             </td>
                                             <td>
-                                                <p>Popcorn: " . $popcorn . "</p>
-                                                <p>Coke: " . $coke . "</p>
-                                                <p>Candy: " . $candy . "</p>
-                                                <p>Nachos: " . $nachos . "</p>
+                                                <p>Popcorn: ' . $popcorn . '</p>
+                                                <p>Coke: ' . $coke . '</p>
+                                                <p>Candy: ' . $candy . '</p>
+                                                <p>Nachos: ' . $nachos . '</p>
                                                 <br>
                                             </td>
                                             <td>
-                                                <p> ". $sum ."</p> 
+                                                <p> '. $sum .'</p> 
+                                            </td>
+                                            
+                                            <td>
+                                                <p>Star Wars: A New Hope (Premiere)</p>
                                             </td>
 
-                                        </tr>";
+                                        </tr>';
                                     }
-                                /*echo "<tr>";
-
-                                    echo "<td>";
-                                        echo "<strong><u>Tickets</u></strong>";
-                                        echo "<p>Adult tickets: " . $adults . "</p>";
-                                        echo "<p>Senior tickets: " . $seniors . "</p>";
-                                        echo "<p>Children tickets: " . $children . "</p>";
-                                        echo "<br>";
-                                    echo "</td>";
-
-                                    echo "<td>";
-                                        echo "<strong><u>Food</u></strong>";
-                                        echo "<p>Popcorn: " . $popcorn . "</p>";
-                                        echo "<p>Coke: " . $coke . "</p>";
-                                        echo "<p>Candy: " . $candy . "</p>";
-                                        echo "<p>Nachos: " . $nachos . "</p>";
-                                        echo "<br>";
-                                    echo "</td>";
-
-                                    echo "<strong><u>Total Payed:</u></strong> <p1> $" . $sum . "</p1> ";
-
-                                echo "</tr>";*/
-
-                                //////////////////////LOOP//////////////////////////////////////////////////////////////
-
-                                
-
-
+                        
                             ?>
+                            <tr>
                             </table>
+
+                            <?php else: ?>
+                                <h1>YOU HAVE NOT BOOKED ANY SEATS</h1>
+						   <?php endif; ?>
+
 
                         <!-- --------------------------------------------------------------------------------------------------- -->
 
