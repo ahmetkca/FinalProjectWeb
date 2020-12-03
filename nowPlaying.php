@@ -51,7 +51,7 @@ session_start();
 								  <p><img src="images/newhope.png" alt="Star Wars A New Hope" height="120%" width="60%" class="img"/></p>
 							   </td>
 							   <td>
-								   <h1>Star Wars A New Hope</h1>
+								   <h1>Star Wars: A New Hope</h1>
 								   <h2 style="color:rgb(81, 185, 255)"><strong>Current Big Premiere</strong></h2>
 								   <p class="upperinfo">Run time: 125 min<br>
 								   Rating: PG<br>
