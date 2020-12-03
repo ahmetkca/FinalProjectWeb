@@ -60,7 +60,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 							<!-- tab content-->
 							
 							<!-- Star wars tab-->
-							<div class="tab-content" id="nav-tabContent" style="border:solid 10pt orange; margin-bottom: 50pt; border-radius: 7pt;">
+							<div class="tab-content shadowbox" id="nav-tabContent" style="border:solid 10pt orange; margin-bottom: 50pt; border-radius: 7pt;">
 								<div class="tab-pane fade show active" id="nav-movie1" role="tabpanel" aria-labelledby="nav-movie1-tab">
 									<div class="container">
 										<div class="row">
