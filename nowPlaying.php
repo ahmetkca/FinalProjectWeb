@@ -57,7 +57,7 @@ session_start();
 								   <p class="upperinfo">Run time: 125 min<br>
 								   Rating: PG<br>
 								   Genre: Adventure/ Sci Fi<br>
-								   Trailer: <a href="https://www.youtube.com/watch?v=1g3_CFmnU7k" target="_blank" class="playbutt"><img src="images/Play.PNG" class="imgply" height="3%" width="3%"/></a><br>
+								   Trailer: <a href="https://www.youtube.com/watch?v=1g3_CFmnU7k" target="_blank" class="play-button"><i class="circle imgply"></i></a><br><br>
 								   <button onclick="document.location='bookSeats.php'" class="butt" Style="margin-top: 3px">Buy Tickets </button>
 								   <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
 									<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
