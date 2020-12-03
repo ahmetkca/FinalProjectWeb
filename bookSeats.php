@@ -235,6 +235,35 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 							<div id="myModal" class="modal">
 								<div class="modal-content">
 									<span id="closeModal" class="close">&times;</span>
+									<h2 align="center">SCREEN</h2>
+									<table>
+										<?php 
+										$rowABC = array("A", "B", "C", "D", "E");
+										for ($r = 1; $i <= 5; $i+=1) {
+											echo "<tr><td>".$rowABC[$r-1]."</td>";
+											for ($c = 1; $c <= 9; $c+=1 ) {
+												$slc = false;
+												foreach($_GET['seats'] as $seat) {
+													
+													if ($r == $seat[1] && $c == $seat[3]) {
+														
+														$slc = true;
+														break;
+													}
+												}
+												if ($slc) {
+													echo '<td><img width="20" height="20" src="images/selectedSeat.png"></td>';
+													$slc = false;
+												} else {
+													echo '<td><img width="20" height="20" src="images/selectedSeat.png"></td>';
+												}
+												
+
+											}
+											echo "</tr>";
+										}
+										?>	
+									</table>
 									<h1>Thank you for purchase, <?= $_SESSION['fname']; ?> <?= $_SESSION['lname'] ?></h1>
 									<p>Total: <?= $_GET['total']; ?>$</p>
 									<p>Username: <?= $_SESSION['username']; ?></p>
