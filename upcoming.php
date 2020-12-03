@@ -95,7 +95,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 											<div class="container2" >
 												<div class="row">
 													<div class="col">
-													<div class="card text-white bg-dark" style="max-width: 80rem;">
+													<div class="card text-white bg-dark shadowbox" style="max-width: 80rem;">
  														<div class="card-header"></div>
   														<div class="card-body">
 														<h5 class="card-title">Description</h5>
@@ -195,7 +195,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 														<div class="row">
 															<div class="col">
 
-																<div class="card text-white bg-danger mb-3" style="max-width: 80rem; ">
+																<div class="card text-white bg-danger mb-3 shadowbox" style="max-width: 80rem;">
 																	<div class="card-header"></div>
 																		<div class="card-body">
 																			<h5 class="card-title">Description</h5>
@@ -287,7 +287,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 												<div class="row">
 													<div class="col">
 															
-														<div class="card text-white bg-primary mb-3" style="max-width: 80rem;">
+														<div class="card text-white bg-primary mb-3 shadowbox" style="max-width: 80rem;">
 															<div class="card-header"></div>
 															<div class="card-body">
 																<h5 class="card-title">Description</h5>
@@ -382,7 +382,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 											<div class="container2" >
 												<div class="row">
 													<div class="col" >
-													<div class="card text-black bg-warning mb-3" style="max-width: 80rem;">
+													<div class="card text-white bg-warning mb-3 shadowbox" style="max-width: 80rem;">
 														<div class="card-header"></div>
 														<div class="card-body">
 															<h5 class="card-title">Description</h5>
