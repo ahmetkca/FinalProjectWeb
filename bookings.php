@@ -58,7 +58,8 @@ session_start();
 
                                 //Finds the number of bookings the user has made
                                 $check = mysqli_num_rows($sqltype);
-
+                                
+                                //////////////////////////LOOP/////////////////////////////////////////////////////////
                                 $infoarray = mysqli_fetch_array($sqltype, MYSQLI_ASSOC);
 
                                 $adults = $infoarray["AdultNum"];
@@ -87,6 +88,8 @@ session_start();
 
                                 echo "<strong><u>Total Payed:</u></strong> <p1> $" . $sum . "</p1>";
                                 echo "</div>"
+
+                                //////////////////////LOOP//////////////////////////////////////////////////////////////
 
                             ?>
 
