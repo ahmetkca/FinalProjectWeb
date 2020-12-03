@@ -197,7 +197,38 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 																	<div class="card-header">Header</div>
 																		<div class="card-body">
 																			<h5 class="card-title">Danger Panel title</h5>
-																			<p class="card-text text-white">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p>
+																			<p>
+																			Seventeen-year-old Millie Kessler spends her days trying to survive high school and the cruel actions of the popular crowd. But when she becomes the latest target of the Butcher,
+																			the town's infamous serial killer, her senior year becomes the least of her worries. When the Butcher's mystical dagger causes him and Millie to magically switch bodies,
+																			the frightened teen learns she has just 24 hours to get her identity back before she looks like a middle-aged maniac forever.
+																			</p>
+																			<div class="row">
+																				<div class="col" style="text-align: right;">	
+																					<p> Rating: </p>
+																					<p> Genre:</p>
+																					<p> Original Language:</p>
+																					<p> Director:   </p>
+																					<p> Producer:   </p>
+																					<p> Writer      </p>
+																					<p> Box Office (Gross USA): </p>
+																					<p> Runtime:    </p>
+																					<p> Production Co. </p>
+																					<p> Aspect Ratio:   </p>
+																				</div>
+																				<div class="col">
+																					<p> R (Sexual Content|Strong Bloody Horror Violence)</p>
+																					<p> Comedy, Horror</p>
+																					<p> English</p>
+																					<p> Christopher Landon</p>
+																					<p> Jason Blum</p>
+																					<p> Michael Kennedy, Christopher Landon</p>
+																					<p> Nov 13, 2020  Wide</p>
+																					<p> $7.0M</p>
+																					<p> 1h 41m</p>
+																					<p> Blumhouse Productions</p>																		
+																				
+																				</div>
+																			</div>
 																	</div>
 																</div>	
 															</div>
@@ -258,7 +289,41 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 															<div class="card-header">Header</div>
 															<div class="card-body">
 																<h5 class="card-title">Secondary Panel title</h5>
-																<p class="card-text text-white">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p>
+																<p class="card-text text-white">A look at three defining chapters in the life of Chiron, a young black man growing up in Miami. 
+																His epic journey to manhood is guided by the kindness, support and love of the community that helps raise him.</p>
+																
+																			<div class="row">
+																				<div class="col" style="text-align: right;">	
+																					<p>	Rating:	</p>
+																					<p>	Genre:</p>
+																					<p>	Original Language:</p>
+																					<p>	Director:	</p>
+																					<p>	Producer:	</p>
+																					<p>	Release Date (Theaters):	</p>
+																					<p>	Release Date (Streaming):	</p>
+																					<p>	Box Office (Gross USA):	</p>
+																					<p>	Runtime:	</p>
+																					<p>	Production Co:	</p>
+																					<p>	Sound Mix:	</p>
+																					
+																					
+																				</div>
+																				<div class="col">
+																					<p> R (Drug Use|Brief Violence|Some Sexuality)</p>
+																					<p> Drama</p>
+																					<p> English</p>
+																					<p> Barry Jenkins</p>
+																					<p> Adele Romanski, Dede Gardner, Jeremy Kleiner</p>
+																					<p> Nov 18, 2016  Wide</p>
+																					<p> Feb 21, 2017</p>
+																					<p> $27.9M</p>
+																					<p> 1h 51m</p>
+																					<p> Plan B Entertainment, Upload Films, Pastel</p>	
+																					<p>	Dolby Digital</p>
+																					<p> Scope (2.35:1)</p>																	
+																				
+																			</div>
+																			</div>
 															</div>
 														</div>
 													</div>
@@ -320,6 +385,40 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 														<div class="card-body">
 															<h5 class="card-title">Warning Panel title</h5>
 															<p class="card-text text-white">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p>
+
+															<div class="row">
+																				<div class="col" style="text-align: right;">	
+																					<p>	Rating:	</p>
+																					<p>	Genre:</p>
+																					<p>	Original Language:</p>
+																					<p>	Director:	</p>
+																					<p>	Producer:	</p>
+																					<p> Writer: </p>
+																					<p>	Release Date (Theaters):	</p>
+																					<p>	Release Date (Streaming):	</p>
+																					<p>	Box Office (Gross USA):	</p>
+																					<p>	Runtime:	</p>
+																					<p>	Production Co:	</p>
+																					<p>	Sound Mix:	</p>
+																					<p>	Aspect Ratio:	</p>
+																					
+																				</div>
+																				<div class="col">
+																					<p> PG-13 (Intense Sci-Fi Action/Violence)</p>
+																					<p> Action, Adventure, Fantasy</p>
+																					<p> English</p>
+																					<p> Kenneth Branagh</p>
+																					<p> Kevin Feige</p>
+																					<p> Ashley Miller, Zack Stentz, Don Payne</p>
+																					<p> May 6, 2011  Wide</p>
+																					<p> Nov 23, 2015</p>
+																					<p> $268.0M</p>
+																					<p> 1h 53m</p>	
+																					<p>	Marvel Studios</p>
+																					<p> SDDS, Dolby Digital, Datasat</p>																	
+																				
+																				</div>
+																			</div>
 														</div>
 														</div>
 													</div>
