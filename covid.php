@@ -44,7 +44,8 @@ session_start();
 						</div>
                         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
    						<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
+						
+						<br>
 						<h1>Covid-19 Policies</h1>
 
 						<div class="container-md">
@@ -93,7 +94,7 @@ session_start();
 								<ul>
 									<li>Fever</li>
 									<li>Cough</li>
-									<li>difficulty breathing</li>
+									<li>Difficulty breathing</li>
 									<li>Sore throat</li>
 									<li>Loss of taste or smell</li>
 									<li>Severe dizziness</li>
