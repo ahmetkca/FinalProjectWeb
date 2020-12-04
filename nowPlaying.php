@@ -18,6 +18,7 @@ session_start();
 
 
 				<body>
+						<!-- Main Naviagtion abr -->
 						<nav class="navbar navbar-custom "><!a navigation header bar atop the page/>
                             <img src="images/Logo.png" alt="Logo is missing from the current directory" height="200" width="200"/>
                            <a class="navbar-brand" href="home.php">Home</a> 
@@ -25,6 +26,8 @@ session_start();
                            <a class="navbar-brand" href="nowPlaying.php">Now Playing</a>
                            <a class="navbar-brand" href="bookSeats.php">Book Seats</a>
                            <a class="navbar-brand" href="covid.php">COVID-19</a> 
+
+						   <!-- log in or register -->
                            <?php if (isset($_SESSION['username'])): ?>
 							<div class="navbar-nav">
 								<a class="navbar-item nav-link" href="#" style="color: white">Welcome <?= $_SESSION['username'] ?></a>
@@ -60,8 +63,9 @@ session_start();
 								   Genre: Adventure/ Sci Fi<br>
 								   Trailer: <a href="https://www.youtube.com/watch?v=1g3_CFmnU7k" target="_blank" class="play-button"><i class="circle imgply"></i></a><br><br><!traler button/>
 								   <button onclick="document.location='bookSeats.php'" class="butt" Style="margin-top: 3px">Buy Tickets </button>
+								   
+								   <!-- Twitter Facebook and email -->
 								   <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-									
 									<a class="a2a_button_facebook"></a>
 									<a class="a2a_button_twitter"></a><!sociel links/>
 									<a class="a2a_button_email"></a>
