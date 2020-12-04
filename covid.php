@@ -18,6 +18,7 @@ session_start();
 
 
 				<body>
+						<!a navigation header bar atop the page/>
 						<nav class="navbar navbar-custom ">
                             <img src="images/Logo.png" alt="Logo is missing from the current directory" height="200" width="200"/>
                            <a class="navbar-brand" href="home.php">Home</a> 
@@ -38,7 +39,7 @@ session_start();
 						   </div>
 						   <?php endif; ?>
                                				
-						</nav>
+						</nav><!an information bar at the bottom og the page/>
 						<div class="navbar-b">
 							<p>2020 OT FILMS Canada LP | Privacy Policy | Terms of Use</p>
 						</div>
@@ -48,7 +49,7 @@ session_start();
 						<br>
 						<h1>Covid-19 Policies</h1>
 
-						<div class="container-md">
+						<div class="container-md"><!creates a sub navigation bar that hides the infromation without the matching id so only the corispoding information is vissable/>
 							<nav>
 								<div class="nav nav-tabs justify-content-center nav-fill" id="nav-tab" role="tablist">
 
@@ -59,10 +60,10 @@ session_start();
 								</div>
 							  </nav>
 						</div>
-						<div class="tab-content" id="nav-tabContent">
+						<div class="tab-content" id="nav-tabContent"><!foramts the shown information at the top of the navigation area instead of displaying it in the notrmal part of the page />
 						<div class="tab-pane fade show active" id="nav-Policy" role="tabpanel" aria-labelledby="Face-Mask-Policy">
 							<div class="shown">
-								<h1>Face Mask Policy</h1>
+								<h1>Face Mask Policy</h1><!the first sub page of info auto loaded upon page enetry/>
 								<h2>Policy</h2>
 								<p>In compliance with local health regulations and/or by-laws, it is mandatory to wear a non-medical face covering over your nose, mouth and chin while you are on the premises of any OT Film's locations. You may remove your face covering to enjoy your concessions when seated in your auditorium.</p>
 								<ul>
@@ -76,10 +77,10 @@ session_start();
 
 						<div class="tab-pane fade" id="nav-Contact" role="tabpanel" aria-labelledby="Contact-Tracing">		
 							<div class="shown">
-							<h1>Contact Tracing</h1>
+							<h1>Contact Tracing</h1><!Seconf subpage loaded when user select the optioon form the nav bar/>
 							<div>
 								<h2>Tracing</h2>
-								<p>As per provincial requirements, OT Films has implemented contact tracing measures at all locations. To ensure a safe and physically-distanced movie-going experience, we encourage all guests to purchase their tickets and reserve their seats in advance at <a href="bookSeats.php" class="override">OTFilms.com</a>.
+								<p>As per provincial requirements, OT Films has implemented contact tracing measures at all locations. To ensure a safe and physically-distanced movie-going experience, we encourage all guests to purchase their tickets and reserve their seats in advance at <a href="bookSeats.php" class="override">OTFilms.com</a>.<!a brings the user to the book eats page so it is done online not in person/>
 								</br><a href="https://www.cdc.gov/coronavirus/2019-ncov/community/contact-tracing-nonhealthcare-workplaces.html" class="override" margin-left="20%">Why Do We Trace</a></p>
 								</br><img src="images/Ct.png" alt="Why to trace" class="center"/> 
 
@@ -89,7 +90,7 @@ session_start();
 					
                         <div class="tab-pane fade" id="nav-Plan" role="tabpanel" aria-labelledby="Plane-your-Visit">
 							<div class="shown">
-								<h1>Plan Your Visit</h1>
+								<h1>Plan Your Visit</h1><!thierd subpage loaded when user select the optioon form the nav bar/>
 							<div>
 								<h2>Can I go to the Movies?</h2>
 								<p>Please stay home if you have any of the following symptoms:</p>
@@ -153,7 +154,7 @@ session_start();
 
 						<div class="tab-pane fade" id="nav-Doing" role="tabpanel" aria-labelledby="What-Were-Doing">
 							<div class="shown">
-							<h1>What We're Doing</h1>
+							<h1>What We're Doing</h1><!forth subpage loaded when user select the optioon form the nav bar/>
 							<div>
 								<h2>Our Cast And Crew</h2>
 								<ul>

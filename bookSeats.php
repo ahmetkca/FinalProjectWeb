@@ -1,4 +1,5 @@
 <?php
+// starts session to check if user is logged in or not.
 session_start();
 $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 
@@ -251,6 +252,8 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 									<h2 align="center" style="color: white;">SCREEN</h2>
 									<table align="center" style="margin: 0;">
 										<?php 
+											// Outputs seat layout.
+											// User can see which seats they have selected on the receipt.
 											$rowABC = array("r1", "r2", "r3", "r4", "r5");
 											for ($r = 1; $r <= 5; $r+=1) {
 												echo '<tr><td style="overflow: hidden;">'.$rowABC[$r-1].'</td>';
@@ -264,7 +267,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 															break;
 														}
 													}
-													//print_r($r." ".$c);
+													
 													if ($slc) {
 														echo '<td><img width="20" height="20" src="images/selectedSeat.png"></td>';
 														$slc = false;
@@ -288,6 +291,8 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 								</div>
 							</div>
 							<script>
+								// add a onclick listener to the span in the modal
+								// so user can close the modal.
 								document.getElementById("closeModal").addEventListener("click", function() {
 									document.getElementById("myModal").style.display = "none";
 								});
@@ -301,21 +306,6 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 								}
 								
 							</script>
-							<script src="https://smtpjs.com/v3/smtp.js">
-								var msg = document.getElementById('myModal').innerHTML;
-								function sendEmail() {
-									Email.send({
-										SecureToken : "463c10eb-7f02-4c98-a3da-09e4cd99e8bd",
-										To : <?= $_SESSION['email']; ?>,
-										From : "otfilms@gmail.com",
-										Subject : "Thank you for your purchase.",
-										Body : msg
-									}).then(
-										message => alert("mail sent successfully")
-									);
-								}
-								sendEmail();
-							</script>
 							
 						<?php endif; ?>
 
@@ -325,6 +315,9 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 						<script>
 							var session = '<?php echo $session_value; ?>';
 							var checkout_btn = document.getElementById('checkout-btn');
+
+							// check if user is logged in
+							// otherwise make checkout button unusable.
 							if (session !== '') {
 								checkout_btn.innerHTML = "Checkout";
 								checkout_btn.disabled = false;
