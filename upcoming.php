@@ -136,8 +136,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 																		<p>Apr 10, 2015</p>
 																		<p>$291.9M</p>
 																		<p>2h 4m</p>
-																		<p>Lucasfilm Ltd.</p>
-																	
+																		<p>Lucasfilm Ltd.</p>					
 																		<br>
 																	</div>
 																</div>
@@ -248,12 +247,12 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 																					<br>
 																				</div>
 																			</div>
-																	</div>
-																</div>	
+																		</div>
+																	</div>	
+																</div>
 															</div>
 														</div>
 													</div>
-												</div>
 											<!-- Review Tab -->
 												<div class="tab-pane fade show" id="nav-review2" role="tabpanel" aria-labelledby="nav-review2-tab">
 													<div class="container2">
@@ -274,22 +273,15 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 																	<br>
 																	<dt>Vaughn steals more than a body in this snarky, over-the-top mashup -- he steals the whole show.</dt>
 																	<dd>-	Nelly Benitez</dd>
-																</d1>
-																	
-
-																
-													
- 													 		</div>
-														</div>
-
-																
+																</d1>				
+ 														 		</div>
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-																
+									</div>							
 								<!-- Moonlight -->
 								<div class="tab-pane fade" id="nav-movie3" role="tabpanel" aria-labelledby="nav-movie3-tab">
 								
@@ -298,7 +290,6 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 											<div class="col" style="background-color: rgb(0, 0, 0);" >
 												<img class="Thumb" src="images/moonlight.jpg" >
 											</div>
-											
 										</div>
 									</div>
 
@@ -363,8 +354,8 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 																					<p> Plan B Entertainment, Upload Films, Pastel</p>	
 																					<p>	Dolby Digital</p>		
 																					<br><br>										
-																			</div>
-																			</div>
+																	</div>
+																</div>
 															</div>
 														</div>
 													</div>
@@ -392,23 +383,14 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 																	<dt>Hype would bruise Barry Jenkins' Moonlight, which is so delicate in its touch that the usual superlatives sound unusually shrill. It's the gentlest, most suggestive of great films.</dt>
 																	<dd>-	Jack Chavez</dd>
 																</d1>
- 													 	</div>
-													</div>	
-
-
-
-
-
-														
+ 													 		</div>
+														</div>									
 													</div>
 												</div>
 											</div>
 										</div>
-									
-									
-								
+									</div>
 								</div>
-							</div>
 							<!-- thor -->
 								<div class="tab-pane fade" id="nav-movie4" role="tabpanel" aria-labelledby="nav-movie4-tab">
 									<div class="container">
