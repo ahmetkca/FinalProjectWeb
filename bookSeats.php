@@ -184,7 +184,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 									</td>
 									<td>
 										<br><br>
-										<button id="checkout-btn" type="submit"><b>Checkout</b></button>
+										<button id="checkout-btn" type="submit" class="btn btn-lg btn-primary"><b>Checkout</b></button>
 									</td>
 
 								</tr>
@@ -299,17 +299,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 										document.getElementById("myModal").style.display = "none";
 									}
 								}
-								/*var msg = document.getElementById('myModal');
-								var xmlhttp = new XMLHttpRequest();
-								xmlhttp.onreadystatechange = function () {
-									if (this.readyState == 4 && this.status == 200) {
-										
-										alert("mail successfully sent.");
-									}
-								};
-								xmlhttp.open("POST", "send_email.php", true);
-								xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-								xmlhttp.send("msg="+msg);*/
+								
 							</script>
 							<script src="https://smtpjs.com/v3/smtp.js">
 								var msg = document.getElementById('myModal').innerHTML;
