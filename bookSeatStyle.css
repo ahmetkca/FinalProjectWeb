@@ -152,3 +152,6 @@ background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
       border-radius: 5pt;
     border-width: 0pt;
 }
+.shadowbox{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+}

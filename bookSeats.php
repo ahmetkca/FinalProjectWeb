@@ -32,7 +32,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 							<div class="navbar-nav">
 								<a class="navbar-item nav-link" href="#" style="color: white">Welcome <?= $_SESSION['username'] ?></a>
 								<a class="navbar-item nav-link" href="logout.php" style="color: white">Logout</a>
-								<a class="navbar-item nav-link" href="bookings.php" style="color: white">Your Bookings</a>
+								<a class="navbar-item nav-link" href="bookings.php" style="color: white">Your Receipts</a>
 						   </div>
 						   <?php else: ?>
 							<div class="navbar-nav">
@@ -46,11 +46,11 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 						<h1 style="font-family: 'Oswald', sans-serif; font-size: 50pt; color: rgb(81, 185, 255);">BOOK YOUR SEATS FOR THE PREMIERE OF</h1>	
 						<h1 style="font-family: 'Oswald', sans-serif; font-size: 50pt; color: rgb(81, 185, 255);">Star Wars: A New Hope</h1>
 						<br>
-						<h4>Screen</h4>
+						<h4 style="color: white;">Screen</h4>
 						<div class="seatSelection">
 						<form method="POST" action="processBookSeats.php" name="myForm">
 						
-							<table style="background-color: white;" class="selectSeat">
+							<table style="background-color: white;" class="selectSeat shadowbox">
 								<?php
 								$myfile = fopen("seats.txt", "r") or die("Unable to open file!");
 								$num_row = 1;
@@ -110,11 +110,11 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 
 					<table>
 						<td>
-						<div class="seatLegend borderChoice">
-							<h4>Select your tickets:</h4>
+						<div class="seatLegend borderChoice shadowbox">
+							<h4 style="color: white;">Select your tickets:</h4>
 							<ul>
 								<li>
-									<label for="Adults">Adults: $12.99</label>
+									<label for="Adults" style="color: white;">Adults: $12.99</label>
 									<select onchange="changeSeats(); calcTotal();" name="Adults" id="Adults">
 									<option value="0">0</option>
 									<option value="1">1</option>
@@ -122,7 +122,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 									</select>
 								</li>
 								<li>
-									<label for="Seniors">Seniors: $8.99</label>
+									<label for="Seniors" style="color: white;">Seniors: $8.99</label>
 									<select onchange="changeSeats(); calcTotal();" name="Seniors" id="Seniors">
 									<option value="0">0</option>
 									<option value="1">1</option>
@@ -130,7 +130,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 									</select>
 								</li>
 								<li>
-									<label for="Children">Children: $0.99</label>
+									<label for="Children" style="color: white;">Children: $0.99</label>
 									<select onchange="changeSeats(); calcTotal();" name="Children" id="Children">
 									<option value="0">0</option>
 									<option value="1">1</option>
@@ -161,32 +161,31 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 										<button class="food add" type="button"  onclick="addPopcorn(); calcTotal();" >+</button>
 										<button class="food minus" type="button"  onclick="minusPopcorn(); calcTotal();" >-</button>
 										<br><br>
-										<p>Popcorn($5): <input type="number" id="popcornOut" value="0" disabled></p>
+										<p style="color: white;">Popcorn($5): <input type="number" id="popcornOut" value="0" disabled></p>
 									</td>
 									
 									<td>
 										<button class="food add" type="button"  onclick="addCoke(); calcTotal();" >+</button>
 										<button class="food minus" type="button"  onclick="minusCoke(); calcTotal();" >-</button>
 										<br><br>
-										<p>Coke($1): <input type="number" id="cokeOut" value="0" disabled></p>
+										<p style="color: white;">Coke($1): <input type="number" id="cokeOut" value="0" disabled></p>
 									</td>
 									<td>
 										<button class="food add" type="button"  onclick="addCandy(); calcTotal();" >+</button>
 										<button class="food minus" type="button"  onclick="minusCandy(); calcTotal();" >-</button>
 										<br><br>
-										<p>Candy($5): <input type="number" id="candyOut" value="0" disabled></p>
+										<p style="color: white;">Candy($5): <input type="number" id="candyOut" value="0" disabled></p>
 									</td>
 									<td>
 										<button class="food add" type="button"  onclick="addNachos(); calcTotal();" >+</button>
 										<button class="food minus" type="button"  onclick="minusNachos(); calcTotal();" >-</button>
 										<br><br>
-										<p>Nachos($8): <input  type="number" id="nachosOut" value="0" disabled></p>
+										<p style="color: white;">Nachos($8): <input  type="number" id="nachosOut" value="0" disabled></p>
 									</td>
 									<td>
 										<br><br>
-										<button id="checkout-btn" type="submit" ><b>Checkout</b></button>
+										<button id="checkout-btn" type="submit"><b>Checkout</b></button>
 									</td>
-									
 
 								</tr>
 
@@ -214,10 +213,10 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 
 
 							<td>
-								<div id="reciept">
-									<p>Subtotal: $<p1 id="subtotal">0.00</p1></p>
-									<p>HST: $<p1 id="tax">0.00</p1></p>
-									<p>Total: $<p1 id="total">0.00</p1></p>
+								<div id="reciept" class="shadowbox">
+									<p style="color: white;">Subtotal: $<p1 id="subtotal">0.00</p1></p>
+									<p style="color: white;">HST: $<p1 id="tax">0.00</p1></p>
+									<p style="color: white;">Total: $<p1 id="total">0.00</p1></p>
 								</div>
 							</td>
 

@@ -28,7 +28,7 @@ session_start();
 							<div class="navbar-nav">
 								<a class="navbar-item nav-link" href="#" style="color: white">Welcome <?= $_SESSION['username'] ?></a>
 								<a class="navbar-item nav-link" href="logout.php" style="color: white">Logout</a>
-								<a class="navbar-item nav-link" href="bookings.php" style="color: white">Your Bookings</a>
+								<a class="navbar-item nav-link" href="bookings.php" style="color: white">Your Receipts</a>
 						   </div>
 						   <?php else: ?>
 							<div class="navbar-nav">
@@ -59,6 +59,7 @@ session_start();
 										<img src="images/moonlight.jpg" height="450" width="800" id="2" style="display: none; border: 5px solid rgb(81, 185, 255);">
 										<img src="images/stellar.jpg" height="450" width="800" id="3" style="display: none; border: 5px solid rgb(81, 185, 255);">
 										<img src="images/thor.jpg" height="450" width="800" id="4" style="display: none; border: 5px solid rgb(81, 185, 255);">
+										<p id="slidenum" style="color: rgb(81, 185, 255); text-align: center; font-size: 20pt;">1/5</p>
 									</td>
 
 									<td>

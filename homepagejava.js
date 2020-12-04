@@ -1,10 +1,12 @@
 var slidecount = 0;
+var slidearray = [0,1,2,3,4];
+var max = slidearray.length - 1;
 
 function nextslide(){
 
     slidecount++;
 
-    if(slidecount > 4){
+    if(slidecount > max){
         slidecount = 0;
     }
 
@@ -17,7 +19,7 @@ function prevslide(){
     slidecount--;
 
     if(slidecount < 0){
-        slidecount = 4;
+        slidecount = max;
     }
 
     slide();
@@ -25,41 +27,13 @@ function prevslide(){
 }
 
 function slide(){
-
-    if(slidecount == 0){
-        document.getElementById("0").style.display = 'block';
-        document.getElementById("1").style.display = 'none';
-        document.getElementById("2").style.display = 'none';
-        document.getElementById("3").style.display = 'none';
-        document.getElementById("4").style.display = 'none';
+    for(var i = 0; i < slidearray.length; i++){
+        if( i == slidecount){
+            document.getElementById(slidecount.toString()).style.display = 'block';
+        }
+        else{
+            document.getElementById(i.toString()).style.display = 'none';
+        }
+        document.getElementById("slidenum").innerHTML = (slidecount+1) + "/" + (max+1);
     }
-    else if(slidecount == 1){
-        document.getElementById("0").style.display = 'none';
-        document.getElementById("1").style.display = 'block';
-        document.getElementById("2").style.display = 'none';
-        document.getElementById("3").style.display = 'none';
-        document.getElementById("4").style.display = 'none';
-    }
-    else if(slidecount == 2){
-        document.getElementById("0").style.display = 'none';
-        document.getElementById("1").style.display = 'none';
-        document.getElementById("2").style.display = 'block';
-        document.getElementById("3").style.display = 'none';
-        document.getElementById("4").style.display = 'none';
-    }
-    else if(slidecount == 3){
-        document.getElementById("0").style.display = 'none';
-        document.getElementById("1").style.display = 'none';
-        document.getElementById("2").style.display = 'none';
-        document.getElementById("3").style.display = 'block';
-        document.getElementById("4").style.display = 'none';
-    }
-    else if(slidecount == 4){
-        document.getElementById("0").style.display = 'none';
-        document.getElementById("1").style.display = 'none';
-        document.getElementById("2").style.display = 'none';
-        document.getElementById("3").style.display = 'none';
-        document.getElementById("4").style.display = 'block';
-    }
-
 }
