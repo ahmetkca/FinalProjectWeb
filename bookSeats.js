@@ -51,7 +51,7 @@ function checkSeatNum(event, s_id) {
     //return true;
 }
 
-//Handling adding/subtracting beverages and snacks
+//Handling button to add popcorn to cart
 function addPopcorn() {
 
     if(popcorn>=0){
@@ -60,7 +60,7 @@ function addPopcorn() {
     }
     
 }
-
+//Handling button to remove popcorn from cart
 function minusPopcorn() {
     if(popcorn >=1 ){
         popcorn--;
@@ -68,7 +68,7 @@ function minusPopcorn() {
     }
     
 }
-
+//Handling button to add coke to cart
 function addCoke() {
 
     if (coke >= 0 ) {
@@ -77,35 +77,35 @@ function addCoke() {
     }
     
 }
-
+//Handling button to remove coke from cart
 function minusCoke() {
     if(coke >=1){
         coke--;
         document.getElementById("cokeOut").value = coke;
     }
 }
-
+//Handling button to add candy to cart
 function addCandy() {
     if (candy >= 0 ) {
         candy++;
         document.getElementById("candyOut").value = candy;
     }
 }
-
+//Handling button to remove candy from cart
 function minusCandy() {
      if(candy >=1 ){
         candy--;
         document.getElementById("candyOut").value = candy;
     }
 }
-
+//Handling button to add nachos to cart
 function addNachos() {
     if (nachos >= 0 ) {
         nachos++;
         document.getElementById("nachosOut").value = nachos;
     }
 }
-
+//Handling button to remove nachos from cart
 function minusNachos() {
      if(nachos >=1 ){
         nachos--;
