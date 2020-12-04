@@ -1,3 +1,5 @@
+
+<!-- sessions start -->
 <?php
 session_start();
 $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
@@ -20,14 +22,17 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 
 
 				<body style="background-color:rgb(81, 185, 255)">
-					
+
+						<!-- navbar top of page -->
 						<nav class="navbar navbar-custom" >
                            <img src="images/Logo.png" alt="Logo is missing from the current directory" height="200" width="200"/>
                            <a class="navbar-brand" href="home.php">Home</a> 
                            <a class="navbar-brand" href="upcoming.php">Upcoming</a>
                            <a class="navbar-brand" href="nowPlaying.php">Now Playing</a>
                            <a class="navbar-brand" href="bookSeats.php">Book Seats</a>
-                           <a class="navbar-brand" href="covid.php">COVID-19</a> 
+						   <a class="navbar-brand" href="covid.php">COVID-19</a> 
+						   
+						   <!-- log in or Register  -->
 						   <?php if (isset($_SESSION['username'])): ?>
 							<div class="navbar-nav">
 								<a class="navbar-item nav-link" href="#" style="color: white">Welcome <?= $_SESSION['username'] ?></a>
@@ -92,12 +97,14 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 												</div>
 											</div>
 										</div>
-									<!-- Synop Tab -->
+									<!-- Movie Info Tab -->
 										<div class="tab-pane fade show active" id="nav-synop" role="tabpanel" aria-labelledby="nav-synop-tab">
 											<div class="container2" >
 												<div class="row">
 													<div class="col">
-													<div class="card text-white bg-dark shadowbox" style="max-width: 80rem;">
+
+													<!-- Movie info textbox -->
+														<div class="card text-white bg-dark shadowbox" style="max-width: 80rem;">
  														<div class="card-header"></div>
   														<div class="card-body">
 														<h5 class="card-title">Description</h5>
@@ -118,9 +125,6 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 																		<p>	Box Office (Gross USA):	</p>
 																		<p>	Runtime:	</p>
 																		<p>	Production Co:	</p>
-																		
-																		
-																	
 																	</div>
 																	<div class="col" >
 																		<p>PG (Sci-Fi Action Violence)</p>
@@ -136,16 +140,14 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 																	
 																		<br>
 																	</div>
-																	
 																</div>
-													
- 													 	</div>
-													</div>
+ 													 		</div>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-									<!-- Review Tab (4divs) -->
+									<!-- Review Tab  -->
 										<div class="tab-pane fade show" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab">
 											<div class="container2">
 												<div class="row">
@@ -165,25 +167,14 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 																	<dt>Star Wars name is a household name, with 9 movies in its line-up. The original trilogy is no doubt incredible, but honestly this movie is as close to perfect as it gets.</dt>
 																	<dd>-	Roger Kaur</dd>
 																</d1>
-																	
-																												
-													
- 													 	</div>
-													</div>														
-														
-														
-														
-														
-														
-														
+ 														 	</div>
+														</div>														
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-									
 								</div>
-
 						<!-- Freaky Tab -->			
 						<div class="tab-pane fade show " id="nav-movie2" role="tabpanel" aria-labelledby="nav-movie2-tab">
 							<div class="container">
@@ -214,12 +205,12 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 														</div>
 													</div>
 												</div>
-											<!-- Synop Tab -->
+											<!-- Movie info Tab -->
 												<div class="tab-pane fade show active" id="nav-synop2" role="tabpanel" aria-labelledby="nav-synop2-tab">
 													<div class="container2" >
 														<div class="row">
 															<div class="col">
-
+																	<!-- text box for movie info -->
 																<div class="card text-white bg-danger mb-3 shadowbox" style="max-width: 80rem;">
 																	<div class="card-header"></div>
 																		<div class="card-body">
@@ -263,11 +254,12 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 														</div>
 													</div>
 												</div>
-											<!-- Review Tab (4divs) -->
+											<!-- Review Tab -->
 												<div class="tab-pane fade show" id="nav-review2" role="tabpanel" aria-labelledby="nav-review2-tab">
 													<div class="container2">
 														<div class="row">
 															<div class="col" >
+																<!-- text box for review -->
 																<div class="card text-white bg-danger mb-3 shadowbox" style="max-width: 80rem;">
  																<div class="card-header"></div>
   																<div class="card-body">
@@ -329,12 +321,12 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 												</div>
 											</div>
 										</div>
-									<!-- Synop Tab -->
+									<!-- Movie info Tab -->
 										<div class="tab-pane fade show active" id="nav-synop3" role="tabpanel" aria-labelledby="nav-synop3-tab">
 											<div class="container2" >
 												<div class="row">
 													<div class="col">
-															
+															<!-- text box for movie info -->
 														<div class="card text-white bg-primary mb-3 shadowbox" style="max-width: 80rem;">
 															<div class="card-header"></div>
 															<div class="card-body">
@@ -384,7 +376,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 											<div class="container2">
 												<div class="row">
 													<div class="col">
-
+														<!-- text box for review -->	
 														<div class="card text-white bg-primary mb-3 shadowbox" style="max-width: 80rem;">
  														<div class="card-header"></div>
   														<div class="card-body">
@@ -447,11 +439,12 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 												</div>
 											</div>
 										</div>
-									<!-- Synop Tab -->
+									<!-- Movie Info -->
 										<div class="tab-pane fade show active" id="nav-synop4" role="tabpanel" aria-labelledby="nav-synop4-tab">
 											<div class="container2" >
 												<div class="row">
 													<div class="col" >
+														<!-- text box for movie info -->
 													<div class="card text-white bg-warning mb-3 shadowbox" style="max-width: 80rem;">
 														<div class="card-header"></div>
 														<div class="card-body">
@@ -459,8 +452,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 															<p class="card-text text-black">As the son of Odin (Anthony Hopkins), king of the Norse gods, Thor (Chris Hemsworth) will soon inherit the throne of Asgard from his aging father. However, on the day that he is to be crowned,
 															 Thor reacts with brutality when the gods' enemies, the Frost Giants, enter the palace in violation of their treaty. As punishment,
 															  Odin banishes Thor to Earth. While Loki (Tom Hiddleston), Thor's brother, plots mischief in Asgard, Thor, now stripped of his powers, faces his greatest threat.</p>
-
-															<div class="row">
+																			<div class="row">
 																				<div class="col" style="text-align: right;">	
 																					<p>	Rating:	</p>
 																					<p>	Genre:</p>
@@ -499,12 +491,12 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 												</div>
 											</div>
 										</div>
-									<!-- Review Tab (4divs) -->
+									<!-- Review Tab -->
 										<div class="tab-pane fade show" id="nav-review4" role="tabpanel" aria-labelledby="nav-review4-tab">
 											<div class="container2">
 												<div class="row">
 													<div class="col">
-
+																<!-- text box for review -->
 																<div class="card text-white bg-warning mb-3 shadowbox" style="max-width: 80rem;">
  																<div class="card-header"></div>
   																<div class="card-body">
@@ -535,7 +527,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 							</div>
 						</div>
 
-						
+						<!-- Bottom nav bar -->
                         <div  class="navbar-b" >
 							<p>2020 OT FILMS Canada LP | Privacy Policy | Terms of Use</p>
 						</div>
