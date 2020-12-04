@@ -80,7 +80,7 @@ session_start();
 							<h1>Contact Tracing</h1>
 							<div>
 								<h2>Tracing</h2>
-								<p>As per provincial requirements, OT Films has implemented contact tracing measures at all locations. To ensure a safe and physically-distanced movie-going experience, we encourage all guests to purchase their tickets and reserve their seats in advance at <a href="bookSeats.php" class="override">OTFilms.com</a>.
+								<p>As per provincial requirements, OT Films has implemented contact tracing measures at all locations. To ensure a safe and physically-distanced movie-going experience, we encourage all guests to purchase their tickets and reserve their seats in advance at <a href="bookSeats.php" class="override">OTFilms.com</a>.<!a brings the user to the book eats page so it is done online not in person/>
 								</br><a href="https://www.cdc.gov/coronavirus/2019-ncov/community/contact-tracing-nonhealthcare-workplaces.html" class="override" margin-left="20%">Why Do We Trace</a></p>
 								</br><img src="images/Ct.png" alt="Why to trace" class="center"/> 
 
