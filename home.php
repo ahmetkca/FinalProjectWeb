@@ -48,11 +48,13 @@ session_start();
 							<table class="center">
 
 								<tr>
-
+									
+									<!-- previous button -->
 									<td>
 										<a id="prev" onclick="prevslide()">&#10094;</a>
 									</td>
 
+									<!-- each image given and id used for slideshow -->
 									<td>
 										<img src="images/freaky.jpg" height="450" width="800" id="0" style="border: 5px solid rgb(81, 185, 255);">
 										<img src="images/downton.jpg" height="450" width="800" id="1" style="display: none; border: 5px solid rgb(81, 185, 255);">
@@ -62,6 +64,7 @@ session_start();
 										<p id="slidenum" style="color: rgb(81, 185, 255); text-align: center; font-size: 20pt;">1/5</p>
 									</td>
 
+									<!-- next button -->
 									<td>
 										<a id="next" onclick="nextslide()">&#10095;</a>
 									</td>
@@ -74,6 +77,7 @@ session_start();
 
 							<h1>OUR LOCATIONS</h1>
 						
+						<!-- styled table with locations, contact info, and linked images -->
 						<div style="background-image: url('images/moviesback.jpg');">
 							<table border="10" class="center" style="border-color: rgb(81, 185, 255); background-color: orange;">
 
@@ -139,6 +143,7 @@ session_start();
 
 						<div style="height: 100px;"> </div>
 						
+						<!-- imax link/image -->
 						<a href="https://www.imax.com/">
 							<img src="images/imax.jpg" style="display: block; margin-left: auto; margin-right: auto;">
 						</a>

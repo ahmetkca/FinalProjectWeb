@@ -53,7 +53,7 @@ session_start();
                                 $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
                                 //This writes to mySQL console
-                                //it selects everything from the users tables, and checks for the '$user' variable
+                                //it selects everything from the bookings tables, and checks for the '$user' variable
                                 $sqltask = "select * from booked where Username = '$user'";
                                 $sqltype = mysqli_query($connection, $sqltask);
 
@@ -61,15 +61,10 @@ session_start();
                                 $check = mysqli_num_rows($sqltype);
 
                                 echo "<br>";
-                                //echo '<table id="content">';
-                                
-                                //////////////////////////LOOP/////////////////////////////////////////////////////////
-                                //$infoarray = mysqli_fetch_array($sqltype, MYSQLI_ASSOC);
-
-                                
-                                
                                 ?>
                                 
+                                <!-- checks if a booking exists from the user -->
+                                <!-- If so, display info and give print option -->
                                 <?php if ($check >= 1): ?>
                                 <center><p id="print" onclick="window.print()">Click Here to Print this Page</p></center>
                                 <br>
@@ -87,7 +82,7 @@ session_start();
                                     </thead>
 
 
-                                <?php
+                                <?php //Recieves all relevant info to output on receipt, from the database
                                     while ($infoarray = mysqli_fetch_array($sqltype)) {
                                         $adults = $infoarray["AdultNum"];
                                         $seniors = $infoarray["SeniorNum"];
@@ -100,6 +95,7 @@ session_start();
                                         $seats = $infoarray["seatsNum"];
                                         $time = $infoarray["timeNum"];
 
+                                        //Styling and output
                                         echo '<tr style="border-bottom: 1px solid black;">
                                             <td>
                                                 <p>Adult tickets: ' . $adults . '</p>
@@ -135,7 +131,7 @@ session_start();
                             <tr>
                             </table>
 
-                            <?php else: ?>
+                            <?php else: ?>  <!-- if no bookings exist by the username, output this message -->
                                 <h1>YOU HAVE NOT BOOKED ANY SEATS</h1>
 						   <?php endif; ?>
 

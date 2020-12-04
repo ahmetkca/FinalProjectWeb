@@ -113,6 +113,7 @@ function minusNachos() {
     }
 }
 
+//Gets Cost for various seat types
 function getSeatCost(){
 
     var adult = parseInt(Adults.value);
@@ -127,6 +128,7 @@ function getSeatCost(){
     return (adult+senior+child);
 }
 
+//Gets cost for food items
 function getFoodCost(){
 
     var popcorn = parseInt(popcornOut.value);
@@ -143,8 +145,11 @@ function getFoodCost(){
     return (popcorn+coke+candy+nachos);
 }
 
+//Calculates subtotals and totals, then sends values of each input to hidden inputs used for
+//submission processing
 function calcTotal(){
 
+    //Used for submission processing
     getAdults();
     getSeniors();
     getChildren();
@@ -154,6 +159,7 @@ function calcTotal(){
     getCandy();
     getNachos();
 
+    //Used to get cost
     var sub = getSeatCost() + getFoodCost();
     var tax = sub*0.13;
     var total = sub + tax;
@@ -165,6 +171,7 @@ function calcTotal(){
     getTotal();
 }
 
+//Below is all for submission processing
 function getTotal(){
     document.getElementById("totalSubmission").value = document.getElementById("total").innerHTML;
 }
