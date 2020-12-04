@@ -66,6 +66,7 @@ session_start();
 									<a class="a2a_button_twitter"></a><!sociel links/>
 									<a class="a2a_button_email"></a>
 									</div>
+									<br>
 								   <h2>Cast</h2>
 								   <p>Mark Hamill, Harrison Ford, Carrie Fisher, Alec Guinness and Peter Cushing.</p>
 									</td>
@@ -73,6 +74,7 @@ session_start();
 						   </table>
 						</div>
 						<div class="sin">
+							<br>
 							<h3>Synopsis</h3>
 							<p>After Princess Leia, the leader of the Rebel Alliance, is held hostage by Darth Vader, Luke and Han Solo must free her and destroy the powerful weapon created by the Galactic Empire.</p>
 							<h4>Initital Release</h4>
