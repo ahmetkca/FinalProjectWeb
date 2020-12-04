@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $row_num = 0;
             $total = $_POST['totalSubmission'];
             $seats = $_POST['seats'];
-            //print_r($_POST['totalSubmission']);
+            
 
             //Reads the file to initialise a 2D array (similar bookseats.php), used to target a seat directly by row and column
             //opposed to iterating through
@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     
                     $seats_file_array[$row_num][$a] = intval($row_seats[$a]);
                 }
-                //$seats_file_array[$row_num] = $row_seats;
+                
 
                 $row_num+=1;
             }
@@ -50,6 +50,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $seats_file_array[intval($seat[1])-1][intval($seat[3])-1] = 1;
             }
 
+            // creates a brand new array with only selected seats
+            // excluding the occupied ones.
             $newSeatsNum = array();
             foreach($_POST['seats'] as $seat) {
                 if ($seat == "occupied" || $seat == "covid") {
@@ -68,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $line = "";
                 $nCol = 1;
                 foreach($row as $cell) {
-                    //$line =$line.$cell.",";
+                    
                     if ($nCol < 9) {
                         $line =$line.$cell.",";
                     } else {
@@ -86,6 +88,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $nRow+=1;
             }
             fclose($writeToFile);
+
+            // query string for receipt modal.
+            // holds receipt information.
             $rStr = "location: bookSeats.php?total=".$total;
             foreach($_POST['seats'] as $seat) {
                 if ($seat == "occupied" || $seat == "covid") {
@@ -139,12 +144,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 }
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+            
+            // redirects user to bookSeats.php with receipt information such as seats selected, number of popcorn, type of ticket.
             header($rStr);
         } else {
+            // redirects user to bookSeats.php with appropriate error message.
             header("location: bookSeats.php?error=You must choose your seat(s) and have at least 1 ticket.");
         }
     } else {
+        // redirects user to bookSeats.php with appropriate error message.
         header("location: bookSeats.php?error=You must choose your seat(s) and have at least 1 ticket.");
     }
 }

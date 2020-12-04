@@ -3,6 +3,8 @@ var coke = 0;
 var candy = 0;
 var nachos = 0;
 
+// ensures after user change their ticket selection
+// make all checkbox unchecked so user can select seat(s) over again.
 function changeSeats() {
     for (var i = 1; i <= 5; i++) {
         for (var k = 1; k <= 9; k++ ) {
@@ -16,20 +18,20 @@ function changeSeats() {
     }
 }
 
+// check how many tickets user have selected
+// ensures user can't select more than how many ticket they selected
+// if they try to select more than that cancel the action.
 function checkSeatNum(event, s_id) {
     var selected_seat = document.getElementById(s_id);
     var adult = parseInt(document.getElementById("Adults").value);
     var senior = parseInt(document.getElementById("Seniors").value);
     var children = parseInt(document.getElementById("Children").value);
-
     if (adult == 0 && senior == 0 && children == 0) {
         alert("You must have at least Adult or Senior or Children 1 ticket.");
-        //selected_seat.setAttribute("checked", "false");
+        
         event.preventDefault();
-        //return false;
+        
     }
-
-    
     var max_seat =adult + senior + children;
     console.log(max_seat);
     var num_selected_seats=0;
@@ -37,18 +39,13 @@ function checkSeatNum(event, s_id) {
         for (var k = 1; k <= 9; k++ ) {
             var seat = document.getElementById("r"+i+"c"+k);
             if (seat.checked == true && seat.className == "free-seat") {
-                
                 ++num_selected_seats;
             }
-            
-            if (num_selected_seats > max_seat) {
-                //selected_seat.setAttribute("checked", "false");
+            if (num_selected_seats > max_seat) {   
                 event.preventDefault();
-                //return false;
             }
         }
     }
-    //return true;
 }
 
 //Handling adding/subtracting beverages and snacks
