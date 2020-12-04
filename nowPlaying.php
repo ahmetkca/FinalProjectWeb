@@ -18,7 +18,7 @@ session_start();
 
 
 				<body>
-						<nav class="navbar navbar-custom ">
+						<nav class="navbar navbar-custom "><!a navigation header bar atop the page/>
                             <img src="images/Logo.png" alt="Logo is missing from the current directory" height="200" width="200"/>
                            <a class="navbar-brand" href="home.php">Home</a> 
                            <a class="navbar-brand" href="upcoming.php">Upcoming</a>
@@ -35,7 +35,7 @@ session_start();
 							<div class="navbar-nav">
 								<a class="navbar-item nav-link" href="login.html" style="color: white">Login</a> or
 								<a class="navbar-item nav-link" href="signup.html" style="color: white">Register</a>
-						   </div>
+						   </div><!an information bar at the bottom og the page/>
 						   <?php endif; ?>    				
         				</nav>
 
@@ -58,12 +58,12 @@ session_start();
 								   <p class="upperinfo">Run time: 125 min<br>
 								   Rating: PG<br>
 								   Genre: Adventure/ Sci Fi<br>
-								   Trailer: <a href="https://www.youtube.com/watch?v=1g3_CFmnU7k" target="_blank" class="play-button"><i class="circle imgply"></i></a><br><br>
+								   Trailer: <a href="https://www.youtube.com/watch?v=1g3_CFmnU7k" target="_blank" class="play-button"><i class="circle imgply"></i></a><br><br><!traler button/>
 								   <button onclick="document.location='bookSeats.php'" class="butt" Style="margin-top: 3px">Buy Tickets </button>
 								   <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
 									
 									<a class="a2a_button_facebook"></a>
-									<a class="a2a_button_twitter"></a>
+									<a class="a2a_button_twitter"></a><!sociel links/>
 									<a class="a2a_button_email"></a>
 									</div>
 								   <h2>Cast</h2>
@@ -97,7 +97,7 @@ session_start();
 							<h4>Genre</h4>
 							<p>Adventure/ Sci Fi</p>
 
-							<h3>Testimonials</h3>
+							<h3>Testimonials</h3><!reviews and reviewrs who left them/>
 
 							<dl>
 								<dt>Few films before or after it have managed to include such a celebrated, recognizable score - thanks to the masterful compositions by John Williams.</dt>
