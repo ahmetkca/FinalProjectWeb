@@ -184,9 +184,8 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 									</td>
 									<td>
 										<br><br>
-										<button id="checkout-btn" type="submit" ><b>Checkout</b></button>
+										<button id="checkout-btn" type="submit"><b>Checkout</b></button>
 									</td>
-									
 
 								</tr>
 
