@@ -61,7 +61,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 								  <a class="nav-item nav-link active" id="nav-movie-tab" data-toggle="tab" href="#nav-movie1" role="tab" aria-controls="nav-movie1" aria-selected="true">Star Wars</a>
 								  <a class="nav-item nav-link" id="nav-movie-tab" data-toggle="tab" href="#nav-movie2" role="tab" aria-controls="nav-movie2" aria-selected="false">Freaky</a>
 								  <a class="nav-item nav-link" id="nav-movie-tab" data-toggle="tab" href="#nav-movie3" role="tab" aria-controls="nav-movie3" aria-selected="false">Moonlight</a>
-								  <a class="nav-item nav-link" id="nav-movie-tab" data-toggle="tab" href="#nav-movie4" role="tab" aria-controls="nav-movie4" aria-selected="false">Thor</a>
+								  <a class="nav-item nav-link" id="nav-movie-tab" data-toggle="tab" href="#nav-movie4" role="tab" aria-controls="nav-movie4" aria-selected="false">Simpsons</a>
 								</div>
 							  </nav>
 							<!-- tab content-->
