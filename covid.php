@@ -18,6 +18,7 @@ session_start();
 
 
 				<body>
+						<!a navigation header bar atop the page/>
 						<nav class="navbar navbar-custom ">
                             <img src="images/Logo.png" alt="Logo is missing from the current directory" height="200" width="200"/>
                            <a class="navbar-brand" href="home.php">Home</a> 
@@ -38,7 +39,7 @@ session_start();
 						   </div>
 						   <?php endif; ?>
                                				
-						</nav>
+						</nav><!an information bar at the bottom og the page/>
 						<div class="navbar-b">
 							<p>2020 OT FILMS Canada LP | Privacy Policy | Terms of Use</p>
 						</div>
@@ -48,7 +49,7 @@ session_start();
 						<br>
 						<h1>Covid-19 Policies</h1>
 
-						<div class="container-md">
+						<div class="container-md"><!creates a sub navigation bar that hides the infromation without the matching id so only the corispoding information is vissable/>
 							<nav>
 								<div class="nav nav-tabs justify-content-center nav-fill" id="nav-tab" role="tablist">
 
@@ -59,7 +60,7 @@ session_start();
 								</div>
 							  </nav>
 						</div>
-						<div class="tab-content" id="nav-tabContent">
+						<div class="tab-content" id="nav-tabContent"><!foramts the shown information at the top of the navigation area instead of displaying it in the notrmal part of the page />
 						<div class="tab-pane fade show active" id="nav-Policy" role="tabpanel" aria-labelledby="Face-Mask-Policy">
 							<div class="shown">
 								<h1>Face Mask Policy</h1>
