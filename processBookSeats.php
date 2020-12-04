@@ -17,7 +17,7 @@
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['seats']) && (isset($_POST['Adults']) || isset($_POST['Seniors']) || isset($_POST['Children'])) ) {
-        if ($_POST['Adults'] == '0' && $_POST['Seniors'] == '0' && $_POST['Children'] == '0') {
+        if ($_POST['Adults'] != '0' && $_POST['Seniors'] != '0' && $_POST['Children'] != '0') {
             $myfile = fopen("seats.txt", "r") or die("Unable to open file!");
             $seats_file_array = array();
             $row_num = 0;
@@ -139,23 +139,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 }
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-            /*
-            $msg = "First line of text\nSecond line of text";
-
-            // use wordwrap() if lines are longer than 70 characters
-            $msg = wordwrap($msg,70);
-
-            // send email
-            mail($_SESSION['email'],"OT Films", $msg);*/
+            
             header($rStr);
         } else {
             header("location: bookSeats.php?error=You must choose your seat(s) and have at least 1 ticket.");
-            //echo "<h1> </h1>";
         }
     } else {
         header("location: bookSeats.php?error=You must choose your seat(s) and have at least 1 ticket.");
-        //echo "<h1> </h1>";
     }
 }
 ?>
