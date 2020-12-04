@@ -396,7 +396,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 									<div class="container">
 										<div class="row">
 											<div class="col" style="background-color: rgb(0, 0, 0);" >
-												<img class="Thumb" src="images/thor.jpg" >
+												<img class="Thumb" src="images/simpsons.jpg" >
 											</div>
 										
 										</div>
@@ -416,7 +416,7 @@ $session_value=(isset($_SESSION['username']))?$_SESSION['username']:'';
 											<div class="container2">
 												<div class="row">
 													<div class="col" >
-														<div class="youtube" align="center"><iframe src="https://www.youtube.com/embed/JOddp-nlNvQ"></iframe></div>
+														<div class="youtube" align="center"><iframe src="https://www.youtube.com/embed/a1pWCkW95W0"></iframe></div>
 													</div>													
 												</div>
 											</div>
