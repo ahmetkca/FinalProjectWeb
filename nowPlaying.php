@@ -35,11 +35,11 @@ session_start();
 							<div class="navbar-nav">
 								<a class="navbar-item nav-link" href="login.html" style="color: white">Login</a> or
 								<a class="navbar-item nav-link" href="signup.html" style="color: white">Register</a>
-						   </div><!an information bar at the bottom og the page/>
+						   </div>
 						   <?php endif; ?>    				
         				</nav>
 
-                        <div class="navbar-b">
+                        <div class="navbar-b"><!an information bar at the bottom og the page/>
 							<p>2020 OT FILMS Canada LP | Privacy Policy | Terms of Use</p>
 						</div>
                         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -53,7 +53,7 @@ session_start();
 								  <p><img src="images/newhope.png" alt="Star Wars A New Hope" height="120%" width="60%" class="img shadowbox"/></p>
 							   </td>
 							   <td>
-								   <h1>Star Wars: A New Hope</h1>
+								   <h1>Star Wars: A New Hope</h1><!short movie info blurb/>
 								   <h2 style="color:rgb(81, 185, 255)"><strong>Current Big Premiere</strong></h2>
 								   <p class="upperinfo">Run time: 125 min<br>
 								   Rating: PG<br>
@@ -75,7 +75,7 @@ session_start();
 						</div>
 						<div class="sin">
 							<br>
-							<h3>Synopsis</h3>
+							<h3>Synopsis</h3><!long movie info blurb/>
 							<p>After Princess Leia, the leader of the Rebel Alliance, is held hostage by Darth Vader, Luke and Han Solo must free her and destroy the powerful weapon created by the Galactic Empire.</p>
 							<h4>Initital Release</h4>
 							<p>1977</p>
